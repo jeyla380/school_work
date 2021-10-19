@@ -3,7 +3,7 @@
 <br>
 <br>
 
-## 🌍 Web Programming and Design
+## 💻 Web Programming and Design
 | XHTML & Internet Fundamentals | Web Programming | Advanced Javascript and JSP | Website Design |
 | --- | --- | --- | --- |
 | ... | ... | ... | ... |
