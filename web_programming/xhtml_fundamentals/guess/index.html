@@ -1,0 +1,36 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Sailor Moon Guessing Game</title>
+			<link type="text/css" rel="stylesheet" href="css/style.css">
+			<script src="js/script.js"></script>
+		</head>
+		
+		<body onload="resetGame();">
+			<div class ="body">
+			<h1>Sailor Moon Guessing Game</h1>
+			<h3 id="game-message">Let's Get Started! You have 10 guesses.</h3>
+			<h4>Guess between 1 - 99</h4>
+			<img id="game-image" src="img/sailormoon/main.jpg">
+				<form action="javascript:void(0);">
+					<input id="user-input" type="text" autocomplete="off">
+					<input id="submit-guess" class="show" type="submit" onclick="playGame(); playAudio();" value="Enter">
+					<input id="play-again" class="hide" type="submit" onclick="resetGame();" value="Play Again?">
+				</form>
+				<h3 class="guesses">Previous guesses: </h3>
+				<div class="paragraph">
+					<p id="num-guess"></p>
+				</div>
+				<br>
+				<div id="audio">
+					<audio id="music" controls>
+						<source src="music/EmotionalPrism.mp3" type="audio/mpeg">
+					</audio>
+					<h5>Music: </h5>
+					<p>Emotional Prism 感情的なプリズム</p>
+					<p><a href="https://soundcloud.com/mikazukibigwave">ミカヅキBIGWAVE</a></p>
+				</div>
+			</div>
+		</body>
+	</html>
