@@ -1,0 +1,146 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+*{margin: 0; padding: 0;}
+
+body
+{
+	background: url("../img/sailormoon/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 2000px 1000px;
+}
+
+div.body
+{
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 2
+}
+
+h1
+{
+	font-family: 'Elsie';
+	font-size: 50px;
+	padding: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+h3
+{
+	font-family: 'Elsie';
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+h3.guesses
+{
+	font-family: 'Elsie';
+	font-size: 30px;
+}
+
+h4
+{
+	font-family: 'Elsie';
+	font-weight; bold;
+	font-size: 25px;
+	text-align: center;
+}
+
+h5
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+p#num-guess
+{
+	font-family: 'Dosis';
+	padding-bottom: 5px;
+}
+
+div.paragraph
+{
+	text-align: center;
+}
+
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 225px;
+	padding: 10px;
+}
+
+input
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	font-family: 'Elsie';
+	font-size: 17px;
+	background-color: #FFFACD;
+}
+
+input[type="text"]
+{
+	font-family: 'Dosis';
+	background-image: url("../img/sailormoon/symbol.png");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: 5px 2px;
+	padding-left: 45px;
+	width: 50px;
+	background-color: white;
+}
+
+form
+{
+	text-align: center;
+}
+
+input.hide
+{
+	display: none;
+}
+
+input.show
+{
+	display: block;
+}
+
+div#audio
+{
+	text-align: center;
+	font-family: 'Dosis';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border-top: 2px solid white;
+	padding-top: 15px;
+}
+
+div#audio h5
+{
+	font-size: 15px;
+}
+
+div#audio p
+{
+	font-size: 13px;
+}
+
+div#audio p a
+{
+	text-decoration: none;
+}
