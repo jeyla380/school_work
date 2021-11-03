@@ -1,0 +1,66 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Tic Tac Toe</title>
+			<link style="text/css" rel="stylesheet" href="css/style.css">
+			<script src="js/script.js"></script>
+		</head>
+		
+		<body>
+			<div class="choose">
+				<button onclick="document.getElementById('myModal').style.display='block'" class="open">Choose Your Character</button>
+			</div>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<div class="container" id="container">
+						<span onclick="document.getElementById('myModal').style.display = 'none'" class="close">&times;</span>
+						<input type="image" src="img/ken.gif" id="ken" onclick="chooseKen();">
+						<input type="image" src="img/ryu.gif" id="ryu" onclick="chooseRyu();">
+						<input type="image" src="img/chun-li.gif" id="chun-li" onclick="chooseChunLi();">
+						<input type="image" src="img/ibuki.gif" id="ibuki" onclick="chooseIbuki();">
+						<input type="image" src="img/sakura.gif" id="sakura" onclick="chooseSakura();">
+						<input type="image" src="img/zangief.gif" id="zangief" onclick="chooseZangief();">
+						<h2 id="chosen"></h2>
+					</div>
+				</div>
+			</div>
+		
+			<img class="logo" src="img/logo.png">
+			<h2 id="game-message">Tic Tac Toe</h2>
+			<img src="img/KO.png">
+			<form onsubmit="return false">
+				<div class="one">
+					<h3>Player 1</h3>
+					<input id="player1" type="text" value="" autocomplete="off">
+				</div>
+				<div class="two">
+					<h3>Player 2</h3>
+					<input id="player2" type="text" value="" autocomplete="off">
+				</div>
+				<div class="fight">
+					<input type="submit" onclick="submitPlayer();" value="Fight!">
+				</div>
+			</form>
+			<div id="game-board">
+				<div id="row-1">  
+					<div onclick="playGame(this, 1);"></div>			
+					<div onclick="playGame(this, 2);"></div>			
+					<div onclick="playGame(this, 4);"></div> 
+				</div>
+				<div id="row-2">  
+					<div onclick="playGame(this, 8);"></div>			
+					<div onclick="playGame(this, 16);"></div>			
+					<div onclick="playGame(this, 32);"></div> 
+				</div>
+				<div id="row-3">  
+					<div onclick="playGame(this, 64);"></div>			
+					<div onclick="playGame(this, 128);"></div>			
+					<div onclick="playGame(this, 256);"></div> 
+				</div>
+			</div>
+			<div class="restart">
+				<button onclick ="restartGame();">Play Again?</button>
+			</div>
+			<img class ="fighting" src="img/fighting.png">
+		</body>
+	</html>
