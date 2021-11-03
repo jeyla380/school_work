@@ -15,6 +15,7 @@
 | [Pizza-One](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_one) | ... | ... | ... |
 | [Pizza-Two](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_two) | ... | ... | ... |
 | [Superheroes](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/superheroes) | ... | ... | ... |
+| [Tic-Tac-Toe](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/tic_tac_toe) | ... | ... | ... |
 <br>
 
 ## 📷 Visual Arts
