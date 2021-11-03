@@ -13,6 +13,7 @@
 | [Lottery](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/lottery) | ... | ... | ... |
 | [Mad-Lib](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/mad_lib) | ... | ... | ... |
 | [Pizza-One](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_one) | ... | ... | ... |
+| [Pizza-Two](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_two) | ... | ... | ... |
 <br>
 
 ## 📷 Visual Arts
