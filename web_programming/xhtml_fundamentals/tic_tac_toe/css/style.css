@@ -1,0 +1,228 @@
+/*CSS*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+/*Look @ This: https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/*/
+
+*{margin: 0; padding: 0; box-sizing: border-box; user-select: none;}
+
+body
+{
+	background-image: url("../img/background.jpg");
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Press Start 2P';
+}
+
+img.logo
+{
+	margin-bottom: 0;
+	height: 75px;
+}
+
+img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 45px;
+	margin-top: 0;
+	padding-top: 0;
+	height: 145px;
+}
+
+img.fighting
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 50%;
+	z-index: -1;
+	
+}
+
+h2#game-message
+{
+	font-size: 45px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+h2#chosen
+{
+	text-align: center;
+	padding: 3px;
+	margin-top: 5px;
+}
+
+div#game-board
+{
+	overflow: hidden;
+	margin: 20px auto;
+	width: 605px;
+}
+
+div[id^="row-"]
+{
+	clear: both;
+}
+
+div[id^="row-"] div
+{
+	border: 3px solid black;
+	height: 200px;
+	width: 200px;
+	float: left;
+	text-align: center;
+}
+
+div[id^="row-"] div:first-child
+{
+	border-left: none;
+}
+
+div[id^="row-"] div:last-child
+{
+	border-right: none;
+}
+
+div#row-1 div
+{
+	border-top: none;
+}
+
+div#row-3 div
+{
+	border-bottom: none;
+}
+
+div.restart
+{
+	text-align: center;
+}
+
+div.one
+{
+	text-align: center;
+	position: absolute;
+	top: 22%;
+	left: 22%;
+}
+
+input#player1
+{
+	font-size: 15px;
+	font-family: 'Press Start 2P';
+	text-align: center;
+	padding: 5px;
+	width: 60%;
+	margin-top: 5px;
+}
+
+div.two
+{
+	text-align: center;
+	position: absolute;
+	top: 22%;
+	right: 22%;
+}
+
+input#player2
+{
+	font-size: 15px;
+	font-family: 'Press Start 2P';
+	text-align: center;
+	padding: 5px;
+	width: 60%;
+	margin-top: 5px;
+}
+
+div.fight
+{
+	position: absolute;
+	top: 30.5%;
+	width: 100%;
+	text-align: center;
+}
+
+input[type="submit"]
+{
+	text-align: center;
+	font-family: 'Press Start 2P';
+	font-size: 15px;
+	padding: 4px;
+
+}
+
+button
+{
+	font-family: 'Press Start 2P';
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Press Start 2P';
+	font-size: 13px;
+	padding: 4px;
+}
+
+div.choose
+{
+	position: absolute;
+	top: 27.5%;
+	width: 100%;
+	text-align: center;
+}
+
+.modal-content input
+{
+	padding: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; /
+  overflow: auto; /
+  background-color: rgb(0,0,0); /
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes backgroundAnimate
+{
+	0%
+	{
+		background-position: 0 0;
+	}
+	100%
+	{
+		background-position: 10000px 0;
+	}
+}
