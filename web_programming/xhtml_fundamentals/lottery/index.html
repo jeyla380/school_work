@@ -1,0 +1,36 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Galactic Lottery</title>
+			<link type="text/css" rel="stylesheet" href="css/style.css">
+		</head>
+		
+		<body>
+		<div class="neon">
+			<form action=" " onsubmit="return false">
+				<h1 class="title">Win the Galactic Lottery!</h1>
+					<div>
+						<h3>--- Enter a number less than 9 ---</h3>
+						<div class="inputBox">
+							<input type="text" id="lottery-question" autocomplete="off">
+							<button onclick="submitInfo(); playAudio();" id="button">Enter to Win!</button>
+						</div>
+							<p id="lottery-num1"></p>
+					</div>
+			</form>	
+			<script src="js/script.js"></script>
+			<div class="credits">
+				<h3>Music:</h3>
+				<p>Soda City Funk</p>
+				<p><a href="https://soundcloud.com/timlegend/popular-tracks">Tim Legend</a></p>
+				<br>
+				<audio id="music" controls>
+					<source src="music/SodaCityFunk.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="stars"></div>
+			<div class="twinkling"></div>
+			<div class="clouds"></div>
+		</div>
+		</body>
+	</html>
