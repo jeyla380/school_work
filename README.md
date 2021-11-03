@@ -11,6 +11,7 @@
 | [Image Map](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/image_map) | ... | ... | ... |
 | [Little Boxes](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/little_boxes) | ... | ... | ... |
 | [Lottery](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/lottery) | ... | ... | ... |
+| [Mad-Lib](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/mad_lib) | ... | ... | ... |
 <br>
 
 ## 📷 Visual Arts
