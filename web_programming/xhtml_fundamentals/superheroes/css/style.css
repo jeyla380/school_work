@@ -1,0 +1,120 @@
+h1#dc
+{
+	border: 4px solid white;
+	width: 400px;
+	color:#005ce6;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+h1#marvel
+{
+	border: 4px solid #ed1d24;
+	width: 500px;
+	color: white;
+	box-sizing: border-box;
+	background-color: #ed1d24;
+}
+
+div
+{
+	border: 5px solid #b3b3b3;
+	padding: 20px;
+	margin: 20px 10px 50px 10px;
+}
+
+div.batman
+{
+	border: 8px double #FFD700;
+	padding: 20px;
+	margin: 10px;
+	text-align: justify;
+	display: inline-block;
+	background-color: black;
+	color: LightGrey;
+	
+	background-image: url("https://i.pinimg.com/originals/25/0e/9c/250e9cdce140d70fa8af1d7af02deb38.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: 60px;
+}
+
+div.wonder-woman
+{
+	border: 8px double #DAA520;
+	padding: 20px;
+	margin: 10px;
+	text-align: justify;
+	display: inline-block;
+	background-color: #ff4d4d;
+	color: #262626;
+	
+	background-image: url("https://cdn.freebiesupply.com/logos/large/2x/wonder-woman-logo-png-transparent.png");
+	background-repeat: no-repeat;
+	background-position: 50% 4%;
+	background-size: 70px;
+}
+
+div.superman
+{
+	border: 8px double #cc0000;
+	padding: 20px;
+	margin: 10px;
+	text-align: justify;
+	display: inline-block;
+	background-color: #0060AA; 
+	color: #ffff66;
+	
+	background-image: url("https://www.stickpng.com/assets/images/58428b65a6515b1e0ad75aaf.png");
+	background-repeat: no-repeat;
+	background-position: 50% 4%;
+	background-size: 50px;
+}
+
+div.spiderman
+{
+	border: 8px double #2B3784;
+	padding: 10px;
+	margin: 10px;
+	text-align: justify;
+	display: inline-block;
+	background-color: #B11313; 
+	color: #d9e6f2;
+	
+	background-image: url("https://i.ya-webdesign.com/images/spider-man-symbol-png-3.png");
+	background-repeat: no-repeat;
+	background-position: 50% 1%;
+	background-size: 45px;
+}
+
+div.iron-man
+{
+	border: 8px double #B22222;
+	padding: 10px;
+	margin: 10px;
+	text-align: justify;
+	display: inline-block;
+	background-color: #B97D10; 
+	color: #b30000;
+	
+	background-image: url("https://www.pinclipart.com/picdir/big/61-615853_pegatina-iron-man-2-colores-in-2018-iron.png");
+	background-repeat: no-repeat;
+	background-position: 50% 3%;
+	background-size: 25px;
+}
+
+div.thor
+{
+	border: 8px double #800000;
+	padding: 10px;
+	margin: 10px;
+	text-align: justify;
+	display: inline-block;
+	background-color: #2C3034; 
+	color: #FaF0BF;
+	
+	background-image: url("https://i.ya-webdesign.com/images/thor-hammer-logo-png-14.png");
+	background-repeat: no-repeat;
+	background-position: 50% 2%;
+	background-size: 43px;
+}
