@@ -6,7 +6,7 @@
 ## 💻 Web Programming and Design
 | XHTML & Internet Fundamentals | Web Programming | Advanced Javascript and JSP | Website Design |
 | :---: | :---: | :---: | :---: |
-| [Bootstrap](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/bootstrap) | ... | ... | ... |
+| [Bootstrap](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/bootstrap) | [Class Exercises](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/class_exercises) | ... | ... |
 | [Guessing Game](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/guess) | ... | ... | ... |
 | [Image Map](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/image_map) | ... | ... | ... |
 | [Little Boxes](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/little_boxes) | ... | ... | ... |
