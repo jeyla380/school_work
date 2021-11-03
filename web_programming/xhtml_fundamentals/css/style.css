@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap');
+
+body
+{
+	background-image: url("../img/dot-grid.png");
+}
+
+h1
+{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 55px;
+}
+
+h3
+{
+	font-family: 'Yeseva One', cursive;
+	font-size: 40px;
+}
+
+h4
+{
+	font-size: 25px;
+}
+
+p
+{
+	font-family: 'Cormorant Infant', serif;
+	font-size: 23px;
+}
+
+a.navbar-brand
+{
+	font-family: 'Rochester', cursive;
+	font-size: 25px;
+}
+
+.navbar
+{
+	background-color:#35547e;
+	border: 1px solid grey;
+	opacity: 0.8;
+}
+
+.navbar li a
+{
+	color: black;
+	opacity: 1;
+	font-family: 'Handlee', cursive;
+	font-size: 15px;
+}
+
+div.webpages
+{
+	border: 1px solid black;
+	width: 75%;
+	margin: auto;
+	padding: 20px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+div.background1
+{
+	background-color: #BC8F8F;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	opacity: 0.7;
+}
+	
+div.webpages h3
+{
+	text-align: center;
+}
+
+div.webpages p
+{
+	font-size: 15px;
+}
+
+div.change
+{
+	margin: auto;
+	width: 60%;
+}
+
+div.col-sm-6 p, div.col-sm-4 p
+{
+	font-family: 'Cormorant Infant', serif;
+	text-align: center;
+	font-size: 17px;
+}
+	
+div.col-sm-6, div.col-sm-4
+{
+	margin-top: 20px;
+}
+	
+div.col-sm-4 h4, div.col-sm-6
+{
+	text-align: center;
+	font-family: 'Yeseva One', cursive;
+}
+	
+div.col-sm-4 ul
+{
+	width: 50%;
+	margin: auto;
+	font-family: 'Yeseva One', cursive;
+}
+
+div.reflection, div.eportfolio
+{
+	text-align: center;
+	border: 1px solid black;
+	padding: 20px;
+	width: 75%;
+	margin: auto;
+	margin-top: 120px;
+	margin-bottom: 160px;
+}
+
+div.reflection h3, div.eportfolio h3
+{
+	font-family: 'Fredericka the Great', cursive;
+}
+
+div.reflection ul
+{
+	text-align: left;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 16px;
+}
+
+p.paragraph
+{
+	font-size: 17px;
+}
+
+div.eportfolio a
+{
+	font-family: 'Yeseva One', cursive;
+}
+
+div.music
+{
+	text-align: center;
+	margin: auto;
+	background-color: #696969;
+	opacity: 0.5;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: white;
+}
+	
+div.carousel-inner img
+{
+	width: 75%;
+	margin: auto;
+}
+
+.carousel-control.right, .carousel-control.left 
+{
+	background-image: none;
+}
+
+.carousel-indicators li 
+{
+	border-color: black;
+}
+
+.carousel-indicators li.active 
+{
+	background-color: black;
+}
+
+span.glyphicon-triangle-right, span.glyphicon-triangle-left
+{
+	position: static;
+	margin-top: 120%;
+	margin-bottom: 120%;
+	color: black;
+	font-size: 30px;
+}
+
+div#myCarousel
+{
+	margin-bottom: 150px;
+	margin-top: 80px;
+}
+
+.slideanim 
+{
+	visibility:hidden;
+}
+
+.slide2 {
+  animation-name: slide;
+  animation-duration: 900ms;
+  visibility: visible;
+}
+
+@keyframes slide 
+{
+  0% 
+  {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% 
+  {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media(max-width: 1400px)
+{
+	div.webpages ul
+	{
+		width: 90%;
+	}
+}
+
+@media(max-width: 1200px)
+{
+	div.webpages ul
+	{
+		width: 100%;
+	}
+}
+
+@media(max-width: 1100px)
+{
+	div.webpages
+	{
+		width: 90%;
+	}
+}
+
+@media(max-width: 900px)
+{
+	div.webpages ul
+	{
+		width: 60%;
+		margin-right: 40%;
+	}
+}
+
+@media(max-width: 877px)
+{
+	div.webpages ul
+	{
+		margin-right: 40%;
+		margin-left: -6%;
+	}
+}
+
+@media(max-width: 868px)
+{
+	div.webpages ul
+	{
+		margin-right: 40%;
+		margin-left: -8%;
+	}
+}
+
+@media(max-width: 830px)
+{
+	div.webpages ul
+	{
+		margin-right: 40%;
+		margin-left: -13%;
+	}
+}
+
+@media(max-width: 798px)
+{
+	div.webpages ul
+	{
+		margin-right: 40%;
+		margin-left: -12%;
+	}
+	
+	div.webpages
+	{
+		width: 95%;
+	}
+}
+
+@media(max-width: 767px)
+{
+	div.webpages ul
+	{
+		width: 45%;
+		margin-right: 0;
+		margin-left: 28%;
+	}
+}
+
+@media(max-width: 600px)
+{
+	div.webpages ul
+	{
+		width: 50%;
+		margin-right: 0;
+		margin-left: 28%;
+	}
+	
+	div.webpages, div.eportfolio, div.reflection
+	{
+		width: 90%;
+	}
+}
+
+@media(max-width: 500px)
+{
+	div.webpages ul
+	{
+		width: 60%;
+		margin-left: 25%;
+	}
+}
