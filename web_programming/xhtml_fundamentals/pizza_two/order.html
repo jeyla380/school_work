@@ -1,0 +1,357 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Pizza Avenue</title>
+			<link type="text/css" rel="stylesheet" href="css/style.css">
+		</head>
+		
+		<body>
+			<div>
+				<ul class="title-bar">
+					<li class="title"><h2>Pizza Avenue</h2></li>
+					<li class="tabs"><a href="contact.html">Contact Us</a></li>
+					<li class="tabs"><a class="active icon" href="order.html">Order</a></li>
+					<li class="tabs"><a href="about.html">About Us</a></li>
+					<li class="tabs"><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+			<hr>
+			
+			<div class="description-title">
+			<div>
+				<h1>Create Your Own Pizza</h1>
+			</div>
+			
+			<img src="https://img.icons8.com/clouds/100/000000/pizza-cutter.png">
+			<br>
+			<br>
+			<div>
+				<p class="paragraph">You get the option of customizing your own personal pizza! <br>From the type and size of crust, to adding as many toppings as you want!</p>
+			</div>
+			<br>
+			
+			
+			<div class="describe-index">
+				<p>First, you will need to customize your pizza. Choose the size, the crust, and the toppings. If you are not sure what some of the terms are, there is a "description" button below that will open another page for you so you can still order without disruption. After you've chosen your desired pizza, there is a checkout section at the bottom of the page. You will need to fill out your information so we can get your pizza made and delivered to you as quickly as we can. Once everything is complete, hit the "submit" button, and your order will be sent to us immediately.</p>
+			</div>
+			</div>
+			
+			<div>
+			<form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="post">
+			<br>
+			<br>
+			<br>
+				<div class="pizza">
+					<div class="label-tag size-style">
+						<label>Sizes:</label>
+						<br>
+						<div>
+						<select class="pizza-size" name = "size">
+							<option value="mini">Mini</option>
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+							<option value="extra large">Extra Large</option>
+						</select>
+						</div>
+					</div>
+
+					
+					<div class="label-tag order-crust">
+						<label>Crusts:</label>
+						<br>
+						<br>
+						<div class="sub-crusts">
+						<label class="sub-title">Thin Crusts:</label>
+						<br>
+							<div class="radio-label">
+								<div>
+									<input type="radio" name="crust" value="flatbread-focaccia">Flatbread/Focaccia
+								</div>
+								<div>
+									<input type="radio" name="crust" value="new york">New York
+								</div>
+								<div>
+									<input type="radio" name="crust" value="new haven">New Haven
+								</div>
+								<div>
+									<input type="radio" name="crust" value="st. louis">St. Louis
+								</div>
+								<div>
+									<input type="radio" name="crust" value="neapolitan">Neapolitan
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="sub-crusts">
+						<label class="sub-title">Thick Crusts:</label>
+						<br>
+							<div class="radio-label">
+								<div>
+									<input type="radio" name="crust" value="stuffed">Stuffed
+								</div>
+								<div>
+									<input type="radio" name="crust" value="sicilian">Sicilian
+								</div>
+								<div>
+									<input type="radio" name="crust" value="chicago">Chicago
+								</div>
+								<div>
+									<input type="radio" name="crust" value="greek">Greek
+								</div>
+								<div>
+									<input type="radio" name="crust" value="detroit">Detroit
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="sub-crusts">
+						<label class="sub-title">Custom Crusts:</label>
+						<br>
+							<div class="radio-label">
+								<div>
+									<input type="radio" name="crust" value="gluten free">Gluten Free
+								</div>
+								<div>
+									<input type="radio" name="crust" value="whole wheat">Whole Wheat
+								</div>
+								<div>
+									<input type="radio" name="crust" value="multigrain">Multigrain
+								</div>
+								<div>
+									<input type="radio" name="crust" value="vegan">Vegan
+								</div>
+							</div>
+						</div>
+						<div class="descriptions">
+							<button type="button"><a href="descriptions.html" target="_blank">Descriptions</a></button>
+						</div>
+					</div>
+					
+					<div class="label-tag">
+						<label>Toppings:</label>
+						<br>
+						<div class="checkbox-label">
+							<div class="pepperoni">
+								<input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni
+							</div>
+							<div class="mushroom">
+								<input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms
+							</div>
+							<div class="onion">
+								<input type="checkbox" name="toppings[]" value="onions">Onions
+							</div>
+							<div class="sausage">
+								<input type="checkbox" name="toppings[]" value="sausage">Sausage
+							</div>
+							<div class="bacon">
+								<input type="checkbox" name="toppings[]" value="bacon">Bacon
+							</div>
+							<div class="mozzarella-cheese">
+								<input type="checkbox" name="toppings[]" value="mozzarella cheese">Mozzarella Cheese
+							</div>
+							<div class="gorgonzola-cheese">
+								<input type="checkbox" name="toppings[]" value="gorgonzola cheese">Gorgonzola Cheese
+							</div>
+							<div class="olive">
+								<input type="checkbox" name="toppings[]" value="black olives">Black Olives
+							</div>
+							<div class="pepper">
+								<input type="checkbox" name="toppings[]" value="green peppers">Green Peppers
+							</div>
+							<div class="cilantro">
+								<input type="checkbox" name="toppings[]" value="cilantro">Cilantro
+							</div>
+							<div class="pineapple">
+								<input type="checkbox" name="toppings[]" value="pineapple">Pinapple
+							</div>
+							<div class="spinach">
+								<input type="checkbox" name="toppings[]" value="spinach">Spinach
+							</div>
+							<div class="ham">
+								<input type="checkbox" name="toppings[]" value="ham">Ham
+							</div>
+							<div class="tomato">
+								<input type="checkbox" name="toppings[]" value="tomatoes">Tomatoes
+							</div>
+							<div class="chicken">
+								<input type="checkbox" name="toppings[]" value="chicken">Chicken
+							</div>
+							<div class="bbq-sauce">
+								<input type="checkbox" name="toppings[]" value="bbq-sauce">BBQ Sauce
+							</div>
+							<div class="basil">
+								<input type="checkbox" name="toppings[]" value="basil">Basil
+							</div>
+							<div class="garlic">
+								<input type="checkbox" name="toppings[]" value="garlic">Garlic
+							</div>
+							<div class="artichoke">
+								<input type="checkbox" name="toppings[]" value="artichoke">Artichoke
+							</div>
+							<div class="pesto">
+								<input type="checkbox" name="toppings[]" value="pesto">Pesto
+							</div>
+							<div class="vegan-cheese">
+								<input type="checkbox" name="toppings[]" value="vegan cheese">Vegan Cheese
+							</div>
+						</div>
+						<span class="checkbox-custom"></span>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				
+				<div class="pre-made">
+					<h2>Don't want to make your own pizza?</h2>
+					<p>Look at the other pizzas we have!</p>
+					<br>
+					<br>
+					<br>
+					<button class="premade-button" type="button"><a href="premade.html">Premade Pizzas</a></button>
+				</div>
+				<br>
+				<br>
+				<br>
+			
+				
+				<div class="checkout-style">
+					<div>
+						<h3 class="checkout">Checkout</h3>
+					</div>
+						<div>
+						<div class="checkout-label">
+							<label class="checkout-names">First Name: </label>
+							<br>
+							<input name="first" type="text" placeholder="First Name">
+							<br>
+							<br>
+							
+							<label class="checkout-names">Last Name: </label>
+							<br>
+							<input name="last" type="text" placeholder="Last Name">
+							<br>
+							<br>
+						</div>
+						
+						<div class="checkout-label">
+							<label class="checkout-names">Address 1: </label>
+							<br>
+							<input name="add1" type="text" placeholder="Address" required>
+							<br>
+							<br>
+							
+							<label class="checkout-names">Address 2: </label>
+							<br>
+							<input name="add2" type="text" placeholder="Apt. #">
+							<br>
+							<br>
+							
+							<label class="checkout-names">City: </label>
+							<br>
+							<input name="city" type="text" placeholder="City" required>
+							<br>
+							<br>
+							
+							<label class="checkout-names">State: </label>
+							<br>
+							<select name = "state">
+								<option value="alabama">Alabama</option>
+								<option value="alaska">Alaska</option>
+								<option value="arizona">Arizona</option>
+								<option value="california">California</option>
+								<option value="colorado">Colorado</option>
+								<option value="connecticut">Connecticut</option>
+								<option value="delaware">Delaware</option>
+								<option value="florida">Florida</option>
+								<option value="georgia">Georgia</option>
+								<option value="hawaii">Hawaii</option>
+								<option value="idaho">Idaho</option>
+								<option value="illinois">Illinois</option>
+								<option value="indiana">Indiana</option>
+								<option value="iowa">Iowa</option>
+								<option value="kansas">Kansas</option>
+								<option value="kentucky">Kentucky</option>
+								<option value="louisiana">Louisiana</option>
+								<option value="maine">Maine</option>
+								<option value="maryland">Maryland</option>
+								<option value="massachusetts">Massachusetts</option>
+								<option value="michigan">Michigan</option>
+								<option value="minnesota">Minnesota</option>
+								<option value="mississippi">Mississippi</option>
+								<option value="missouri">Missouri</option>
+								<option value="montana">Montana</option>
+								<option value="nebraska">Nebraska</option>
+								<option value="nevada">Nevada</option>
+								<option value="new hampshire">New Hampshire</option>
+								<option value="new jersey">New Jersey</option>
+								<option value="new mexico">New Mexico</option>
+								<option value="new york">New York</option>
+								<option value="north carolina">North Carolina</option>
+								<option value="north dakota">North Dakota</option>
+								<option value="ohio">Ohio</option>
+								<option value="oklahoma">Oklahoma</option>
+								<option value="oregon">Oregon</option>
+								<option value="pennsylvania">Pennsylvania</option>
+								<option value="rhode island">Rhode Island</option>
+								<option value="south carolina">South Carolina</option>
+								<option value="south dakota">South Dakota</option>
+								<option value="tennessee">Tennessee</option>
+								<option value="texas">Texas</option>
+								<option value="utah">Utah</option>
+								<option value="vermont">Vermont</option>
+								<option value="virginia">Virginia</option>
+								<option value="washington">Washington</option>
+								<option value="west virginia">West Virginia</option>
+								<option value="wisconsin">Wisconsin</option>
+								<option value="wyoming">Wyoming</option>
+							</select>
+							<br>
+							<br>
+							
+							<label class="checkout-names">Zipcode: </label>
+							<br>
+							<input name="zip" type="text" placeholder="Zip" required>
+							<br>
+							<br>
+						</div>
+						
+						<div class="checkout-label">
+							<label class="checkout-names">Phone Number: </label>
+							<br>
+							<input name="phone" type="text" placeholder="Phone Number" required>
+							<br>
+							<br>
+							
+							<label class="checkout-names">Email: </label>
+							<br>
+							<input name="email" type="text" placeholder="Email" required>
+							<br>
+							<br>
+						</div>
+						
+						<div class="checkout-label">
+							<label class="checkout-names">Comments: </label>
+							<br>
+							<textarea name="comments" rows="5" placeholder="Please enter any other comments"></textarea>
+							<br>
+							<br>
+						</div>
+						</div>
+						
+
+						<div class="checkout-buttons">
+						<input class="buttons" type="Submit">
+						<input class="buttons" type="Reset">
+						</div>
+				</div>		
+			</form>
+			</div>
+			
+			<br>
+			<hr>
+			<br>
+			
+		</body>
+	</html>
