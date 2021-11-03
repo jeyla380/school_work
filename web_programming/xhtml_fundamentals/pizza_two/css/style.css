@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Pacifico|Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellota:700|Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {padding: 0; margin: 0; box-sizing: border-box; overflow: hidden;}
+
+html
+{
+	background-image: url(../img/floor-tile.png);
+	height: 100%;
+	margin: auto;
+	overflow: scroll;
+	-ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar
+{
+	display: none;
+}
+
+div ul.title-bar li
+{
+	margin: 5px; 
+	position: absoulte;
+}
+
+
+div ul.title-bar li.tabs
+{
+	display: inline-block;
+	padding-top: 35px;
+	padding-right: 35px;
+	
+	float: right;
+}
+
+div ul.title-bar li.title
+{
+	float: left;
+}
+
+div ul.title-bar
+{
+	width: 100%;
+	border-bottom: 2px solid black;
+	background-color: rgba(233, 150, 122, .65);
+
+}
+
+div ul.title-bar li h2
+{
+	padding: 2px;
+	padding-left: 15px;
+	font-family: 'Pacifico';
+	font-size: 37px;
+	color: #396a93;
+	letter-spacing: 1px;
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 0.5px;
+}
+
+div ul.title-bar li a
+{
+	text-decoration: none;
+	font-family: 'Comfortaa';
+	font-size: 17px;
+	font-weight: bold;
+	color: #708090;
+	padding-top: 28px;
+	transition: color 800ms;
+}
+
+div ul.title-bar li a:hover
+{
+	color: white;
+}
+
+div ul.title-bar li a.active
+{
+	color: white;
+}
+
+div ul.title-bar li a.icon
+{
+	background-image: url("https://pngimage.net/wp-content/uploads/2018/05/black-and-white-food-icon-png-4.png");
+	background-position: top;
+	background-size: 25px;
+	background-repeat: no-repeat;
+}
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div h1
+{
+	padding: 20px;
+	text-align: center;
+	font-family: 'Abril Fatface';
+	font-size: 45px;
+	letter-spacing: 1px;
+}
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div h2
+{
+	padding: 7px;
+	font-family: 'Abril Fatface';
+	font-size: 33px;
+}
+
+div p
+{ 
+	font-family: 'Zilla Slab';
+	font-size: 15px;
+}
+
+div p.paragraph
+{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+div.sizes, div.crust-style, div.pizza-style, div.toppings-style
+{
+	padding: 20px;
+}
+
+div p.mini
+{
+	height: 80px;
+	width: 80px;
+	padding-top: 27px;
+	background-color: #FFFAF0;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid black;
+	
+	float: left;
+	margin-left: 10px;
+}
+
+div p.small
+{
+	height: 110px;
+	width: 110px;
+	padding-top: 40px;
+	background-color: #FFFAF0;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid black;
+	
+	float: left;
+	margin-left: 10px;
+}
+
+div p.medium
+{
+	height: 140px;
+	width: 140px;
+	padding-top: 60px;
+	background-color: #FFFAF0;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid black;
+	
+	float: left;
+	margin-left: 10px;
+}
+
+div p.large
+{
+	height: 170px;
+	width: 170px;
+	padding-top: 70px;
+	background-color: #FFFAF0;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid black;
+	
+	float: left;
+	margin-left: 10px;
+}
+
+div p.extra-large
+{
+	height: 200px;
+	width: 200px;
+	padding-top: 90px;
+	background-color: #FFFAF0;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid black;
+	
+	float: left;
+	margin-left: 10px;
+}
+
+div.sizes p.note
+{
+	font-weight: bold;
+}
+
+div.sizes div.different-sizes
+{
+	padding-top: 10px;
+	
+}
+
+div.descriptions
+{
+	padding-left: 15px;
+}
+
+div.crust-style h3
+{
+	font-family: 'Quicksand';
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #336699;
+}
+
+div.describe h4
+{
+	font-family: 'Quicksand';
+	padding: 10px;
+	padding-left: 15px;
+	color: #6699cc;
+}
+
+div.description-title
+{
+	border-bottom: 5px double #b3cccc;
+}
+
+div.crust-style p, div.pizza-style p, div.toppings-style p, div.faq p
+{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	
+}
+
+
+div.crust-style div.thin-crust-style
+{
+	width: 33.33%;
+	float: left;
+	display: inline-block;
+	
+}
+
+div.crust-style div.thick-crust-style
+{
+	width: 33.33%;
+	float: left;
+	display: inline-block;
+}
+
+div.crust-style div.custom-crust-style
+{
+	width: 33.33%;
+	float: left;
+	display: inline-block;
+}
+
+div.pizza-style div.pizza-style-two
+{
+	width: 12.5%;
+	float: left;
+	display: inline-block;
+	
+	padding: 5px; 
+}
+
+div.toppings-style div.toppings-style-list
+{
+	width: 14.285%;
+	float: left;
+	display: inline-block;
+}
+
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+div.pre-made
+{
+	width: 100%;
+	text-align: center;
+	background-color: rgba(176, 196, 222, .50);
+	border: 1px solid #1e3048;
+	border-radius: 20px;
+	
+	background-image: url("https://img.icons8.com/plasticine/2x/down.png");
+	background-position: 50% 60%;
+	background-size: 40px;
+	background-repeat: no-repeat;
+}
+
+div.pre-made h2
+{
+	padding: 15px;
+	font-family: 'Abril Fatface';
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+div.pre-made p
+{
+	font-family: 'Zilla Slab';
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+button
+{
+	font-family: 'Lobster Two';
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #FFA07A;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+button a
+{
+	text-decoration: none;
+	color: black;
+}
+
+div form
+{
+
+	padding: 15px;
+	padding-left: 20px;
+}
+
+div form div
+{
+	padding: 10px;
+}
+
+div form div label
+{
+	font-family: 'Quicksand';
+	font-weight: bold;
+	font-size: 17px;
+	color: #9f6060;
+}
+
+div form div input
+{
+	padding: 3px;
+}
+
+div form div input.buttons
+{
+	padding: 5px;
+	font-family: 'Zilla Slab';
+	font-weight: bold;
+	font-size: 13px;
+	border-radius: 10px;
+	border: 1px solid gray;
+
+}
+
+div form div textarea
+{
+	padding: 5px;
+}
+
+div form div input::placeholder
+{
+	font-family: 'Zilla Slab';
+	color: #C0C0C0;
+}
+
+div form div textarea::placeholder
+{
+	font-family: 'Zilla Slab';
+	color: #C0C0C0;
+}
+
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+div form div.pizza div.label-tag
+{
+	padding-top: 10px;
+	width: 33.33%;
+	float: left;
+	display: inline-block;
+}
+
+div.label-tag select.pizza-size
+{
+	font-size: 15px;
+}
+
+ div.pizza label
+{
+	color: #52527a;
+	font-size: 20px;
+}
+
+ div.pizza label.sub-title
+{
+	font-size: 16px;
+	color: #7575a3;
+	padding: 2px;
+}
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+div.premade div.label-tag
+{
+	padding-top: 10px;
+	width: 25%;
+	float: left;
+	display: inline-block;
+}
+
+select.pizza-size
+{
+	font-size: 15px;
+}
+
+ div.premade label
+{
+	color: #52527a;
+	font-size: 20px;
+}
+
+ div.premade label.sub-title
+{
+	font-size: 16px;
+	color: #7575a3;
+	padding: 2px;
+}
+
+div.premade div.label-tag div
+{
+	font-family: 'Zilla Slab';
+}
+
+div.premade div.checkbox-label
+{
+	font-family: 'Zilla Slab';
+	
+}
+
+label.checkout-names
+{
+	font-family: 'Zilla Slab';
+	font-size: 17px;
+}
+
+div.premade label.checkout-names
+{
+	font-family: 'Zilla Slab';
+	font-size: 17px;
+	color: #a97070;
+}
+
+div.label-tag input
+{
+	font-family: 'Zilla Slab';
+	font-size: 15px;
+	
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 4px;
+	background-color: rgba(179, 204, 230, .80);
+}
+
+div.label-tag div.reset-button
+{
+	padding: 3px;
+	padding-left: 60px;
+}
+
+div.label-tag div.reset-button input
+{
+	font-weight: bold;
+	
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: LightGrey;
+}
+
+button.premade-button
+{
+	font-size: 25px;
+	background-color: #ffc6b3;
+}
+
+
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+div form div select
+{
+	font-family: 'Zilla Slab';
+}
+
+div form div.pizza div div.checkbox-label
+{
+	font-family: 'Zilla Slab';
+}
+
+div.pizza
+{
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	
+	width: 75%;
+	margin: auto;
+}
+
+
+div form div.pizza div div.checkbox-label div.pepperoni
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1744/1744108.png");
+	background-position: 28%;
+	background-size: 33px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.mushroom
+{
+	background-image: url("https://img.icons8.com/cotton/2x/mushroom.png");
+	background-position: 30%;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.onion
+{
+	background-image: url("https://cdn4.iconfinder.com/data/icons/vegetable-2-filled/64/vegetable-05-512.png");
+	background-position: 23%;
+	background-size: 23px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.sausage
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/food-and-drink-color/64/food_bbq_grill_sausage_hotdog_fastfood_frankfurter-512.png");
+	background-position: 24%;
+	background-size: 38px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.bacon
+{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/food-drink-60/50/1F953-bacon-512.png");
+	background-position: 22%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.mozzarella-cheese
+{
+	background-image: url("https://cdn4.iconfinder.com/data/icons/cheese-lovers/512/Cheese_final_Mozzarella-512.png");
+	background-position: 42%;
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.gorgonzola-cheese
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/cheese-blue-line/64/212_cheese-dairy-product-food-homemade-512.png");
+	background-position: 43%;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.olive
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/yummicon-pro/100/098_Olive-512.png");
+	background-position: 31%;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.pepper
+{
+	background-image: url("https://cdn0.iconfinder.com/data/icons/vegetables-36/512/green_pepper-vegetable-vegan-healthy-vegetarian-organic-512.png");
+	background-position: 34%;
+	background-size: 23px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.cilantro
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/food-5-7/128/Vigor_Parsley-Herb-Ingredients-Spice-Leaf-Food-Cilantro-512.png");
+	background-position: 25%;
+	background-size: 22px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.pineapple
+{
+	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/pineapple-1490070-1261666.png");
+	background-position: 24%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.spinach
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1135/1135484.png");
+	background-position: 24%;
+	background-size: 26px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.ham
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1096/1096726.png");
+	background-position: 21%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.tomato
+{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/food-drink-60/50/1F345-tomato-512.png");
+	background-position: 27%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.chicken
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/restaurants-and-food/95/chicken-512.png");
+	background-position: 25%;
+	background-size: 24px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.bbq-sauce
+{
+	background-image: url("https://cdn4.iconfinder.com/data/icons/barbecue-16/64/2_sauce_grill_barbecue_bbq_cooking-512.png");
+	background-position: 28%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.basil
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/herb-fill-outline/64/Basil-herb-herbs-plant-512.png");
+	background-position: 21%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.garlic
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/linefillix-vegetables/128/vegetables_food-25-512.png");
+	background-position: 21%;
+	background-size: 33px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.artichoke
+{
+	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/artichoke-1640364-1391065.png");
+	background-position: 28%;
+	background-size: 25px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.pesto
+{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/european-cuisine-flat-colorful-1/614/7081_-_Green_Sauce-512.png");
+	background-position: 19%;
+	background-size: 37px;
+	background-repeat: no-repeat;
+}
+
+div form div.pizza div div.checkbox-label div.vegan-cheese
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/vegan-filled-outline/340/vegetarian_vegan_cheese_food_meal_snack_no-512.png");
+	background-position: 34%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+.sub-crusts
+{
+	padding: 2px;
+}
+
+div form div.pizza div div.radio-label
+{
+	font-family: 'Zilla Slab';
+}
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div.premade-style
+{
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	
+	width: 85%;
+	margin: auto;
+}
+
+div.premade form div.label-tag div.pepperoni
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1744/1744108.png");
+	background-position: 32%;
+	background-size: 33px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.mushroom
+{
+	background-image: url("https://img.icons8.com/cotton/2x/mushroom.png");
+	background-position: 35%;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.onion
+{
+	background-image: url("https://cdn4.iconfinder.com/data/icons/vegetable-2-filled/64/vegetable-05-512.png");
+	background-position: 26%;
+	background-size: 23px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.sausage
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/food-and-drink-color/64/food_bbq_grill_sausage_hotdog_fastfood_frankfurter-512.png");
+	background-position: 25%;
+	background-size: 38px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.bacon
+{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/food-drink-60/50/1F953-bacon-512.png");
+	background-position: 23%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.mozzarella-cheese
+{
+	background-image: url("https://cdn4.iconfinder.com/data/icons/cheese-lovers/512/Cheese_final_Mozzarella-512.png");
+	background-position: 49%;
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.gorgonzola-cheese
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/cheese-blue-line/64/212_cheese-dairy-product-food-homemade-512.png");
+	background-position: 51%;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.olive
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/yummicon-pro/100/098_Olive-512.png");
+	background-position: 35%;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.pepper
+{
+	background-image: url("https://cdn0.iconfinder.com/data/icons/vegetables-36/512/green_pepper-vegetable-vegan-healthy-vegetarian-organic-512.png");
+	background-position: 40%;
+	background-size: 23px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.cilantro
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/food-5-7/128/Vigor_Parsley-Herb-Ingredients-Spice-Leaf-Food-Cilantro-512.png");
+	background-position: 27%;
+	background-size: 22px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.pineapple
+{
+	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/pineapple-1490070-1261666.png");
+	background-position: 27%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.spinach
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1135/1135484.png");
+	background-position: 26%;
+	background-size: 26px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.ham
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1096/1096726.png");
+	background-position: 21%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.tomato
+{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/food-drink-60/50/1F345-tomato-512.png");
+	background-position: 30%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.chicken
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/restaurants-and-food/95/chicken-512.png");
+	background-position: 27%;
+	background-size: 24px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.bbq-sauce
+{
+	background-image: url("https://cdn4.iconfinder.com/data/icons/barbecue-16/64/2_sauce_grill_barbecue_bbq_cooking-512.png");
+	background-position: 32%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.basil
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/herb-fill-outline/64/Basil-herb-herbs-plant-512.png");
+	background-position: 20%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.garlic
+{
+	background-image: url("https://cdn3.iconfinder.com/data/icons/linefillix-vegetables/128/vegetables_food-25-512.png");
+	background-position: 22%;
+	background-size: 33px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.artichoke
+{
+	background-image: url("https://cdn.iconscout.com/icon/premium/png-256-thumb/artichoke-1640364-1391065.png");
+	background-position: 31%;
+	background-size: 25px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.pesto
+{
+	background-image: url("https://cdn2.iconfinder.com/data/icons/european-cuisine-flat-colorful-1/614/7081_-_Green_Sauce-512.png");
+	background-position: 21%;
+	background-size: 37px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.vegan-cheese
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/vegan-filled-outline/340/vegetarian_vegan_cheese_food_meal_snack_no-512.png");
+	background-position: 40%;
+	background-size: 27px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.apples
+{
+	background-image: url("https://cdn1.iconfinder.com/data/icons/fresh-fruit-2/128/apple-512.png");
+	background-position: 24%;
+	background-size: 22px;
+	background-repeat: no-repeat;
+}
+
+div.premade form div.label-tag div.rosemary
+{
+	background-image: url("https://image.flaticon.com/icons/png/512/1398/1398266.png");
+	background-position: 31%;
+	background-size: 22px;
+	background-repeat: no-repeat;
+}
+
+
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div h3.checkout
+{
+	padding: 5px;
+	font-family: 'Abril Fatface';
+	font-size: 25px;
+	letter-spacing: 1px;
+	color: #333333;
+	border-bottom: 2px solid rgba(255, 153, 153, .60);
+	text-align: center;
+	padding-right: 6%;
+	
+	background-image: url("https://img.icons8.com/cotton/2x/shopping-basket.png");
+	background-position: 53% 8%;
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+
+div.checkout-style
+{	
+	width: 80%;
+	margin: auto;
+}
+
+
+div form div.checkout-label
+{
+	
+	padding-top: 10px;
+	width: 25%;
+	float: left;
+	display: inline-block;
+}
+
+div.checkout-buttons
+{
+	text-align: center;
+}
+
+div.checkout-buttons input.buttons
+{
+	font-size: 17px;
+	
+	border: 1px solid grey;
+	background-color: #e6e6e6;
+}
+
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+div.faq h4
+{
+	font-family: 'Quicksand';
+	padding: 10px;
+	padding-left: 15px;
+	color: #6699cc;
+}
+
+div.faq h3
+{
+	font-family: 'Quicksand';
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #336699;
+	text-align: center;
+}
+
+div.faq-style
+{
+	width: 50%;
+	margin: auto;
+	border-radius: 25px;
+	padding: 10px;
+	padding-right: 25px;
+	background-color: rgba(217, 217, 217, .65);
+	
+	text-align: justify;
+}
+
+
+/**--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+img
+{
+	display: block;
+	margin: auto;
+	height: 115px;
+	width: 115px;
+}
+
+img.classic
+{
+	display: block;
+	margin: auto;
+	height: 115px;
+	width: 180px;
+}
+
+img.home-image
+{
+	display: block;
+	margin: auto;
+	height: 300px;
+	width: 300px;
+}
+
+div.icons
+{
+	text-align: center;
+	padding: 10px;
+}
+
+div.icons div.describe
+{
+	float: left;
+	display: inline-block;
+	width: 33%;
+}
+
+/**------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div.describe-index
+{
+	padding: 20px 300px;
+	text-align: center;
+}
+
+div.describe-index p
+{
+	font-size: 15px;
+	text-align: center;
+}
+
+/**------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div.contact-style
+{
+	width: 50%;
+	margin: auto;
+}
+
+div.contact-lists
+{
+	padding-left: 40%;
+}
+
+div.contact-button
+{
+	padding-left: 45%;
+}
+
+
