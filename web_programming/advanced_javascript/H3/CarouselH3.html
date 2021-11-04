@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery-cycle-all.js"></script>
+        <script type="text/javascript" src="AJAX.js"></script>
+        <script type="text/javascript">
+            var html = '';
+            $(document).ready(function()
+            {
+                $.getJSON('HobbiesInfo.json', function(data)
+                {
+                    $.each(data, function(key, value)
+                    {
+                        $.each(value, function(index, datastuff)
+                        {
+                            html += '<div class="hobby">';
+                            html += '<h2 id="title">' + datastuff.Name + '</h2>';
+                            html += '<p onclick="hobbies(' + datastuff.id + ')"><img src="' + datastuff.Image + '"style="width: 150px;"></p></div>'
+                        });
+                    });
+                    
+                    $('#hobbies').html(html);
+                    
+                    //creates the carousel speed, buttons, etc.
+                    $('#hobbies').cycle({
+                        fx: 'fade',
+                        pause: '1',
+                        prev: '#previous',
+                        next: '#next',
+                        speed: 500,
+                        timeout: 10000
+                    });
+                });
+            });
+        </script>
+        
+        <title>Carousel Assignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="margin-right: 0; margin-left: 0;">
+            <div id="main" style="width: 525px; text-align: center;"><h2>Hobbies Carousel</h2></div>
+            <div>
+                <table style="width:600px">
+                    <!-- This is where the title, image, and buttons go -->
+                    <tr style="height: auto">
+                        <td><a href="#" id="previous">Previous</a></td>
+                        <td style="width:300px; height:auto"><div id="hobbies"></div></td>
+                        <td><a href="#" id="next">Next</a></td>
+                    </tr>
+                    <!-- an extra row to space out the top and bottom rows -->
+                    <tr style="height: 100px;">
+                        <td></td>
+                    </tr>
+                    <!-- This is where the description goes -->
+                    <tr style="height: auto; width: 600px; position: absolute;">
+                        <td>
+                            <div id="info">
+                                <figure>
+                                    <figcaption></figcaption>
+                                </figure>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+    </body>
+</html>
