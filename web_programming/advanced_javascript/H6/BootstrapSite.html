@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+            *, *::before, *::after
+            {
+                font-family: 'Fredoka One', cursive;
+            }
+            
+            .question-body
+            {
+                width: 800px;
+                max-width: 80%;
+                background-color: #4682B4;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            
+            .btn-grid
+            {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                gap: 10px;
+                margin: 20px 0;
+            }
+            
+            .btn
+            {
+                border: 1px solid lightgray;
+                background-color: lightgray;
+                color: black;
+            }
+            
+            .btn:hover
+            {
+                border: 1px solid #2b506e;
+                background-color: #2b506e;
+                color: white;
+            }
+            
+            #start-btn, #next-btn, #reset-btn
+            {
+                border: 1px solid #2b506e;
+                background-color: #2b506e;
+                color: white;
+                font-size: 20px;
+                padding: 10px 30px;
+            }
+            
+            #start-btn:hover, #next-btn:hover, #reset-btn:hover
+            {
+                border: 1px solid lightgray;
+                background-color: lightgray;
+                color: black;
+                font-size: 20px;
+                padding: 10px 30px;
+            }
+            
+            .correct
+            {
+                border: 1px solid #6B8E23;
+                background-color: #6B8E23;
+            }
+            
+            .wrong
+            {
+                border: 1px solid #B22222;
+                background-color: #B22222;
+            }
+            
+            .controls
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .hide
+            {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron" style="text-align: center;">
+                <h1>THE OFFICE QUIZ PT. II</h1>
+                <br>
+                <img src="images/the-office.jpg" class="img-fluid" style="max-width: 60%; height: auto;">
+            </div>
+        
+            <div class="question-body" style="text-align: center; margin: auto;">
+                <div id="question-container" class="hide">
+                    <div id="question" style="color: black;">Question</div>
+                    <div id="answer-btn" class="btn-grid"> 
+                        <button id="answer-one" class="btn">Answer 1</button>
+                        <button id="answer-two" class="btn">Answer 2</button>
+                        <button id="answer-three" class="btn">Answer 3</button>
+                        <button id="answer-four" class="btn">Answer 4</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="controls" style="text-align: center;">
+                        <button id="start-btn" class="btn btn-primary">Start</button>
+                        <button id="next-btn" class="btn btn-primary hide">Next</button>
+                        <button id="reset-btn" class="btn btn-primary hide">Reset Game</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <script>
+            var Question = 0;
+    
+            var startButton = document.getElementById('start-btn');
+            var questionContainer = document.getElementById('question-container');
+            var questionElem = document.getElementById('question');
+            var nextButton = document.getElementById('next-btn');
+            var resetButton = document.getElementById('reset-btn');
+            
+            startButton.addEventListener("click", startGame);
+            nextButton.addEventListener("click", nextQuestion);
+            
+            function startGame()
+            {
+                //console.log('Check');
+                startButton.classList.add('hide');
+                questionContainer.classList.remove('hide');
+                nextQuestion();
+            }
+            
+            function nextQuestion()
+            {
+                showQuestion();
+                if(Question == 10)
+                {
+                    nextButton.classList.add('hide');
+                    resetGame();
+                }
+            }
+            
+            function showQuestion(question)
+            {
+                questionElem.innerHTML = myQuestions.Quiz[Question].question;
+                document.getElementById('answer-one').innerHTML = myQuestions.Quiz[Question].answers.a;
+                document.getElementById('answer-two').innerHTML = myQuestions.Quiz[Question].answers.b;
+                document.getElementById('answer-three').innerHTML = myQuestions.Quiz[Question].answers.c;
+                document.getElementById('answer-four').innerHTML = myQuestions.Quiz[Question].answers.d;
+               
+                correctAnswer();
+                Question++;
+            }
+            
+            function resetGame()
+            {
+                Question = 0;
+                resetButton.addEventListener("click", function(e){
+                    location.reload();
+                },
+                false
+                );
+            }
+            
+            function correctAnswer()
+            {
+                //needs work
+                
+                switch(myQuestions.Quiz[Question].question)
+                {
+                    case "In what episode does Kevin drop his chili?":
+                        document.getElementById('answer-three').onclick = function(e){
+                            document.getElementById('answer-three').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        nextButton.classList.add('hide');
+                        break;
+                    case "Which of these objects was NOT in the teapot that Jim got for Pam?":
+                        document.getElementById('answer-three').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-three').classList.remove('correct');
+                        document.getElementById('answer-one').onclick = function(e){
+                            document.getElementById('answer-one').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-one').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;   
+                    case "What was the name of Stanely's first wife?":
+                        document.getElementById('answer-one').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-one').classList.remove('correct');
+                        document.getElementById('answer-two').onclick = function(e){
+                            document.getElementById('answer-two').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-two').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "Where was Ryan working when Michael recruited him for the Michael Scott Paper Company?":
+                        document.getElementById('answer-two').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-two').classList.remove('correct');
+                        document.getElementById('answer-four').onclick = function(e){
+                            document.getElementById('answer-four').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-four').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "What is Dwight's middle name?":
+                        document.getElementById('answer-four').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-four').classList.remove('correct');
+                        document.getElementById('answer-one').onclick = function(e){
+                            document.getElementById('answer-one').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-one').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "What's the name of Pam and Jim's son?":
+                        document.getElementById('answer-one').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-one').classList.remove('correct');
+                        document.getElementById('answer-three').onclick = function(e){
+                            document.getElementById('answer-three').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-three').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "Who was never manager of the Scranton Branch":
+                        document.getElementById('answer-three').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-three').classList.remove('correct');
+                        document.getElementById('answer-three').onclick = function(e){
+                            document.getElementById('answer-three').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-three').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "In the dinner party episode, what does Jan throw at the plasma TV?":
+                        document.getElementById('answer-three').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-three').classList.remove('correct');
+                        document.getElementById('answer-one').onclick = function(e){
+                            document.getElementById('answer-one').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-one').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "Whose birthday does the office celebrate when there are rumors that the company is downsizing?":
+                        document.getElementById('answer-one').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-one').classList.remove('correct');
+                        document.getElementById('answer-two').onclick = function(e){
+                            document.getElementById('answer-two').classList.add('correct');
+                            nextButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-two').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                    case "Who beats Michael's pushup challenge by doing 26 pushups at the office?":
+                        document.getElementById('answer-two').onclick = function(e){
+                            return false;
+                        };
+                        document.getElementById('answer-two').classList.remove('correct');
+                        document.getElementById('answer-three').onclick = function(e){
+                            document.getElementById('answer-three').classList.add('correct');
+                            resetButton.classList.remove('hide');
+                        };
+                        document.getElementById('answer-three').classList.remove('correct');
+                        nextButton.classList.add('hide');
+                        break;
+                }
+            }
+            
+            
+            var myQuestions = {
+            "Quiz" : [
+                {
+                    question: "In what episode does Kevin drop his chili?",
+                    answers: {
+                        a: "Stress Relief: Part 1",
+                        b: "Broke",
+                        c: "Casual Friday",
+                        d: "Café Disco"
+                    },
+                    correctAnswer: "c"
+                },
+                {
+                    question: "Which of these objects was NOT in the teapot that Jim got for Pam?",
+                    answers: {
+                        a: "Two ketchup packets",
+                        b: "Boggle timer", 
+                        c: "Mini-golf pencil",
+                        d: "Cassette"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    question: "What was the name of Stanely's first wife?",
+                    answers: {
+                        a: "Donna",
+                        b: "Teri",
+                        c: "Cynthia",
+                        d: "Lydia"
+                    },
+                    correctAnswer: "b"
+                },
+                {
+                    question: "Where was Ryan working when Michael recruited him for the Michael Scott Paper Company?",
+                    answers: {
+                        a: "Frozen banana stand",
+                        b: "His mother's basement",
+                        c: "Subway",
+                        d: "Bowling alley"
+                    },
+                    correctAnswer: "d"
+                },
+                {
+                    question: "What is Dwight's middle name?",
+                    answers: {
+                        a: "Kurt",
+                        b: "Jerry",
+                        c: "Fart",
+                        d: "Helburt"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    question: "What's the name of Pam and Jim's son?",
+                    answers: {
+                        a: "Raymond",
+                        b: "Cece",
+                        c: "Philip",
+                        d: "Michael"
+                    },
+                    correctAnswer: "c"
+                },
+                {
+                    question: "Who was never manager of the Scranton Branch",
+                    answers: {
+                        a: "Creed",
+                        b: "Jim",
+                        c: "Ryan",
+                        d: "Nellie"
+                    },
+                    correctAnswer: "c"
+                },
+                {
+                    question: "In the dinner party episode, what does Jan throw at the plasma TV?",
+                    answers: {
+                        a: "A Dundee",
+                        b: "Neon bar sign",
+                        c: "A plate of food",
+                        d: "A candle"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    question: "Whose birthday does the office celebrate when there are rumors that the company is downsizing?",
+                    answers: {
+                        a: "Phyllis",
+                        b: "Meredith",
+                        c: "Kelly",
+                        d: "Angela"
+                    },
+                    correctAnswer: "b"
+                },
+                {
+                    question: "Who beats Michael's pushup challenge by doing 26 pushups at the office?",
+                    answers: {
+                        a: "Dwight",
+                        b: "Meredith",
+                        c: "Stanley",
+                        d: "Angela"
+                    },
+                    correctAnswer: "c"
+                }
+            ]
+        }
+        </script>    
+    </body>
+</html>
