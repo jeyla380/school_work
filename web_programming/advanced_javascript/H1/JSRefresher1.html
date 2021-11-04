@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Javascript with JSON</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var assignment = {
+                "Quiz": [
+                    {
+                        "Question":"Where did Michael Scott grow up?",
+                        "answer1": {
+                            "text":"Scranton, Pennsylvania",
+                            "value":10
+                        },
+                        "answer2": {
+                            "text":"New York City, New York",
+                            "value":0
+                        },
+                        "answer3": {
+                            "text":"Philadelphia, Pennsylvania",
+                            "value":0
+                        },
+                        "answer4": {
+                            "text":"Cleveland, Ohio",
+                            "value":0
+                        }
+                    },
+                    {
+                        "Question":"He didn't learn to how to talk until the age of?",
+                        "answer1": {
+                            "text":"3",
+                            "value":0
+                        },
+                        "answer2": {
+                            "text":"6",
+                            "value":0
+                        },
+                        "answer3": {
+                            "text":"5",
+                            "value":10
+                        },
+                        "answer4": {
+                            "text":"9",
+                            "value":0
+                        }
+                    },
+                    {
+                        "Question":"Which Dunder Mifflin employee attended high school with Michael?",
+                        "answer1": {
+                            "text":"Darryl",
+                            "value":0
+                        },
+                        "answer2": {
+                            "text":"Toby",
+                            "value":0
+                        },
+                        "answer3": {
+                            "text":"Phyllis",
+                            "value":10
+                        },
+                        "answer4": {
+                            "text":"Dwight",
+                            "value":0
+                        }
+                    },
+                    {
+                        "Question":"Where did he go to college?",
+                        "answer1": {
+                            "text":"University of Pennsylvania",
+                            "value":0
+                        },
+                        "answer2": {
+                            "text":"He did not go to college",
+                            "value":10
+                        },
+                        "answer3": {
+                            "text":"The University of Scranton",
+                            "value":0
+                        },
+                        "answer4": {
+                            "text":"Ohio University",
+                            "value":0
+                        }
+                    },
+                    {
+                        "Question":"How did Michael lose his college tuition money?",
+                        "answer1": {
+                            "text":"He started a business that ended up failing",
+                            "value":0
+                        },
+                        "answer2": {
+                            "text":"He got into TV shopping",
+                            "value":0
+                        },
+                        "answer3": {
+                            "text":"He bought a fancy car",
+                            "value":0
+                        },
+                        "answer4": {
+                            "text":"He invested in a pyramid scheme",
+                            "value":10
+                        }
+                    }
+                ]
+            }
+        var points = 0;
+        var question = 0;
+        function quizOn(choice)
+        {
+            points = points + parseInt(choice);
+            
+            if(question < 5)
+            {
+                document.getElementById("placeholder").innerHTML = "<form><p>" + assignment.Quiz[question].Question + "</p><p>"
+                + "<input type=\"radio\" value= " + assignment.Quiz[question].answer1.value + " onchange=\"quizOn(this.value)\">"
+                + assignment.Quiz[question].answer1.text + "<br><input type=\"radio\" value= " + assignment.Quiz[question].answer2.value
+                + " onchange=\"quizOn(this.value)\">" + assignment.Quiz[question].answer2.text + "<br><input type=\"radio\" value= "
+                + assignment.Quiz[question].answer3.value + " onchange=\"quizOn(this.value)\">" + assignment.Quiz[question].answer3.text
+                + "<br><input type=\"radio\" value= " + assignment.Quiz[question].answer4.value + " onchange=\"quizOn(this.value)\">"
+                + assignment.Quiz[question].answer4.text + "</form><p> You have " + points + " points.";
+            }
+            else
+            {
+                if(points == 50)
+                {
+                    document.getElementById("placeholder").innerHTML = "<p> You have " + points+ " points. <br>"
+                    + "<p>You got 5/5 questions correct!</p>";
+                }
+                else if(points == 40)
+                {
+                    document.getElementById("placeholder").innerHTML = "<p> You have " + points+ " points. <br>"
+                    + "<p>You got 4/5 questions correct!</p>";
+                }
+                else if(points == 30)
+                {
+                    document.getElementById("placeholder").innerHTML = "<p> You have " + points+ " points. <br>"
+                    + "<p>You got 3/5 questions correct!</p>";
+                }
+                else if(points == 20)
+                {
+                    document.getElementById("placeholder").innerHTML = "<p> You have " + points+ " points. <br>"
+                    + "<p>You got 2/5 questions correct!</p>";
+                }
+                else if(points == 10)
+                {
+                    document.getElementById("placeholder").innerHTML = "<p> You have " + points+ " points. <br>"
+                    + "<p>You got 1/5 questions correct!</p>";
+                }
+                else
+                {
+                    document.getElementById("placeholder").innerHTML = "<p> You have " + points+ " points. <br>"
+                    + "<p>You got 0/5 questions correct!</p>";
+                }
+            }
+            question++;
+        }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <h2>The Office Quiz</h2>
+        </div>
+        <div class="wrapper row2">
+            <div id="container" class="clear">
+                <div id="placeholder" class="section">
+                    <form>
+                        <img src="the-office.jpg">
+                        <p>
+                            <input type="radio" value="0" onchange="quizOn(this.value)">Click here to start!
+                        </p>
+                    </form>
+                </div>
+            </div> 
+        </div>
+        <div id="footer">
+            <p>This was made by Jessemy.</p> 
+        </div>
+    </body>
+</html>
