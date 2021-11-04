@@ -14,3 +14,6 @@
 
 ## Artboard
 ![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/artboard.JPG)
+
+## Painted Apple
+![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/painted_apple.JPG)
