@@ -4,7 +4,7 @@
 <br>
 
 ## 💻 Web Programming and Design
-| XHTML & Internet Fundamentals | Web Programming | Advanced Javascript and JSP | Website Design |
+| XHTML & Internet Fundamentals | Web Programming | Advanced Javascript & JSP | Website Design |
 | :---: | :---: | :---: | :---: |
 | [Bootstrap](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/bootstrap) | [Javascript Validation](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/JavascriptValidation) | ... | ... |
 | [Guessing Game](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/guess) | [SQL Form](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/MySQLForm) | ... | ... |
