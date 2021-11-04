@@ -7,3 +7,7 @@
 
 ## Paragraph Quote
 ![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/Paragraph_Quote.JPG)
+
+
+## Action Practice
+![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/actions_practice.JPG)
