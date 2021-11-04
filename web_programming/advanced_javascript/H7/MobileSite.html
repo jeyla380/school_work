@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Life Outback</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            
+            h1
+            {
+                font-family: 'Cookie', cursive;
+                font-size: 100px;
+            }
+            
+            h2
+            {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 35px;
+            }
+            
+            h3, .panel-heading
+            {
+                font-family: 'Cutive Mono', monospace;
+                font-size: 32px;
+            }
+            
+            #most_popular h3
+            {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 27px;
+            }
+            
+            .panel-body h4
+            {
+                font-family: 'Scope One', serif;
+            }
+            
+            h4
+            {
+                font-family: 'Dancing Script', cursive;
+                font-size: 27px;
+            }
+            
+            .panel-heading h5
+            {
+                font-family: 'Cutive Mono', monospace;
+                font-size: 26px;
+            }
+            
+            .card-title
+            {
+                font-family: 'Scope One', serif;
+                font-size: 19px;
+            }
+            
+            nav li
+            {
+                font-family: 'Josefin Slab', serif;
+            }
+            
+            p, ol.icon-style, li, blockquote
+            {
+                font-family: 'Tajawal', sans-serif;
+                font-size: 16px;
+            }
+            
+            #contact .col-sm-8
+            {
+                font-family: 'Cutive Mono', monospace;
+                font-size: 16px;
+            }
+            
+            .card-body button
+            {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 17px;
+            }
+            
+            .navbar-brand img
+            {
+                height: 100%;
+            }
+            
+            .jumbotron
+            {
+                background-color: #556B2F;
+                color: #FFF;
+                padding: 75px 25px;
+            }
+            
+            .blockquote-footer
+            {
+                color: #DCDCDC;
+            }
+            
+            .container-fluid
+            {
+                padding: 50px;
+                margin-bottom: 60px;
+            }
+            
+            .bg-light
+            {
+                background-color: #f2dca6;
+            }
+            
+            .bg-gray
+            {
+                background-color: #f2f2f2;
+                border: 1px solid #e6e6e6;
+            }
+            
+            .card
+            {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+                transition: 0.3s;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            
+            .card:hover
+            {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0, 0.2);
+            }
+            
+            .card img
+            {
+                margin: auto;
+            }
+            
+            .card-body
+            {
+                padding: 2px 16px;
+            }  
+            
+            .card-body img
+            {
+                padding: 10px;
+                vertical-align: middle;
+                width: 100%;
+            }
+            
+            .card-price
+            {
+                width: 80%;
+                padding: 10px;
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .panel-primary .panel-heading
+            {
+                background-color: #70a7a9;
+                border: 1px solid #70a7a9;
+            }
+            
+            .panel-primary
+            {
+                border: 1px solid #70a7a9;
+            }
+            
+            .icon-style
+            {
+                list-style-image: url('images/check-icon.png');
+                width: 100%;
+            }
+            
+            #carouselImg .item img
+            {
+                margin: auto;
+                height: 400px;
+            }
+            
+            #carouselImg .glyphicon
+            {
+                top: 197px;
+            }
+            
+            @media screen and (min-width: 768px)
+            {
+                .jumbotron .h1, .jumbotron h1
+                {
+                    font-size: 100px;
+                }
+            }
+            
+            @media(max-width: 767px)
+            {
+                .card-body img
+                {
+                    padding: 15px;
+                    width: 75%;
+                    margin: auto;
+                }
+            }
+        </style>
+        
+        <script>
+            $(function(){
+                $('input[name="daterange"]').daterangepicker({
+                    opens: 'left'
+                },
+                function(start, end, label){
+                    console.log("A new date selection was made: " + start.format('YYYY-MMM-DD') + 'to' + end.format('YYYY-MM-DD'));
+                });
+            });
+        </script>
+        
+    </head>
+    <body data-spy='scroll' data-target='.navbar' data-offset='50'>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/plane.png" class="img-responsive">
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="NavBar">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#most_popular">Most Popular</a>
+                                </li>
+                                <li>
+                                    <a href="#flights">Flights</a>
+                                </li>
+                                <li>
+                                    <a href="#hotels">Hotels</a>
+                                </li>
+                                <li>
+                                    <a href="#rental_cars">Rental Cars</a>
+                                </li>
+                                <li>
+                                    <a href="#camper_vans">Camper Vans</a>
+                                </li>
+                                <li>
+                                    <a href="#rvs">RVs and Motorhomes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#destinations">Destinations</a>
+                        </li>
+                        <li>
+                            <a href="#pricing_promotion">Promotion</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm">
+                        <li>
+                            <form class="navbar-form" action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <input class="form-control" type="text" name="daterange" value="12/10/2020 - 12/25/2020">
+                                    <i class="glyphicon glyphicon-calendar form-control-feedback"></i>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="jumbotron text-center">
+            <h1>Life Outback</h1>
+            <br>
+            <!--Carousel-->
+            <div id="carouselImg" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselImg" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselImg" data-slide-to="1"></li>
+                    <li data-target="#carouselImg" data-slide-to="2"></li>
+                    <li data-target="#carouselImg" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/travel-stock1.jpg" class="img-responsive img-rounded">
+                    </div>
+                    <div class="item">
+                        <img src="images/travel-stock2.jpg" class="img-responsive img-rounded">
+                    </div>
+                    <div class="item">
+                        <img src="images/travel-stock3.jpg" class="img-responsive img-rounded">
+                    </div>
+                    <div class="item">
+                        <img src="images/travel-stock4.jpg" class="img-responsive img-rounded">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carouselImg" data-slide="prev">
+                    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouselImg" data-slide="next">
+                    <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+            <blockquote class="blockquote">
+                <p class="mb-0">If happiness is the goal - and it should be, then adventures should be top priority.</p>
+                <footer class="blockquote-footer">Richard Branson</footer>
+            </blockquote>
+        </div>
+        
+        <div id="about" class="container-fluid">
+            <h2 class="text-center">About the Company</h2>
+            <br>
+            <div class="row">
+                <br>
+                <div class='col-md-5'>
+                    <img src="images/building.jpg" class="img-rounded img-responsive" style="width: 100%;">
+                </div>
+                <br>
+                <div class='col-md-7'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat est eu nisi ultricies, sit amet hendrerit magna porta. Duis sit amet ante ex. Integer interdum sem at tellus consequat tempor. Donec vitae sagittis elit. Etiam vitae ex varius justo hendrerit convallis. Integer rhoncus nisi nec mattis pretium. Fusce velit ligula, condimentum a dolor eu, porttitor consectetur justo. Phasellus eu lacus orci. Etiam porttitor viverra dui sit amet aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam in ante sit amet erat vestibulum rhoncus eu ut lacus. Vestibulum nec interdum felis, in rutrum eros. <br><br>Praesent auctor quam sed nunc lacinia tincidunt. Donec scelerisque, leo ac pharetra sodales, est justo egestas lorem, vitae viverra augue libero a tellus. Vestibulum vehicula erat a cursus pulvinar. Integer molestie blandit augue, ac lacinia risus egestas sed. Duis eget justo sed dolor euismod pretium. Mauris fringilla lacinia diam, eget semper ex tincidunt vitae. Curabitur augue felis, malesuada eget porttitor nec, fringilla a justo. Aliquam malesuada diam in libero bibendum pretium. Maecenas molestie lorem eu finibus gravida.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid text-center bg-light">
+            <h2>Services</h2>
+            <br>
+            <div class="row">
+                <div id="most_popular" class="col-sm-12">
+                    <h3>Most Popular</h3>
+                    <br>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card bg-gray">
+                        <img src='images/vacation.jpg' class='img-responsive img-rounded'>
+                        <div class="card-body">
+                            <h4 class="card-title">Vacation Packages</h4>
+                            <p class="card-text">Sed libero lorem, vulputate et semper vel, commodo vel orci. Donec faucibus tortor urna, id varius odio consequat vel. Nunc a eros ac urna tristique sodales. Pellentesque gravida erat dui, eget vestibulum nisi vestibulum id. Sed sit amet eros semper, pharetra elit in, ullamcorper ex. Aliquam a quam pharetra, accumsan nisi quis, venenatis tortor. Integer auctor maximus augue id pharetra. Suspendisse sed sodales felis. Integer sem odio, dapibus in congue at, congue sit amet dolor. Etiam finibus convallis enim, quis blandit purus cursus sit amet. Aliquam erat mi, varius maximus tincidunt non, euismod at ex. Nunc aliquet magna a purus lobortis placerat.</p>
+                            <div class='card-price'>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading"><h5>Grand Hyatt Baha Mar</h5></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-7">
+                                                <img src="images/bahamas.jpg" class="img-responsive img-rounded">
+                                                <br>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <p>This luxury resort is located on Cable Beach and offers 1,800 guestrooms, suites and residences. This property features six pools to choose from. Whether you like cocktails on the beach, tropical local fare, or upscale global cuisine, the resort offers over 20 restaurants, bars and lounges. Make time to experience one of the many treatments or therapies available at ESPA Baha Mar or enjoy a round of golf at Royal Blue at Baha Mar, a Jack Nicklaus Signature Design Golf Course. Once the sun sets, enjoy the energetic nightlife at the 100,000 square foot Baha Mar Casino featuring table games, slot play and sports book, in addition to the Bond Night Club.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id vehicula mauris, at dapibus nisl. Ut libero ipsum, mollis sed vehicula eget, rutrum condimentum lectus. Pellentesque arcu est, vestibulum sit amet arcu vel, consequat vehicula orci. Fusce at tortor viverra, euismod neque et, pellentesque diam. Sed porta risus odio, nec fringilla neque lacinia eu. In nibh magna, fermentum eu blandit vel, rhoncus quis erat. Quisque massa purus, interdum elementum odio eget, faucibus fringilla metus. Curabitur varius tincidunt commodo.</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#USModal" style="margin-bottom: 20px; margin-top: 10px;">Continental U.S.</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#HawaiiModal" style="margin-bottom: 20px; margin-top: 10px;">Hawaii</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#CaribbeanModal" style="margin-bottom: 20px; margin-top: 10px;">Caribbean</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MexicoModal" style="margin-bottom: 20px; margin-top: 10px;">Mexico</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#SouthPacificModal" style="margin-bottom: 20px; margin-top: 10px;">South Pacific</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#EuropeModal" style="margin-bottom: 20px; margin-top: 10px;">Europe</button>
+                                </div>
+                            </div>
+                            
+                            <!--U.S. Modal-->
+                            <div id="USModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Vacation Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Continental U.S.</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Walt Disney World Swan and Dolphin Resort Package</h5>
+                                                                    <img src="images/swan-dolphin-resort.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Resort features include 18 restaurants and lounges, newly renovated guest rooms with Westin Heavenly Beds®, the luxurious Mandara Spa, five pools, two health clubs, tennis, nearby golf and more. Guests also enjoy exclusive Disney benefits, such as complimentary transportation to all Disney theme parks and Disney Springs® provided approximately every 30 minutes during park hours; and complimentary parking at Disney theme parks with a resort room key.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Five nights or more</li>
+                                                                        <li>Full-size rental car</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Bellagio Package</h5>
+                                                                    <img src="images/bellagio.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">The entire personality of Bellagio, including the Conservatory and Botanical Gardens, changes with each of the four seasons. The Bellagio Gallery of Fine Art presents paintings, sculptures, and works on paper. At Spa Bellagio, innovative international treatments provide the ultimate indulgence. Capturing the romance of the Old World in the classical setting of a Mediterranean villa, serene pools, soothing spas, and private cabanas are accented by artful citrus and parterre gardens. Experience an award-winning show and the iconic Fountains of Bellagio where thoughtfully interwoven water, music, and light mesmerize its admirers. Bellagio offers an expansive variety of world-class restaurants to satisfy your dining experience. The hotel rooms and suites at the Bellagio offer the perfect blend of beauty and elegance. With views of the Las Vegas valley or the iconic Bellagio fountains right from your room or suite, your stay will be nothing short of unforgettable.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Two nights or more</li>
+                                                                        <li>Complimentary daily self-parking</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">The Scottsdale Resort at McCormick Ranch Package</h5>
+                                                                    <img src="images/scottsdale-resort.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Beautifully reimagined to reflect the beauty, warmth and community spirit of the Sonoran Desert, The Scottsdale Resort at McCormick Ranch welcomes you to a secluded oasis. Celebrate the pampering indulgence of Luna Spa. Savor the locally-sourced creations of artisan chefs. Schedule a sunrise tee time on nearby McCormick Ranch Golf Course. Or, simply enjoy the sunshine in a poolside cabana.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Two nights or more</li>
+                                                                        <li>Daily resort fee waived</li>
+                                                                        <li>Complimentary parking</li>
+                                                                        <li>Full-size rental car</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Hawaii Modal-->
+                            <div id="HawaiiModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Vacation Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Hawaii</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Napili Kai Beach Resort</h5>
+                                                                    <img src="images/napili-kai.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">The resort sits on 10 landscaped oceanfront acres on unspoiled Napili Bay. The resort hosts many complimentary activities, from mai tai parties to lei making, a putting green and hula lessons. This resort is known for its natural surroundings and genuine Hawaiian hospitality. This property has no resort fees.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Five nights or more</li>
+                                                                        <li>No daily resort fee</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Grand Hyatt Kauai Resort & Spa</h5>
+                                                                    <img src="images/kauai-resort.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">This classic resort features 50 oceanfront acres of exquisite beauty. Celebrate the sun in the water playground featuring river pools, a waterslide and saltwater lagoon, golf at world-class Poipu Bay, and for the ultimate pampering visit, the award-winning Anara Spa offers treatment rooms in a tropical garden setting.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Full-size rental car</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Royal Kona Resort</h5>
+                                                                    <img src="images/royal-kona.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Ocean waves crash against lava rock shores. Lush gardens burst with color and tropical scents. Refreshing sea breezes and warm sunshine wash over bare skin. Royal Kona Resort invites you to enjoy a sensory escape and the aloha spirit any time of the year. Savor delectable cuisine from award-winning chefs at their oceanfront restaurant. Sip a hand-crafted Mai Tai poolside under a shady palm. Discover authentic Hawaiian culture at the Voyagers of the Pacific Luau. Explore active volcanoes or scuba dive with manta rays. Stroll to the quaint seaside village of Kailua-Kona for an afternoon of dining and shopping. Everything you crave in an island escape is at your fingertips, ready to help you make unforgettable memories at the Royal Kona Resort.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>No daily resort fee</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Caribbean Modal-->
+                            <div id="CaribbeanModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Vacation Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Caribbean</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Hard Rock Hotel Package - Dominican Republic</h5>
+                                                                    <img src="images/hardrock-dr.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Located on one of the most beautiful beaches in the easternmost tip of Dominican Republic, this is the first all-inclusive Hard Rock property in the Caribbean.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Five nights or more</li>
+                                                                        <li>Family friendly</li>
+                                                                        <li>Unlimited meals, wine, etc.</li>
+                                                                        <li>Private ground transportation to and from hotel</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">The Royal at Atlantis Package</h5>
+                                                                    <img src="images/theRoyal.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">The iconic Royal Towers are the heartbeat of Atlantis and are centrally located to all of the resort’s premier attractions.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Four nights or more</li>
+                                                                        <li>Children 11 and younger stay and play free</li>
+                                                                        <li>Ground transportation to and from hotel</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Hilton Aruba Resort Package</h5>
+                                                                    <img src="images/aruba.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Discover the sparkling spirit of Aruba at this elegantly modern resort, located on 15 tropical acres along the bright white sands of Palm Beach. Enjoy endless ocean vistas, multiple dining options, a variety of water sports, a kids' club, a casino and the beachfront eforea™ Spa. For the ideal island experience, the resort is conveniently located nearby exciting shopping, dazzling nightlife, and colorful restaurants and bars.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Three nights or more</li>
+                                                                        <li>Children 17 and younger stay free</li>
+                                                                        <li>Ground transport to and from resort</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Mexico Modal-->
+                            <div id="MexicoModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Vacation Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Mexico</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Omni Cancun Hotel & Villas</h5>
+                                                                    <img src="images/omni-cancun.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">This all-inclusive resort is located in the Cancun hotel zone. Gardens surround three swimming pools (including one children’s pool), a swim-up pool bar and a mega Jacuzzi with seating for up to 25 adults. Guests may enjoy a variety of restaurants, weekly theme-night dinners and a kids’ club.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Kids stay free</li>
+                                                                        <li>Unlimited meals, wine, etc.</li>
+                                                                        <li>Private ground transportation to and from hotel</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Hotel Marina El Cid Package</h5>
+                                                                    <img src="images/playa-del-carmen.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">This oceanfront resort features 314 spacious guestrooms, three outdoor pools, a kids' club, a teens' club, two restaurants and a spa. The hotel is located only steps away from the famous La Quinta Avenida (Fifth Avenue), where guests will find shops, restaurants and entertainment. The hotel's proximity makes it the ideal spot to explore and enjoy this delightful destination.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Four nights or more</li>
+                                                                        <li>Unlimited meals, wine, etc.</li>
+                                                                        <li>Ground transportation to and from hotel</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Garza Blanca Preserve</h5>
+                                                                    <img src="images/puerto-vallarta.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Located south of historic Puerto Vallarta, this luxury boutique resort enjoys a tranquil and relaxing setting, two gourmet restaurants and a free-form infinity pool. An all-inclusive plan is available for purchase.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Four nights or more</li>
+                                                                        <li>Unlimited meals, wine, etc.</li>
+                                                                        <li>Ground transport to and from resort</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--South Pacific Modal-->
+                            <div id="SouthPacificModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Vacation Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>South Pacific</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Le Bora Bora by Pearl Resorts</h5>
+                                                                    <img src="images/le-bora-bora.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Le Bora Bora by Pearl Resorts, formerly known as Bora Bora Pearl Beach Resort & Spa, is a newly renovated resort situated on a coral islet between ocean and lagoon and only a ten-minute boat ride from the airport.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Four nights in an Overwater Bungalow</li>
+                                                                        <li>Transportation to and from ferry dock and ferry transfer</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Namale Fiji Island Resort and Spa</h5>
+                                                                    <img src="images/namale-fiji.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Located on 525 acres, this all-inclusive resort is surrounded by a lush tropical rain forest and a panoramic view of the Koro Sea, and features 19 spacious and well-appointed bures.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Daily meals and beverages</li>
+                                                                        <li>Ground transportation to and from hotel</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Rarotonga Beach Bungalows</h5>
+                                                                    <img src="images/rarotonga.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">This resort reflects the true old Polynesia spirit of the islands.</p>
+                                                                    <ul style="text-align: left;">
+                                                                        <li>Five nights or more</li>
+                                                                        <li>Ground transport to and from resort</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Europe Modal-->
+                            <div id="EuropeModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Vacation Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Europe: Your Way Packages</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Best of Italy</h5>
+                                                                    <img src="images/italy.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Spend three days or more in each of the following locations: Rome, Florence, and Venice.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">England and Scotland</h5>
+                                                                    <img src="images/UK.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Take a train from London to Edinburgh and drive throughout the countryside, each for three or more nights.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Greece</h5>
+                                                                    <img src="images/greece.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Spend a week in the three most popular destinations in Greece.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-6">
+                    <div class="card bg-gray">
+                        <img src='images/cruise.jpg' class='img-rounded img-responsive'>
+                        <div class="card-body">
+                            <h4 class="card-title">Cruise Packages</h4>
+                            <p class="card-text">Sed libero lorem, vulputate et semper vel, commodo vel orci. Donec faucibus tortor urna, id varius odio consequat vel. Nunc a eros ac urna tristique sodales. Pellentesque gravida erat dui, eget vestibulum nisi vestibulum id. Sed sit amet eros semper, pharetra elit in, ullamcorper ex. Aliquam a quam pharetra, accumsan nisi quis, venenatis tortor. Integer auctor maximus augue id pharetra. Suspendisse sed sodales felis. Integer sem odio, dapibus in congue at, congue sit amet dolor. Etiam finibus convallis enim, quis blandit purus cursus sit amet. Aliquam erat mi, varius maximus tincidunt non, euismod at ex. Nunc aliquet magna a purus lobortis placerat.</p>
+                            <div class='card-price'>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading"><h5>Mexican Riveria Cruise</h5></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="images/mexican-riveria.gif" class="img-responsive img-rounded">
+                                                <br>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p>Enjoy a stress-free San Diego round-trip cruise to the Mexican Riviera. Cabo San Lucas, a sports fisherman's paradise, awaits. Tour Mazatlán's colonial architectural jewels. Shop Puerto Vallarta's chic boutiques and galleries.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id vehicula mauris, at dapibus nisl. Ut libero ipsum, mollis sed vehicula eget, rutrum condimentum lectus. Pellentesque arcu est, vestibulum sit amet arcu vel, consequat vehicula orci. Fusce at tortor viverra, euismod neque et, pellentesque diam. Sed porta risus odio, nec fringilla neque lacinia eu. In nibh magna, fermentum eu blandit vel, rhoncus quis erat. Quisque massa purus, interdum elementum odio eget, faucibus fringilla metus. Curabitur varius tincidunt commodo.</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#NAModal" style="margin-bottom: 20px; margin-top: 10px;">North America</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#SAModal" style="margin-bottom: 20px; margin-top: 10px;">South America</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#AsiaModal" style="margin-bottom: 20px; margin-top: 10px;">Asia</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#OceanicModal" style="margin-bottom: 20px; margin-top: 10px;">Oceanic</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MediterraneanModal" style="margin-bottom: 20px; margin-top: 10px;">Mediterranean</button>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#TransatlanticModal" style="margin-bottom: 20px; margin-top: 10px;">Transatlantic</button>
+                                </div>
+                            </div>
+                            
+                            <!--North America Modal-->
+                            <div id="NAModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Cruise Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>North America</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Canada and New England Cruise from Quebec Cruise</h5>
+                                                                    <img src="images/quebec-cruise.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Explore the wonders — and colors — of Canada and New England in the fall. Amble the cobblestone streets of Quebec City’s Old Town, stopping to tour the magnificent Château Frontenac dominating the skyline. In Halifax, be sure to see Peggy’s Cove, which boasts one of the most popular lighthouses in Atlantic Canada. Spend some time strolling the village with its galleries and souvenir shops. And while you’re in Portland, Maine, enter Victoria Mansion and step back to 1860 as you admire the elegant period furniture, paintings, carpets and plenty of gilt.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Classic California Coast Cruise</h5>
+                                                                    <img src="images/california.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Hug the shores of the sun-kissed Pacific Coast, where inviting beaches, fascinating cities and exciting attractions await. Soak up the sunshine in San Diego or savor flavorful wines from Ensenada’s burgeoning wine country. Discover the best of the West Coast in style.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Alaska Dawes Glacier Cruise</h5>
+                                                                    <img src="images/alaska.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Journey through the wild terrain of Alaska and discover the natural wonders that await as the rugged beauty of this pristine frontier unfolds. Enjoy luxurious staterooms, cuisine, and service as you discover Seattle, Ketchikan, Juneau, Skagway and Victoria, British Colombia. Hike through a rainforest, kayak past majestic mountains, explore nature in the surrounding islands, whale-watching and a variety of other adventurous activities.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--South America Modal-->
+                            <div id="SAModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Cruise Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>South America</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Peru and Chile Voyage</h5>
+                                                                    <img src="images/peru-chile.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">With over five centuries of history, Lima or the "City of Kings," is a UNESCO World Heritage Site worth exploring. You'll begin your journey here with an overnight stay, so you'll have plenty of time to experience everything Lima has to offer, from Museo Larco to the extravagant display at El Circuito Mágico del Agua. While you're here, sample the city's culinary delights. In the quaint colonial town of Pisco, spend the day by the coastline birding and trying to spot the port's resident marine life or venture to the Museo Arqueologico Paracas to browse a rich collection of Inca and pre-Inca artifacts. Next, it's a day of relaxation and pampering at sea before arriving in Arica, Chile for some beach bumming along the port's 20 km of beaches and exploring in the colorful heart of the city, the Plaza Colón. With a late night stay, there's plenty of time to browse the market stalls, grab a bite and enjoy the lively music. Then it's on to the stunning beach resort town of Iquique. After a day at sea, you'll visit the historic port city of Valparaíso before moving on to the seaside city of Coquimbo and nearby La Serena. You arrive in your final destination, Chile's capital city of Santiago. A city bursting at the seams with fascinating history and cultural life, spend a little time discovering the region's famed wine, neoclassical architecture, and sandy beaches before saying adios to this grand adventure.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Call of the Amazon Cruise</h5>
+                                                                    <img src="images/amazon.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Enjoy a symphony for the senses in the flavors of Chilean bean stew, the dark fruit and spice aromas of Uruguayan red wines, the Amazon jungle's dazzling blue morpho butterfly, and the samba rhythms of Brazil.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Antarctica and South America Cruise</h5>
+                                                                    <img src="images/antarctica.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Prepare to embark on an experience like you've never had before. When you cruise to Antarctica, you get to take in breathtaking views and infinite beauty from the comfort of your balcony or the top-deck. Set your eyes on whale-abundant waters and catch a glimpse of penguin colonies as you sail past and feel free to experience all the wonder that surrounds you.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Asia Modal-->
+                            <div id="AsiaModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Cruise Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Asia</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Thailand, Vietnam and Malaysia Cruise</h5>
+                                                                    <img src="images/thailand-vietnam-malaysia.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Uncover the best of Southeast Asia on Norwegian Sun. At the Samui Elephant Sanctuary, located on the island of Ko Samui, you can learn about these incredible animals and have the opportunity to see them up close. Then explore traditional kampung (villages) in Langkawi or journey inland to its rainforests and hike among waterfalls and hot springs and discover why the island is called "the Jewel of Kedah." In Phuket, you can visit historic Buddhist temples, recline on some of Thailand's most popular beaches or dive into a vibrant underwater world on a snorkeling tour.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Hong Kong to Singapore Cruise</h5>
+                                                                    <img src="images/hong-kong.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Magic, beauty and wonder permeate the ancient cultures and high-tech metropolises spread throughout Asia. Visit century old temples and pagodas. The natural beauty surrounding you in this region will leave you breathless. Seven Seas Explorer® is stunning, with art by Pablo Picasso on the walls and a vivid cobalt-blue glass installation on the ceiling in the elegant restaurant Compass Rose. See for yourself how every space is designed to impress.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Best of Southern Japan Cruise</h5>
+                                                                    <img src="images/japan.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Japan may not be the first country that comes to mind when you think of a cruise vacation, but this diversely beautiful country located on the eastern edge of Asia has a lot to offer cruisers, and as an island nation there are possible ports of call on every side of the country. Japan cruise itineraries usually embark from Tokyo and cruise around Japan to more than fifteen different ports of call.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Oceanic Modal-->
+                            <div id="OceanicModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Cruise Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Oceanic</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Papua New Guinea Cruise</h5>
+                                                                    <img src="images/papua-new-guinea.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Witness the amazing diversity of colored reef fish while snorkeling or scuba diving in the crystalline waters of the Isles of Pines, enjoy the sparkling beaches of Champagne Bay, and be in awe of the atoll of the Conflict Islands in Papua New Guinea.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">South Pacific Cruise</h5>
+                                                                    <img src="images/south-pacific.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">The South Pacific islands are the definition of paradise, and the abundance of wildlife is sure to capture your lust for adventure. Beaches of warm, powdery white sand and aqua waters are surrounded by tropical rainforests and soaring mountains. The world's second-largest double barrier reef surrounds the islands of New Caledonia, where a lagoon teems with a kaleidoscope of fish and sea-life. Majestic humpback whales glide between the islands of Tonga, the only South Pacific area to escape colonization. The Loyalty Islands have a wild beauty that will spark your imagination, while the friendly locals will make you feel right at home. Cruise to the South Pacific to settle into island time and relax into the simple life.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Hawaii Cruise</h5>
+                                                                    <img src="images/hawaii.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">This unique seven-day Hawaii cruise includes overnights in both Maui and Kauai, as well as visits to Oahu and the Big Island of Hawaii. Be on island time as you discover cascading waterfalls, black, green and white sand beaches, historic sites and unspoiled nature.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Mediterranean Modal-->
+                            <div id="MediterraneanModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Cruise Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Mediterranean</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">British Isles Cruise</h5>
+                                                                    <img src="images/british-isles.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">On a European cruise to the British Isles, walk in the footsteps of royalty, like the kings, queens and musical empires before you. Travel along the Royal Mile to Edinburgh Castle, where bagpipes greet you. See the world's oldest book, The Book of Kells, at Trinity College Library. Or walk along Abbey Road and visit the old stomping grounds of one of the world's most famous boybands. With Princess®, fortresses and musical memoirs await.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Italy, Greece, and Turkey Cruise</h5>
+                                                                    <img src="images/italy-greece-turkey.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Sail from Rome and discover idyllic beaches and ancient ruins in the birthplace of poetry and art. Temples, amphitheaters and villages preserved in volcanic ash, digs that are still revealing the mysteries of the past. It's time to see how just far adventure can take you. Get in touch with traditional customs and soak in the Mediterranean waves.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Spain, France, and Italy Cruise</h5>
+                                                                    <img src="images/spain-france-italy.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Whether you love art, history, natural wonders, fine cuisine, or all of the above, a Mediterranean cruise lets you experience something amazing at every stop. From the sun-soaked playgrounds of the French Riviera to the iconic architecture of Spain, Celebrity offers something special for every discerning world traveler.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Transatlantic Modal-->
+                            <div id="TransatlanticModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Cruise Packages</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading"><h5>Transatlantic</h5></div>
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Eastbound Transatlantic Cruise</h5>
+                                                                    <img src="images/newyork-uk.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Step aboard in New York for the unique experience of a Queen Mary 2® Transatlantic Crossing to Southampton. You'll have seven nights to appreciate her famed sophistication and dazzling entertainment, with six full days to be as active, as sociable or as relaxed as you wish.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Atlantic Quest Voyage</h5>
+                                                                    <img src="images/miami-lisbon.gif" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">Depart from vibrant Miami, Florida and board the Azamara Quest for eight restful days at sea. Traverse the globe as you voyage across the Atlantic to the enthralling island of Madeira. Here, you'll have a chance to ride up, in the capital city of Funchal's cable car and, if you're feeling adventurous, take a unique ride back down. Then stroll the historic promenades and enjoy the delicious tastes and friendly hospitality of this Portuguese island well into the evening hours. After another soothing day at sea, you'll arrive at your charming final destination for an overnight stay – Lisbon. Portugal's capital city is bursting with history, culture, and cuisine. Take the tram to Jardim da Praça do Império, Europe's largest plaza. Stroll the neighboring tropical botanical gardens, and take in the breathtaking intricate archways and facades of the Mosteiro dos Jerónimos. Explore the city's most infamous landmark, Castelo de São Jorge and soak in panoramic views of one of the world's oldest cities.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card bg-gray">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Transatlantic Cruise</h5>
+                                                                    <img src="images/transatlantic.jpg" class="img-responsive img-rounded">
+                                                                    <br>
+                                                                    <p class="card-text">People have been cruising across the Atlantic Ocean for centuries, and now is your chance to share this amazing perspective. Enjoy relaxing days on board one of our Transatlantic cruises and take advantage of the flexibility that only Freestyle Cruising can offer. Discover it's all about choices, double down on action in the casino or stroll the decks and stargaze at constellations more vivid than you can imagine. And along the way, you'll visit some of the most historical and beautiful cities in Europe, making memorable moments on your Transatlantic cruise.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <br>
+                <div id="flights" class="col-sm-4">
+                    <div class="card bg-gray">
+                        <img src='images/flight.jpg' class='img-rounded img-responsive'>
+                        <div class="card-body">
+                            <h4 class="card-title">Flights</h4>
+                            <p class="card-text">Maecenas eget justo vel turpis sollicitudin feugiat non eu sapien. Nunc vehicula tristique purus nec vehicula. Nullam bibendum odio vitae elit dictum, eu ornare justo cursus. Morbi iaculis eros ut ullamcorper consequat. Praesent facilisis odio ligula, sit amet faucibus lectus semper a. Maecenas ac ipsum eget metus accumsan euismod vitae non elit. Nunc a urna in lorem venenatis tempor. Praesent tincidunt interdum orci et eleifend. Nam risus erat, dignissim nec diam suscipit, varius hendrerit ante. Vestibulum ultrices sapien at velit aliquam, id posuere arcu dapibus.</p>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="images/delta-logo.png" class="img-responsive img-rounded">
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="images/klm-logo.png" class="img-responsive img-rounded">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="images/korean-air.png" class="img-responsive img-rounded">
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="images/aeromexico.png" class="img-responsive img-rounded">
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div id="hotels" class="col-sm-4">
+                    <div class="card bg-gray">
+                        <img src='images/hotel.jpg' class='img-responsive img-rounded'>
+                        <div class="card-body">
+                            <h4 class="card-title">Hotels</h4>
+                            <p class="card-text">Morbi ut fermentum lorem, ac tristique eros. Nam nec imperdiet arcu. Vivamus fringilla feugiat aliquam. Suspendisse pharetra quam sit amet ligula bibendum, quis facilisis elit porta. Nam scelerisque malesuada tellus at viverra. Vestibulum finibus dignissim dictum. Ut elementum id lectus id condimentum. Nunc sed dui dictum, pharetra purus nec, ornare neque. Fusce sit amet dolor gravida, dignissim odio sit amet, suscipit lacus. Etiam eget placerat diam. Etiam vehicula lorem sit amet risus auctor iaculis. Mauris vitae enim lectus.</p>
+                            <div class="row">
+                                <div class='col-sm-4'>
+                                    <img src='images/hilton_logo.png' class='img-responsive img-rounded'>
+                                </div>
+                                <div class='col-sm-4'>
+                                    <img src='images/hyatt-logo.png' class='img-responsive img-rounded'>
+                                </div>
+                                <div class='col-sm-4'>
+                                    <img src='images/marriott-logo.png' class='img-responsive img-rounded'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rental_cars" class="col-sm-4">
+                    <div class="card bg-gray">
+                        <img src='images/rental-cars.jpg' class='img-responsive img-rounded'>
+                        <div class="card-body">
+                            <h4 class="card-title">Rental Cars</h4>
+                            <p class="card-text">Aenean porta pulvinar nulla, ut luctus urna. Sed vel dui non lacus mollis condimentum. Suspendisse congue ultrices efficitur. Fusce ac quam augue. Vestibulum consequat bibendum diam vitae eleifend. Aenean et iaculis orci. Maecenas tincidunt malesuada ex condimentum aliquam. Donec venenatis, ante ut sagittis malesuada, orci leo mattis massa, id interdum velit risus vel lacus. Ut iaculis non odio id tincidunt. Donec ornare sollicitudin viverra. Donec vitae ex eu lacus faucibus blandit accumsan a turpis. Vivamus consequat orci dui, quis vehicula orci hendrerit egestas. Quisque aliquet justo non arcu sollicitudin, vel dapibus risus iaculis. Integer pretium viverra est ut tempor. Nullam pellentesque eget mauris quis fermentum.</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="images/enterprise-logo.png" class='img-responsive img-rounded'>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="images/hertz-logo.png" class='img-responsive img-rounded'>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="images/avis-logo.jpg" class='img-responsive img-rounded'>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="images/budget-logo.png" class='img-responsive img-rounded'>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="images/alamo-logo.png" class='img-responsive img-rounded'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="camper_vans" class="col-sm-6">
+                    <div class="card bg-gray">
+                        <img src='images/camper-van.jpg' class='img-responsive img-rounded'>
+                        <div class="card-body">
+                            <h4 class="card-title">Camper Vans</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna elit, iaculis et accumsan id, ultricies sit amet odio. Cras luctus vulputate velit. Sed porttitor ex est, eget auctor leo posuere rutrum. Nullam lobortis leo tortor, at dapibus sem efficitur et. Etiam vulputate facilisis lacus sed bibendum. Praesent tincidunt lacus in tortor porttitor consectetur. Proin pharetra et mi ac consequat. Nulla sit amet risus posuere, lacinia tellus iaculis, congue elit. Vestibulum id aliquet urna. Donec vitae convallis nunc. Maecenas eget neque nec lorem suscipit pretium ut a lectus. Duis mattis interdum arcu, sit amet pretium elit tempus in.</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="images/Native-Camper-Vans-Logo.png" class="img-responsive img-rounded">
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="images/Tourig-logo.jpg" class="img-responsive img-rounded" style='width: 42%;'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rvs" class="col-sm-6">
+                    <div class="card bg-gray">
+                        <img src='images/RV.jpg' class='img-responsive img-rounded'>
+                        <div class="card-body">
+                            <h4 class="card-title">RVs and Motorhomes</h4>
+                            <p class="card-text">Phasellus nec lacus vel enim efficitur maximus. Vestibulum viverra augue a arcu rhoncus, sed rutrum nisl accumsan. Aliquam ultrices augue ligula, ac suscipit libero fermentum eu. Quisque finibus, dolor eu ultricies mattis, tellus velit lacinia risus, sed tempus mauris massa at neque. Nunc imperdiet turpis eu luctus porttitor. Praesent quis mattis ante, ut pretium libero. Etiam porta ante varius orci vehicula congue. Nullam hendrerit gravida sagittis.</p>
+                            <div class='row'>
+                                <div class='col-sm-6'>
+                                    <img src="images/Airstream_logo.jpg" class="img-responsive img-rounded">
+                                </div>
+                                <div class='col-sm-6'>
+                                    <img src="images/Winnebago_Logo.png" class="img-responsive img-rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="destinations" class="container-fluid text-center">
+            <h2>Where to Go!</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id mollis nibh. Fusce in nisi sed est ultrices ullamcorper. Sed feugiat mauris nec risus posuere semper. Pellentesque quis semper dolor. Aenean nec dui sed mi dapibus semper non ut neque. Fusce pulvinar, magna et pretium scelerisque, metus risus auctor magna, in tempus nunc ligula sed turpis. Suspendisse imperdiet felis ut ultrices cursus. Nullam vehicula ex lacus, maximus elementum nibh blandit gravida. Donec mauris mauris, cursus non fermentum ac, ultricies a nisi. Etiam quam odio, consequat quis facilisis ut, interdum sed felis. Etiam nec convallis purus. In imperdiet libero sapien, at sagittis ipsum sollicitudin vitae. Pellentesque maximus condimentum bibendum. Aenean bibendum orci sit amet pretium dictum. Vivamus sit amet lacus lorem. Suspendisse id sem eu odio faucibus aliquet. Mauris augue velit, fermentum in neque ut, sollicitudin elementum dolor. Nam iaculis aliquet lacus, ac pellentesque enim iaculis non.</p>
+            <br>
+            <img src="images/map.png" class="img-responsive img-rounded">
+        </div>
+        
+        <div id="pricing_promotion" class="container-fluid bg-light">
+            <div class="text-center">
+                <h2>Ongoing Promotions</h2>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <img src="images/costa-rica.jpg" class="img-rounded img-responsive">
+                            <h3>W Costa Rica</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>5 Nights from $849 <small><strike>$1259</strike></small></h4>
+                            <p>Standing tall between a beautiful beach and the mangroves, W Costa Rica welcomes guests with a locally influenced lifestyle. An all-inclusive plan is available for purchase.</p>
+                            <ol class="icon-style" style="text-align: left;">
+                                <li>Luxury resort</li>
+                                <li>$75 Spa credit</li>
+                                <li>Ground transportation to and from resort</li>
+                            </ol>
+                            <p>Inspired by the vibrant culture of Guanacaste, this eclectic resort boasts a bold design and exemplifies the best of Tico culture. Guests can start the day at Zona Azul Beach Club enjoying the white sands of Playa Conchal and end it experiencing the amazing sunsets in the Living Room imbibing craft cocktails. The 150 guest rooms exhibit locally-inspired décor, modern amenities and a spacious walk-in shower. Guests will enjoy two pools, two restaurants, the AWAY® Spa and have access to a 18-hole golf course.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <img src="images/bermuda.jpg" class="img-rounded img-responsive" style="margin: auto;">
+                            <h3>Bermuda Cruise</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>7-night cruise from $769 <small><strike>$1069</strike></small></h4>
+                            <p>Enjoy pristine, pastel islands surrounded by historical sites and friendly people. Savor the year-round balmy breezes, clear waters colored by incredible coral reefs and lovely pink sands. Be sure to pack your shorts, sunscreen and golf clubs as the courses here are a stunning treat.</p>
+                            <p>On board, you'll find 16 dining options and 13 exciting bars and lounges where you can just hang out. There's even a bowling alley (a cruise industry first!) and rock climbing wall.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <img src="images/sea-change-villas.jpg" class="img-responsive img-rounded">
+                            <h3>Sea Change Villas</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>6 Days (5 Nights) with Airfare from $1,809 <small><strike>$2,515</strike></small></h4>
+                            <p>This is an ideal place for honeymooners and couples who seek an upscale, quiet and relaxing atmosphere.</p>
+                            <ol class="icon-style" style="text-align: left;">
+                                <li>Five nights for the price of four</li>
+                                <li>Round-trip economy class airfare from Los Angeles</li>
+                                <li>Ground transportation to and from hotel</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contact" class='container-fluid'>
+            <div class='text-center'>
+                <h2>Contact Us</h2>
+                <br>
+            </div>
+            <div class='row'>
+                <div class='col-sm-4'>
+                    <div class='text-center'>
+                        <h4>Offices</h4>
+                        <br>
+                        <p>
+                            <span class='glyphicon glyphicon-map-marker'></span>
+                            4389 Western Lane New York, New York, United States 10001
+                        </p>
+                        <p>
+                            <span class='glyphicon glyphicon-map-marker'></span>
+                            Brandenburgische Str 5466 4677 Langenthal, Germany
+                        </p>
+                        <p>
+                            <span class='glyphicon glyphicon-map-marker'></span>
+                            8068 Garden Place SERPENTINE VIC 3961, Australia
+                        </p>
+                        <p>
+                            <span class='glyphicon glyphicon-map-marker'></span>
+                            Rua Ébano, 6234 São Roque-SP 18132-430, Brazil
+                        </p>
+                        <hr>
+                        <h4>Phone Number</h4>
+                        <p>
+                            <span class='glyphicon glyphicon-phone-alt'></span>
+                            +1-202-555-0140
+                        </p>
+                        <hr>
+                        <h4>Email</h4>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            contact_us@lifeoutback.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <br>
+                        <div class="col-sm-3 form-group">
+                            <label>Select the Type of Question:</label>
+                            <select class="form-control">
+                                <optgroup label="Prices">
+                                    <option>Vacation & Cruise Packages</option>
+                                    <option>Flights</option>
+                                    <option>Hotels</option>
+                                    <option>Rental Cars</option>
+                                    <option>Camper Vans</option>
+                                    <option>RVs</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option>Promotions</option>
+                                    <option>Destinations</option>
+                                    <option>Other</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-sm-3 form-group">
+                            <label>Name</label>
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-3 form-group">
+                            <label>Email</label>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="text" required>
+                        </div>
+                        <div class="col-sm-3 form-group">
+                            <label>Phone Number (optional)</label>
+                            <input class="form-control" id="phone" name="phone" placeholder="Phone Number" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="message" name="message" rows="13"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
