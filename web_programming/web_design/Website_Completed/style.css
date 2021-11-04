@@ -1,0 +1,1129 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+html
+{
+    background-image: url(img/background-grid.png);
+}
+
+div.header
+{
+	text-align: center;
+	padding: 1px;
+}
+
+div.header h3
+{
+	font-family: Rochester;
+	font-size: 30px;
+}
+
+div ol.tabs li
+{
+	display: inline-block;
+	padding: 0px 60px;
+	margin-top: 45px;
+}
+
+div.website-tabs
+{
+	text-align: center;
+	border: 1px solid rgba(88, 90, 115, .59);
+	background-color: rgba(88, 90, 115, .59);
+}
+
+div.welcome-section
+{
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+div.welcome
+{
+	margin-top: 120px;
+	padding-bottom: 30px;
+}
+
+div.welcome h1
+{
+	font-family: Abril Fatface;
+	letter-spacing: 2px;
+	font-size: 55px;
+}
+
+div.text
+{
+	border: 3px solid #BFB9B4;
+	padding: 80px;
+	width: 45%;
+	margin: auto;
+	font-family: Homemade Apple;
+	font-size: 18px;
+}
+
+div.aboutme-section
+{
+	text-align: center;
+	border: 1px solid rgba(217, 156, 156, .76);
+	background-color: rgba(217, 156, 156, .76);
+	margin-top: 70px;
+	padding-bottom: 60px;
+	
+}
+
+div.aboutme
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+div.aboutme h2
+{
+	font-family: Abril Fatface;
+	letter-spacing: 2px;
+	font-size: 45px;
+}
+
+li a.active
+{
+	border: 2px solid #2A3159;
+	border-radius: 15px;
+	padding: 10px 15px;
+}
+
+li a
+{
+	text-decoration: none;
+	color: #F2E6CE;
+	font-family: Quicksand;
+	font-size: 20px;
+	padding: 10px 15px;
+	border-radius: 15px;
+	transition: 1s;
+}
+
+li a:hover
+{
+	background-color: #2A3159;
+}
+
+img.washi-tape2
+{
+	position: absolute;
+	top: 73px;
+	transform: rotate(-2deg);
+	width: 18%;
+}
+
+img.coffee-stain
+{
+	position: absolute;
+	width: 20%;
+	left: -103px;
+	top: 443px;
+	opacity: 0.7;
+}
+
+img.washi-tape
+{
+	position: absolute;
+	width: 20%;
+	transform: rotate(1deg);
+	top: 1109px;
+	right: 20px;
+}
+
+div.dropdown
+{
+	visibility: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+div.dropdown-content 
+{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	right: 40px;
+}
+
+div.dropdown-content a 
+{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: Quicksand;
+	font-size: 15px;
+	text-align: center;
+}
+
+div.dropdown-content a.active2
+{
+	background-color: #BFB9B4;
+}
+
+div.dropdown-content a:hover 
+{
+	background-color: rgba(191, 185, 180, 0.4);
+}
+
+div.dropdown:hover div.dropdown-content 
+{
+	display: block;
+}
+
+button.dropbtn 
+{
+	font-size: 16px;
+	border: 2px solid #2A3159;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+	background: transparent;
+}
+
+div.menu-bar 
+{
+  width: 31px;
+  height: 4px;
+  background-color: #F2E6CE;
+  margin: 6px 0;
+}
+
+div.goals
+{
+	margin-top: 100px;
+}
+
+div.outcomes, div.goals
+{
+	text-align: center;
+}
+
+div.goals h2, div.outcomes h2
+{
+	font-family: Abril Fatface;
+	letter-spacing: 2px;
+	font-size: 35px;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 2px solid #2A3159;
+}
+
+div.goals h4
+{
+	font-family: Rochester;
+	font-size: 27px;
+	text-align: left;
+}
+
+div.outcomes img, div.goals img
+{
+	width: 35%;
+	position: relative;
+}
+
+div.outcomes img
+{
+	left: 170px;
+	transform: rotate(25deg);
+}
+
+div.goals img
+{
+	top: -634px;
+	right: 88px;
+}
+
+div.grid-item5 ul li
+{
+	font-family: Quicksand;
+	text-align: left;
+}
+
+div.grid-container5
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	text-align: center;
+	margin-top: 30px;
+	align-items: center;
+	padding-bottom: 100px;
+}
+
+div.grid-item5
+{
+	text-align: center;
+	margin: auto;
+	padding: 25px;
+}
+
+div.coursework
+{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.coursework h2
+{
+	font-family: Abril Fatface;
+	letter-spacing: 2px;
+	font-size: 35px;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 2px solid #2A3159;
+}
+
+div.coursework img
+{
+	position: absolute;
+	width: 10%;
+	right: 256px;
+	top: 307px;
+}
+
+div.school
+{
+	font-family: Homemade Apple;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+div.grid-container0
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+div.grid-container1
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+div.grid-item0, div.grid-item2
+{
+	border-top: 2px solid #F2E6CE;
+}
+
+div.grid-item
+{
+	font-family: Abril Fatface;
+	font-size: 35px;
+}
+
+div.grid-item2 a, div.grid-item0 a
+{
+	font-family: Rochester;
+	font-size: 28px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+div.grid-item2 a:hover, div.grid-item0 a:hover
+{
+	color: #BFB9B4;
+}
+
+div.modal
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+div.modal-content
+{
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid black;
+	width: 75%;
+	text-align: center;
+}
+
+span.close
+{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+span.close:hover, div.close:focus
+{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div.modal-content table
+{
+	margin: auto;
+	font-family: Quicksand;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div.modal-content table tr th h6
+{
+	font-family: Abril Fatface;
+	font-size: 25px;
+	margin-bottom: 10px;
+	padding: 2px;
+	border-bottom: 2px solid #2A3159;
+}
+
+div.modal-content table tr td
+{
+	padding: 10px;
+}
+
+div.outside
+{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto
+}
+
+div.outside h2
+{
+	font-family: Abril Fatface;
+	letter-spacing: 2px;
+	font-size: 35px;
+	padding: 5px;
+	text-align: center;
+	border-bottom: 2px solid #2A3159;
+}
+
+div.grid-container2
+{
+	display: grid;
+	grid-template-columns: auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+div.grid-container2 img
+{
+	width: 90%;
+}
+
+div.grid-item2-outside
+{
+	font-family: Abril Fatface;
+	font-size: 20px;
+	text-align: center;
+	padding: 15px;
+}
+
+div.grid-container3
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 30px;
+	align-items: center;
+	padding-bottom: 100px;
+}
+
+div.grid-item3 img
+{
+	width: 65%;
+	align-self: center;
+}
+
+div.grid-item3
+{
+	font-family: Abril Fatface;
+	font-size: 17px;
+	text-align: center;
+	padding: 20px;
+}
+
+div.grid-container4
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+div.grid-container4 img
+{
+	width: 150px;
+}
+
+div.grid-item4
+{
+	font-family: Abril Fatface;
+	font-size: 16px;
+	text-align: center;
+	padding: 15px;
+}
+
+div.bg-color
+{
+	background-color: rgba(191, 185, 180, .50);
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+div.resume
+{
+	margin-top: 100px;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.resume h2
+{
+	font-family: Abril Fatface;
+	letter-spacing: 2px;
+	font-size: 35px;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 2px solid #2A3159;
+}
+
+div.grid-container7
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 5px;
+	text-align: center;
+	margin-top: 44px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.grid-container6
+{
+	display: grid;
+	grid-template-columns: auto;
+	padding: 5px;
+	text-align: center;
+}
+
+div.grid-item6
+{
+	padding: 10px;
+}
+
+div.grid-item6 h4
+{
+	font-family: Rochester;
+	font-size: 32px;
+	text-align: left;
+	margin-top: 80px;
+}
+
+div.grid-item6 table
+{
+	text-align: left;
+}
+
+div.grid-item6 table th
+{
+	font-family: Abril Fatface;
+	font-size: 23px;
+	padding-bottom: 5px;
+}
+
+div.grid-item6 table th span
+{
+	font-size: 20px;
+}
+
+div.education, div.volunteer
+{
+	width: 560px;
+	margin: auto;
+}
+
+div.certification, div.bg-color2
+{
+	width: 360px;
+	margin-left: 0;
+}
+
+td.degree, td.gpa
+{
+	text-align: left;
+	font-family: Quicksand;
+}
+
+td.degree em
+{
+	font-size: 17px;
+}
+
+td.date
+{
+	text-align: right;
+	font-family: Quicksand;
+}
+
+div.bg-color2
+{
+	background-color: rgba(242,230,206,0.5);
+}
+
+@media(max-width: 1600px)
+{
+	img.washi-tape
+	{
+		top: 1118px;
+	}
+}
+
+@media(max-width: 1447px)
+{
+	img.washi-tape
+	{
+		top: 1168px;
+	}
+	div ol.tabs li
+	{
+		padding: 3px 40px;
+	}
+}
+
+@media(max-width: 1400px)
+{
+	div ol.tabs li
+	{
+		padding: 3px 35px;
+	}
+	img.washi-tape
+	{
+		top: 1172px;
+	}
+}
+
+@media(max-width: 1347px)
+{
+	img.washi-tape
+	{
+		top: 1214px;
+	}
+}
+
+@media(max-width: 1297px)
+{
+	img.washi-tape
+	{
+		top: 1248dpx;
+	}
+}
+
+@media(max-width: 1278px)
+{
+	img.washi-tape
+	{
+		top: 1250px;
+	}
+}
+
+@media(max-width: 1225px)
+{
+	div ol.tabs li
+	{
+		padding: 3px 15px;
+	}
+	img.coffee-stain
+	{
+		width: 25%;
+	}
+}
+
+@media(max-width: 1138px)
+{
+	img.washi-tape
+	{
+		top: 1290px;
+	}
+}
+
+@media(max-width: 1078px)
+{
+	img.washi-tape
+	{
+		top: 1295px;
+	}
+}
+
+@media(max-width: 1031px)
+{
+	img.washi-tape2
+	{
+		top: 88px;
+	}
+}
+
+@media(max-width: 1020px)
+{
+	div ol.tabs li
+	{
+		padding: 3px 10px;
+	}
+}
+
+@media(max-width: 1007px)
+{
+	img.washi-tape
+	{
+		top: 1338px;
+	}
+}
+
+@media(max-width: 1000px)
+{
+	div.grid-container7
+	{
+		display: inline-block;
+		float: left;
+		width: 100%;
+	}
+	div.certification, div.bg-color2
+	{
+		width: 600px;
+		margin:auto;
+	}
+	div.certification table
+	{
+		margin: auto;
+	}
+	div.certification h4
+	{
+		text-align: center;
+	}
+	div.volunteer table
+	{
+		margin-bottom: 80px;
+	}
+	div.grid-container7
+	{
+		margin-top: 0px;
+	}
+}
+
+@media(max-width: 977px)
+{
+	img.washi-tape2
+	{
+		top: 89px;
+	}
+}
+
+@media(max-width: 970px)
+{
+	div ol.tabs li
+	{
+		padding: 3px 5px;
+	}
+}
+
+@media(max-width: 930px) /*This is where the nav bar will be created*/
+{
+	div ol.tabs
+	{
+		display: none;
+	}
+	div.dropdown
+	{
+		visibility: visible;
+		padding: 40px;
+	}
+	div.header
+	{
+		position: absolute;
+		top: 4px;
+		left: 44px;
+	}
+	div.header h3
+	{
+		font-size: 40px;
+		color: #F2E6CE;
+	}
+	div.website-tabs
+	{
+		text-align: right;
+	}
+	div.dropdown-content
+	{
+		text-align: left;
+	}
+	img.washi-tape2
+	{
+		top: 120px;
+		width: 20%;
+	}
+	img.coffee-stain
+	{
+		visibility: hidden;
+	}
+	img.washi-tape
+	{
+		top: 1209px;
+	}
+	div.grid-container3
+	{
+		display: inline-block;
+		float: left;
+		width: 100%;
+	}
+	div.coursework img
+	{
+		left: 100px;
+		top: 200px;
+	}
+	div.coursework
+	{
+		width: 100%;
+	}
+	div.resume
+	{
+		width: 100%;
+	}
+	div.outside
+	{
+		width: 100%;
+	}
+}
+
+@media(max-width: 904px)
+{
+	img.washi-tape
+	{
+		top: 1250px;
+	}
+}
+
+@media(max-width: 870px)
+{
+	div ol.tabs li
+	{
+		padding: 3px 5px;
+	}
+}
+
+@media(max-width: 840px)
+{
+	img.washi-tape
+	{
+		top: 1291px;
+	}
+	div.bg-color
+	{
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		float: left;
+		width: 100%;
+	}
+	div.outside-grid4
+	{
+		bottom: 0;
+		margin-left: 0%;
+		width: 100%;
+	}
+	div.grid-container4
+	{
+		display: inline-block;
+		float: left;
+		width: 100%;
+	}
+}
+
+@media(max-width: 772px)
+{
+	img.washi-tape
+	{
+		top: 894px;
+	}
+	div.text
+	{
+		font-family: Annie Use Your Telescope;
+		font-size: 27px;
+		padding: 10px;
+		width: 80%;
+	}
+	div.grid-container5
+	{
+		display: inline-block;
+		float: left;
+	}
+	div.outcomes
+	{
+		margin-top: -136px;
+	}
+}
+
+@media(max-width: 749px)
+{
+	img.washi-tape
+	{
+		top: 867px;
+	}
+}
+
+@media(max-width: 745px)
+{
+	img.washi-tape
+	{
+		top: 935px;
+	}
+}
+
+@media(max-width: 710px)
+{
+	img.washi-tape2
+	{
+		top: 125px;
+		width: 25%;
+	}
+}
+
+@media(max-width: 707px)
+{
+	img.washi-tape
+	{
+		top: 1015px;
+	}
+}
+
+@media(max-width: 700px)
+{
+	img.washi-tape
+	{
+		top: 986px;
+	}
+}
+
+@media(max-width: 691px)
+{
+	img.washi-tape
+	{
+		top: 1000px;
+		width: 30%;
+	}
+}
+
+@media(max-width: 648px)
+{
+	img.washi-tape
+	{
+		width: 32%;
+	}
+}
+
+@media(max-width: 588px)
+{
+	img.washi-tape
+	{
+		top: 1008px;
+	}
+}
+
+@media(max-width: 578px)
+{
+	img.washi-tape
+	{
+		top: 1048px;
+	}
+	div.outside-grid1
+	{
+		position: relative;
+		margin-left: 41%;
+	}
+	div.grid-container1
+	{
+		display: inline-block;
+		float: left;
+	}
+}
+
+@media(max-width: 548px)
+{
+	img.washi-tape2
+	{
+		top: 125px;
+		width: 30%;
+	}
+}
+
+@media(max-width: 536px)
+{
+	img.washi-tape
+	{
+		width: 35%;
+	}
+}
+
+@media(max-width: 511px)
+{
+	img.washi-tape
+	{
+		top: 1086px;
+	}
+}
+
+@media(max-width: 472px)
+{
+	img.washi-tape
+	{
+		top: 1127px;
+	}
+}
+
+@media(max-width: 460px)
+{
+	img.washi-tape2
+	{
+		top: 130px;
+		width: 35%;
+	}
+}
+
+@media(max-width: 459px)
+{
+	img.washi-tape
+	{
+		width: 38%;
+	}
+	div.header h3
+	{
+		font-size: 30px;
+	}
+	div.header
+	{
+		top: 25px;
+	}
+}
+
+@media(max-width: 445px)
+{
+	img.washi-tape
+	{
+		top: 1165px;
+	}
+}
+
+@media(max-width: 428px)
+{
+	img.washi-tape
+	{
+		width: 40%;
+	}
+}
+
+@media(max-width: 417px)
+{
+	img.washi-tape
+	{
+		top: 1205px;
+	}
+}
+
+@media(max-width: 398px)
+{
+	img.washi-tape
+	{
+		width: 45%;
+	}
+}
+
+@media(max-width: 391px)
+{
+	img.washi-tape
+	{
+		top: 1217px;
+	}
+}
+
+@media(max-width: 383px)
+{
+	div.header
+	{
+		left: 20px;
+	}
+	div.dropdown
+	{
+		padding-right: 20px;
+	}
+	div.text
+	{
+		font-size: 25px;
+		padding: 5px;
+		width: 88%;
+	}
+	img.washi-tape
+	{
+		top: 1043px;
+	}
+}
+
+@media(max-width: 380px)
+{
+	img.washi-tape
+	{
+		top: 1103px;
+	}
+}
+
+@media(max-width: 374px)
+{
+	img.washi-tape
+	{
+		width: 50%;
+	}
+	
+	img.washi-tape2
+	{
+		top: 127px;
+		width: 43%;
+	}
+}
+
+@media(max-width: 356px)
+{
+	img.washi-tape
+	{
+		top: 1144px;
+	}
+}
