@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license sentence, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ListOfBooks Assignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="BookList.js" type="text/javascript"></script>
+        <script>
+            function BookList(arr) //<<The "Books" in var books will go here when the function is called
+            {
+                var sentence = "<section><header>List of Books</header><ul>";
+                var length = arr.length;
+                for(i = 0; i < length; i++)
+                {
+                    sentence += "<li><b>" + arr[i].Title + "</b></li><ul><li> Author: " + arr[i].Author + "</li>"; //arr[i]["Title] and arr[i].Title can be used interchangeably.
+                    if(arr[i].Forsale == true)
+                    {
+                        sentence += "<li> Price: $" + arr[i].Price + "</li>";
+                    }
+                    if(arr[i].Awards instanceof Array)
+                    {
+                        sentence += "<li> Awards: <ul>";
+                        var awardCount = arr[i].Awards.length;
+                        //var j = 0;
+                        for(j = 0; j < awardCount; j++) //while(j < awardCount)
+                        {
+                            sentence += "<li> " + arr[i].Awards[j] + "</li>";
+                            //j++;
+                        }
+                        sentence += "</ul></ul></li>"
+                    }
+                    else
+                    {
+                        sentence += "</ul></li>";
+                    }
+                }
+                sentence += "</ul></section>";
+                document.getElementById("information").innerHTML = sentence;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="information">
+            <script>
+                BookList(Books);
+            </script>
+        </div>
+    </body>
+</html>
