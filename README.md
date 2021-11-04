@@ -23,8 +23,8 @@
 ## 📷 Visual Arts
 | Photoshop | InDesign |
 | :---: | :---: |
-| [Vintage Picture](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project03) | ... | 
-| [CD Cover](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project04) | ... |
-| [Brushed Photo](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project05) | ... |
-| [Alien Movie Poster](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project06) | ... |
-| [Other Assignments](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/assignments) | ... |
+| [Vintage Picture](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project03) | [Wildlife Magazine](https://github.com/jeyla380/school_work/tree/main/visual_arts/indesign/project01) | 
+| [CD Cover](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project04) | [Two-Tone Book Cover](https://github.com/jeyla380/school_work/tree/main/visual_arts/indesign/project03) |
+| [Brushed Photo](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project05) | [Wildlife Collage](https://github.com/jeyla380/school_work/tree/main/visual_arts/indesign/project05) |
+| [Alien Movie Poster](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/creative_project06) | [Stickers](https://github.com/jeyla380/school_work/tree/main/visual_arts/indesign/project06) |
+| [Other Assignments](https://github.com/jeyla380/school_work/tree/main/visual_arts/photoshop/assignments) | [Calendar](https://github.com/jeyla380/school_work/tree/main/visual_arts/indesign/project07) |
