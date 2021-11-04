@@ -8,14 +8,14 @@
 ### Front-end Programming
 | XHTML & Internet Fundamentals | Web Programming | Advanced Javascript & JSP | Website Design |
 | :---: | :---: | :---: | :---: |
-| [Bootstrap](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/bootstrap) | [Javascript Validation](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/JavascriptValidation) | ... | ... |
-| [Guessing Game](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/guess) | [SQL Form](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/MySQLForm) | ... | ... |
-| [Image Map](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/image_map) | [eCommerce](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/eCommerce) | ... | ... |
-| [Little Boxes](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/little_boxes) | [PHP-One](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/php_one) | ... | ... |
-| [Lottery](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/lottery) | ... | ... | ... |
-| [Mad-Lib](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/mad_lib) | ... | ... | ... |
-| [Pizza-One](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_one) | ... | ... | ... |
-| [Pizza-Two](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_two) | ... | ... | ... |
+| [Bootstrap](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/bootstrap) | [Javascript Validation](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/JavascriptValidation) | [Javascript Refresher](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H1) | ... |
+| [Guessing Game](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/guess) | [SQL Form](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/MySQLForm) | [Book Search](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H2) | ... |
+| [Image Map](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/image_map) | [eCommerce](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/eCommerce) | [Carousel](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H3) | ... |
+| [Little Boxes](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/little_boxes) | [PHP-One](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/php_one) | [JQuery Intro](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H4) | ... |
+| [Lottery](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/lottery) | ... | [JQuery Website](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H5) | ... |
+| [Mad-Lib](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/mad_lib) | ... | [Bootstrap Site](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H6) | ... |
+| [Pizza-One](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_one) | ... | [Mobile Site](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H7) | ... |
+| [Pizza-Two](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/pizza_two) | ... | [Twitter Site](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H8) | ... |
 | [Superheroes](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/superheroes) | ... | ... | ... |
 | [Tic-Tac-Toe](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/tic_tac_toe) | ... | ... | ... |
 <br>
