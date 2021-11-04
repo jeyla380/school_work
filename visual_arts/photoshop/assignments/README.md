@@ -11,3 +11,6 @@
 
 ## Action Practice
 ![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/actions_practice.JPG)
+
+## Artboard
+![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/artboard.JPG)
