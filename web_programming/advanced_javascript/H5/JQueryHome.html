@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--HOME PAGE-->
+<html>
+    <head>
+        <title>Lake Welding Services</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+            body
+            {
+                background-color: lightgray;
+            }
+            
+            h1
+            {
+                font-family: 'Permanent Marker', cursive; 
+                font-size: 55px;
+            }
+            
+            h3
+            {
+                font-family: 'Carter One', cursive;
+                font-size: 23px;
+            }
+            
+            #tab ul
+            {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 20px;
+            }
+            
+            p, td, label
+            {
+                font-family: 'Armata', sans-serif;
+            }
+            
+            ul li a
+            {
+                color: black;
+            }
+            
+            .active
+            {
+                color: white;
+                background-color: black;
+                padding: 6px;
+                border-radius: 5px;
+            }
+            
+            .about
+            {
+                margin-bottom: -25px;
+            }
+            
+            .about h2
+            {
+                position: relative;
+                bottom: 516px;
+                right: -16px;
+                font-family: 'Holtwood One SC', serif;
+                letter-spacing: 9px;
+                font-size: 84px;
+                color: #696969;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+            
+            .words
+            {
+                width: 65%;
+                margin: auto;
+                position: absolute;
+                bottom: -487px;
+                right: 335px;
+                margin-bottom: 30px;
+            }
+            
+            .link
+            {
+                border: 1px solid dimgray;
+                padding: 3px;
+                border-radius: 5px;
+                background-color: dimgray;
+                color: white;
+                font-family: 'Armata', sans-serif;
+            }
+        </style>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>  
+        <script>
+            $(document).ready(function(){
+                //hover animation
+                $('#navigation1').hover(
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '35px'
+                        },
+                        "slow"
+                        ); //stop animation
+                    },
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '25px'
+                        });
+                    }
+                ); //end hover
+                $('#navigation2').hover(
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '35px'
+                        },
+                        "slow"
+                        ); //stop animation
+                    },
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '25px'
+                        });
+                    }
+                ); //end hover
+                $('#navigation3').hover(
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '35px'
+                        },
+                        "slow"
+                        ); //stop animation
+                    },
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '25px'
+                        });
+                    }
+                ); //end hover
+        
+                
+                $('#title').hide();
+                $('.image').hover(     
+                    function(){
+                        $(this).stop().animate({
+                            opacity: 0.3
+                        },
+                        1000
+                        );
+                    },
+                    function(){
+                        if($(this).next('#title').is(':hidden'))
+                        {
+                            $(this).next('#title').fadeIn();
+                        }
+                    }
+                ); //end hover
+            });
+        </script>       
+        
+    </head>
+    <body>
+        <div class="content">
+            <h1>Lake Welding Services</h1>
+            <div class="navigation-bar">
+                <ul class="navigation" style="font-family: 'Bebas Neue', cursive;">
+                    <li id="navigation1" style="font-size: 25px;"><a href="JQueryHome.html" class="active">Lake Welding Services</a></li>
+                    <li id="navigation2" style="font-size: 25px;"><a href="JQueryAdditional.html">North Star Sales</a></li>
+                    <li id="navigation3" style="font-size: 25px;"><a href="JQueryContact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <div class="image">
+                    <img src="images/weld.png">
+                </div>
+                <h2 id="title">Family Owned. <br> Quality Work.</h2>
+                
+                <div class="words">
+                    <div class="aboutUs">
+                        <h3>About Us</h3>
+                        <p>We are a family-owned business that has been operating since 1976, and we take pride in our work.</p>
+                        <hr>
+                        <br>
+                    </div>
+                    <div class="safety">
+                        <h3>Safety & Quality</h3>
+                        <p>We are licensed, certified, and insured. We use high quality materials and all work is guaranteed.</p>
+                        <hr>
+                        <br>
+                    </div>
+                    <div class="what-we-do">
+                        <h3>What We Do</h3>
+                        <p>Our welding services involve working with a variety of metals, construction equipment repair, pipeline welding, limited repair work on trailers and automobiles, and other kinds of custom work. We also offer portable welding services, meaning we are able travel around the Wasatch Front for all your needs.</p>
+                        <hr>
+                        <br>
+                    </div>
+                    <a href="JQueryContact.html" class="link">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
