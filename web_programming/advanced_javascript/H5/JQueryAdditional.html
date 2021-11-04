@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--ADDITIONAL SIDE BUSINESS-->
+<html>
+    <head>
+        <title>North Star Sales</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+            body
+            {
+                background-color: lightgray;
+            }
+            
+            h1
+            {
+                font-family: 'Permanent Marker', cursive; 
+                font-size: 55px;
+            }
+            
+            h1.small
+            {
+                font-size: 35px;
+                margin-top: -49px;
+            }
+            
+            h3
+            {
+                font-family: 'Carter One', cursive;
+                font-size: 23px;
+            }
+            
+            #tab ul
+            {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 20px;
+            }
+            
+            p, td, label
+            {
+                font-family: 'Armata', sans-serif;
+            }
+            
+            ul li a
+            {
+                color: black;
+            }
+            
+            .active
+            {
+                color: white;
+                background-color: black;
+                padding: 6px;
+                border-radius: 5px;
+            }
+            
+            .content img
+            {
+                position: absolute;
+                z-index: -1;
+                height: 200px;
+                top: 0;
+                right: 765px;
+                opacity: 0.4;
+            }
+            
+            .words
+            {
+                width: 65%;
+                margin: auto;
+            }
+            
+            table
+            {
+                margin: auto;
+            }
+            
+            td
+            {
+                padding: 4px;
+            }
+            
+            .link
+            {
+                border: 1px solid dimgray;
+                padding: 3px;
+                border-radius: 5px;
+                background-color: dimgray;
+                color: white;
+            }
+        </style>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>  
+        <script>
+            $(document).ready(function(){
+                //hover animation
+                $('#navigation1').hover(
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '35px'
+                        },
+                        "slow"
+                        ); //stop animation
+                    },
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '25px'
+                        });
+                    }
+                ); //end hover
+                $('#navigation2').hover(
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '35px'
+                        },
+                        "slow"
+                        ); //stop animation
+                    },
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '25px'
+                        });
+                    }
+                ); //end hover
+                $('#navigation3').hover(
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '35px'
+                        },
+                        "slow"
+                        ); //stop animation
+                    },
+                    function (){
+                        $(this).stop().animate({
+                            fontSize: '25px'
+                        });
+                    }
+                ); //end hover
+            });
+        </script>      
+        
+    </head>
+    <body>
+        <div class="content">
+            <h1>North Star Sales</h1>
+            <h1 class="small">FFL Firearms Transfers</h1>
+            <img src="images/north-star.png">
+            <div class="navigation-bar">
+                <ul class="navigation" style="font-family: 'Bebas Neue', cursive;">
+                    <li id="navigation1" style="font-size: 25px;"><a href="JQueryHome.html">Lake Welding Services</a></li>
+                    <li id="navigation2" style="font-size: 25px;"><a href="JQueryAdditional.html" class="active">North Star Sales</a></li>
+                    <li id="navigation3" style="font-size: 25px;"><a href="JQueryContact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="words">
+                <div class="aboutUs">
+                    <h3>About Us</h3>
+                    <p>We have been in operation since 2010. We are federally licensed to facilitate gun sales & trades.</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="what-we-offer">
+                    <h3>What We Offer</h3>
+                    <p>We offer firearm transfers (which include background checks), limited gun storage, firearm sales, and limited gun repair.</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="price">
+                    <h3>Pricing</h3>
+                    <table>
+                        <tr>
+                            <td><b>Transfer Fee:</b></td>
+                            <td>$25</td>
+                        </tr>
+                        <tr>
+                            <td><b>Guns & Gun Repair:</b></td>
+                            <td><a href="JQueryContact.html" class="link">Pricing Available Upon Request</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
