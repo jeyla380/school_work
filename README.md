@@ -21,6 +21,6 @@
 <br>
 
 ## 📷 Visual Arts
-| Photoshop | InDesign | Premiere Pro |
-| :---: | :---: | :---: |
-| ... | ... | ... |
+| Photoshop | InDesign |
+| :---: | :---: |
+| ... | ... | 
