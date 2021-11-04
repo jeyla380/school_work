@@ -1,0 +1,153 @@
+{
+    "book": [
+        {
+            "authorid": 1,
+            "Author": "Jules Verne",
+            "Title": "A Journey to the Center of the Earth",
+            "Description": "Famous adventure tale that practically launched the genre in 1864.",
+            "Year": 1864
+
+        },
+        {
+            "authorid": 2,
+            "Author": "H.G. Wells",
+            "Title": "The War of the Worlds",
+            "Description": "The Martians come to England. A famous example of invasion literature from 1898.",
+            "Year": 1898
+        },
+        {
+            "authorid": 3,
+            "Author": "Aldous Huxley",
+            "Title": "Brave New World",
+            "Description": "Set in 2540, this novel imagines a radically different future. So good, it�s taught in schools.",
+            "Year": 1932
+        },
+        {
+            "authorid": 4,
+            "Author": "Edwin Balmer & Philip Wylie",
+            "Title": "When Worlds Collide",
+            "Description": "Earth must be evacuated because another planet is on a collision course.",
+            "Year": 1933
+        },
+        {
+            "authorid": 5,
+            "Author": "Samuel R. Delaney",
+            "Title": "Dhalgren",
+            "Description": "  ",
+            "Year": 1900
+        },
+        {
+            "authorid": 6,
+            "Author": "Olaf Stapledon",
+            "Title": "Odd John",
+            "Description": "A superhuman novel where supernormal abilities lead to conflict.",
+            "Year": 1935
+        },
+        {
+            "authorid": 7,
+            "Author": "George Orwell",
+            "Title": "Nineteen Eighty-Four",
+            "Description": "Social sci-fi from the era of Soviet growth where a nasty political system defines the plot.",
+            "Year": 1949
+        },
+        {
+            "authorid": 8,
+            "Author": "George R. Stewart",
+            "Title": "Earth Abides",
+            "Description": "Written shortly after Hiroshima, this post-apocalyptic novel imagines the rebuilding process.",
+            "Year": 1949
+        },
+        {
+            "authorid": 9,
+            "Author": "Isaac Asimov",
+            "Title": "Foundation",
+            "Description": "The original novel in a pioneering series. An immense plot that I cannot sum up in a sentence.",
+            "Year": 1951
+        },
+        {
+            "authorid": 10,
+            "Author": "Ray Bradbury",
+            "Title": "The Illustrated Man",
+            "Description": "18 masterful and highly imaginative short stories from one of the genre's masters.",
+            "Year": 1951
+        },
+        {
+            "authorid": 11,
+            "Author": "Alfred Bester",
+            "Title": "The Demolished Man",
+            "Description": "First Hugo winner. A science fiction detective novel featuring telepathy.",
+            "Year": 1953
+        },
+        {
+            "authorid": 12,
+            "Author": "Clifford D. Simak",
+            "Title": "Ring Around the Sun",
+            "Description": "Clever invasion novel from the 1950s where aliens introduce devices to disrupt Earth's economy.",
+            "Year": 1953
+        },
+        {
+            "authorid": 13,
+            "Author": "Hal Clement",
+            "Title": "Mission of Gravity",
+            "Description": "A world-building novel on a planet with variable surface gravity. Insect-like locals, human explorers.",
+            "Year": 1954
+        },
+        {
+            "authorid": 14,
+            "Author": "Leigh Brackett",
+            "Title": "The Long Tomorrow",
+            "Description": "Following a nuclear war, religious sects create an anti-technology society.",
+            "Year": 1955
+        },
+        {
+            "authorid": 15,
+            "Author": "John Wyndham",
+            "Title": "The Chrysalids",
+            "Description": "Set way in the future in a fundamentalist society. Telepathy makes people different.",
+            "Year": 1955
+        },
+        {
+            "authorid": 16,
+            "Author": "John Christopher",
+            "Title": "The Death of Grass or No Blade of Grass",
+            "Description": "A virus kills off all strains of grasses & causes a famine. England descends into anarchy.",
+            "Year": 1956
+        },
+        {
+            "authorid": 17,
+            "Author": "Robert Heinlein",
+            "Title": "Starship Troopers",
+            "Description": "Fine example of military science fiction from the late 1950s. A war against bugs.",
+            "Year": 1959
+        },
+        {
+            "authorid": 18,
+            "Author": "Kurt Vonnegut",
+            "Title": "The Sirens of Titan",
+            "Description": "Douglas Adams described it as a tour de force novel set amid a Martian invasion of Earth.",
+            "Year": 1959
+        },
+        {
+            "authorid": 19,
+            "Author": "Pat Frank",
+            "Title": "Alas, Babylon",
+            "Description": "Frank imagines the effects of nuclear war on a small town in Florida.",
+            "Year": 1959
+        },
+        {
+            "authorid": 20,
+            "Author": "Walter M. Miller",
+            "Title": "A Canticle for Leibowitz",
+            "Description": "Post-apocalyptic science fiction where monks are trying to preserve vital books and humanity.",
+            "Year": 1960
+        },
+        {
+            "authorid": 21,
+            "Author": "Theodore Sturgeon",
+            "Title": "Venus Plus X",
+            "Description": "20th century Charlie Johns wakes in a future filled with overpopulation, bigotry and no gender.",
+            "Year": 1960
+        }
+    ]
+
+}
