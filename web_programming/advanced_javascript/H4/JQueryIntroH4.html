@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>H4: JQuery Intro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h2
+            {
+                background: url(../images/bat.png)  no-repeat 0 11px;
+                background-size: 23px;
+                cursor: pointer;
+                padding: 10px 0 0 25px;
+            }
+            
+            div.accordion h2
+            {
+                background-image: url(images/bat.png);
+            }
+            
+            .filling
+            {
+                margin-left: 25px;
+            }
+            
+            .accordion
+            {
+                background-color: #ffb366;
+            }
+            
+            #validation
+            {
+                background-color: #cccccc;
+            }
+            
+            .error
+            {
+                color: #bd2130;
+            }
+        </style>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                //toggles all to expand and close when clicked
+                $('.filling').hide();
+                $('.accordion h2').click(function(){
+                    var paragraph = $(this).next('.filling');
+                    if(paragraph.is(':hidden'))
+                    {
+                        paragraph.slideDown();
+                        $(this).addClass('close');
+                    }
+                    else
+                    {
+                        paragraph.slideUp();
+                        $(this).removeClass('close');
+                    }
+                }); //end click       
+                $('#expand').click(function(){
+                    $('.filling').slideToggle("slow");
+                }); //end click function
+                //toggles certain h2 to open when clicked
+                
+                
+                
+                //validation
+                $('#validForm').submit(function(evt){
+                   evt.preventDefault(); 
+                   var email = $('#email').val();
+                   var password = $('#password').val();
+                   //stops the span from repeating when clicking submit multiple times
+                   $(".error").remove();
+                   //email validation
+                   if(email.length < 1)
+                   {
+                       $('#email').after(' <span class="error">This field is required</span>');
+                   }
+                   else
+                   {
+                       var expression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                       var validEmail = expression.test(email);
+                       if (!validEmail)
+                       {
+                           $('#email').after(' <span class="error">Enter a valid email</span>');
+                       }
+                   }
+                   //password validation
+                   if(password.length < 6)
+                   {
+                       $('#password').after(' <span class="error">Password must be at least 6 characters long</span>');
+                   }
+                });
+                
+                
+                
+                //dynamic list add all
+                $('#add').click(function(){
+                    var hobbyArray = ["Language Learning", "Gaming", "Camping", "Playing Piano", "Playing Guitar", "Playing Ukulele", "Traveling"];
+                    for(i = 0; i < hobbyArray.length; i++)
+                    {
+                        $('.list').append('<li>' + hobbyArray[i] + '</li>');
+                        $(this).prop('disabled', true);
+                    } //end for loop
+                }); //end click function
+                
+                //dynamic list remove all
+                $('#remove').click(function(){                    
+                    $('.list li').detach();
+                    $('#add').prop('disabled', false);
+                }); //end click function
+            }); //end .ready(function())
+        </script>
+    </head>
+    <body>
+        <div id="content">
+            <br>
+            <h1>Accordion</h1>
+            <hr>
+            <div class="accordion">
+                <button id="expand">Expand/Close All</button>
+                <h2 class="personal">Personal</h2>
+                <div class="filling">
+                    <p>I'm Jessemy! I'm a 24 year old student in Computer Science! I studied Linguistics for my undergraduate, but then I decided to switch to studying Computer Science. I've traveled to 5 other countries, including in living in 2! I lived in Mexico for 4 months to teach English and traveled to 13 states there (more than here in the U.S.); and I lived in Taiwan for a year to study Mandarin Chinese. Now that I'm back in the U.S. studying, I hope I can find a future career that allows me to live in other countries as well!</p>
+                </div>
+                
+                <h2 class="school">School</h2>
+                <div class="filling">
+                    <table style='width: 700px;'>
+                        <tr>
+                            <th>Type of Degree</th>
+                            <th>Major</th>
+                            <th>College/University</th>
+                            <th>Completed Date</th>
+                        </tr>
+                        <tr>
+                            <td>Associate's</td>
+                            <td>Computer Science and Information Systems</td>
+                            <td>Salt Lake Community College</td>
+                            <td>Aug. 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor's</td>
+                            <td>Linguistics</td>
+                            <td>University of Utah</td>
+                            <td>May 2016</td>
+                        </tr>
+                        <tr>
+                            <td>Associate's</td>
+                            <td>General Studies</td>
+                            <td>Salt Lake Community College</td>
+                            <td>Dec. 2013</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table style='width: 700px;'>
+                        <tr>
+                            <th>Future Plans?</th>
+                        </tr>
+                        <td>I'm thinking of going into a Master's program in Data Analytics. I've been looking at Georgia Tech's Online Master's of Data Analytics Program or Western Governer's University's Program</td>
+                    </table>
+                </div>
+                
+                <h2 class="hobbies">Hobbies</h2>
+                <div class="filling">
+                    <div id="dynamic-list">
+                        <table>
+                            <tr>
+                                <td><button id="add">Add All</button></td>
+                                <td><button id="remove">Remove All</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <ul class="list">
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <h2 class="music">Music</h2>
+                <div class="filling">
+                    <table style='width: 350px; text-align: center;'>
+                        <tr>
+                            <th colspan="2">Some of My Favorite Music<th>
+                        </tr>
+                        <tr>
+                            <td><b>Song</b></td>
+                            <td><b>Artist</b></td>
+                        </tr>
+                        <tr>
+                            <td>Dead Man's Party</td>
+                            <td rowspan="2">Oingo Boingo</td>
+                        </tr>
+                        <tr>
+                            <td>Just Another Day</td>
+                        </tr>
+                        <tr>
+                            <td>[Don't Fear] The Reaper</td>
+                            <td rowspan="2">Blue Oyster Cult</td>
+                        </tr>
+                        <tr>
+                            <td>Burnin' For You</td>
+                        </tr>
+                        <tr>
+                            <td>Soda City Funk</td>
+                            <td>Tim Legend</td>
+                        </tr>
+                        <tr>
+                            <td>Replay</td>
+                            <td>Lady Gaga</td>
+                        </tr>
+                        <tr>
+                            <td>More Than a Feeling</td>
+                            <td rowspan="4">Boston</td>
+                        </tr>
+                        <tr>
+                            <td>Don't Look Back</td>
+                        </tr>
+                        <tr>
+                            <td>Amanda</td>
+                        </tr>
+                        <tr>
+                            <td>Can'tcha Say (You Believe In Me) / Still In Love</td>
+                        </tr>
+                        <tr>
+                            <td>Evil Woman</td>
+                            <td>ELO</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <h1>Validation</h1>
+            <hr>
+            <div id="validation">
+                <form id="validForm" name="form" method="post" action="#">
+                    <h3>Email</h3>
+                    <input type="email" name="email" id="email" required>
+                    <h3>Password</h3>
+                    <input type="password" name="password" id="password" required>
+                    <br>
+                    <br>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>
