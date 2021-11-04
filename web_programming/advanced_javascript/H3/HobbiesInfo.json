@@ -1,0 +1,40 @@
+{
+    "hobbies": [
+        {
+            "Name": "Playing Piano",
+            "id": 1,
+            "Image": "images/piano.png",
+            "Information": "I started learning the piano when I was about 6 years old, and have been playing ever since then; I also don't play professionally, but I play for fun as I only took piano lessons until I was 18."
+        },
+        {
+            "Name": "Playing Guitar",
+            "id": 2,
+            "Image": "images/guitar.png",
+            "Information": "I learned to play the guitar when I was in highschool. I'm not very good at it, but I enjoy to play in my free time. Because I can play the guitar, I can also play the ukulele (since they are very similar), but the ukulele is definitely a lot easier to play."
+        },
+        {
+            "Name": "Camping",
+            "id": 3,
+            "Image": "images/camping.png",
+            "Information": "I've always enjoyed going camping, but I don't do it too often. I'm trying to get into it more as I now have someone to go with that enjoys camping as much as me!"
+        },
+        {
+            "Name": "Gaming",
+            "id": 4,
+            "Image": "images/gaming.png",
+            "Information": "Gaming is something I like to do in my free time! I'm not really into MMOs or PvP type games, but rather rogue-like games and single-player games."
+        },
+        {
+            "Name": "Learning Languages",
+            "id": 5,
+            "Image": "images/languages.png",
+            "Information": "I've always thought that speaking multiple languages is very cool, so I've been trying to learn more languages. So far I've learned Mandarin Chinese (intermediate advanced level) and French (beginning advanced level). I've taken a semester of Spanish and Italian, but I don't consider myself being able to speak it (because I can't), and I've learned the Korean and Russian alphabet so I can read, but I can't comprehend. I'm trying to focus on Chinese and French right now, but I'm hoping to learn more Spanish, Italian, Korean, Russian, and even more languages in the future!"
+        },
+        {
+            "Name": "Traveling",
+            "id": 6,
+            "Image": "images/traveling.png",
+            "Information": "I love traveling to new places and eating new foods! I've been to 6 states out of Utah, and 5 countries outside the U.S. I lived in Taiwan for one year, lived in Mexico for 4 months, traveled to South Korea a couple of times (from Taiwan), Canada (British Columbia), and I recently went to England and Scotland (or the United Kingdom) last May! I'm hoping to do some more traveling sometime soon (hopefully)!"
+        }
+    ]
+}
