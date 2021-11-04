@@ -4,3 +4,6 @@
 
 ## Font Practice
 ![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/Font_Practice.JPG)
+
+## Paragraph Quote
+![](https://github.com/jeyla380/school_work/blob/main/visual_arts/photoshop/assignments/Paragraph_Quote.JPG)
