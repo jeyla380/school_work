@@ -1,0 +1,102 @@
+div.website
+{
+	border: 1px solid black;
+}
+
+div.header
+{
+	text-align: center;
+	padding: 25px;
+}
+
+div ol.tabs li
+{
+	display: inline-block;
+	padding: 10px 95px;
+}
+
+div.website-tabs
+{
+	text-align: center;
+	border: 1px solid rgba(88, 90, 115, .59);
+	background-color: rgba(88, 90, 115, .59);
+}
+
+div.welcome-section
+{
+	text-align: center;
+}
+
+div.welcome
+{
+	padding-top: 65px;
+	padding-bottom: 30px;
+}
+
+div.text
+{
+	border: 3px solid #2A3159;
+	padding: 80px;
+	padding-bottom: 120px;
+	width: 45%;
+	margin: auto;
+}
+
+div.aboutme-section
+{
+	text-align: center;
+	border: 1px solid rgba(217, 156, 156, .76);
+	background-color: rgba(217, 156, 156, .76);
+	margin-top: 70px;
+	
+}
+
+div.aboutme
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+div.mobile
+{
+	border: 1px solid black;
+	width: 20%;
+}
+
+div.mobile div ol li
+{
+	display: inline-block;
+	padding: 0px 27px;
+}
+
+div.mobile div ol
+{
+	text-align: left;
+	border: 1px solid rgba(88, 90, 115, .59);
+	background-color: rgba(88, 90, 115, .59);
+	position: relative;
+	top: -16px;
+}
+
+li.nav div
+{
+	height: 4px;
+	background-color: #F2E6CE;
+	margin: 5px 0;
+	border-radius: 25px;
+}
+
+li.nav
+{
+	width: 30px;
+	position: relative;
+	top: 9px;
+}
+
+li.header-text
+{
+	position: relative;
+	left: -20px;
+	color: #F2E6CE;
+	font-size: 21px;
+}
