@@ -5,7 +5,7 @@
 
 ## 💻 Computer Science
 
-### Front-end Programming
+### Web Programming
 | XHTML & Internet Fundamentals | Web Programming | Advanced Javascript & JSP | Website Design |
 | :---: | :---: | :---: | :---: |
 | [Bootstrap](https://github.com/jeyla380/school_work/tree/main/web_programming/xhtml_fundamentals/bootstrap) | [Hello World](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/Hello_World) | [Javascript Refresher](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H1) | [Create a Gif](https://github.com/jeyla380/school_work/tree/main/web_programming/web_design/A4) |
