@@ -22,27 +22,7 @@
 ### Back-end Programming
 | Fundamentals of Programming (Java) | 
 | :---: |
-| [Ball](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Ball) |
-| [DocComments](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/DocComments) |
-| [Employee](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Employee) |
-| [DemoFinal](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Final) |
-| [HoppityHop](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/hoppityHop.java) |
-| [jGrasp](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/Pattern.java) |
-| [LabArrays](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/LabArraysClass.java) |
-| [LabCountry](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/LabCountry) |
-| [LabEratosthenes](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/Eratosthenes.java) |
-| [LabPartyGuest](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/PartyGuests.java) |
-| [LabPattern3](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/Pattern3.java) |
-| [LabRectangleMenu](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/LabRectangleMenu) |
-| [LabWhile](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/labWhile.java) |
-| [Marbles](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/marble.java) |
-| [Matrix](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Matrix) |
-| [Midterm1](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Midterm1) |
-| [Midterm2](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Midterm2) |
-| [MinMax](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/minimax.java) |
-| [Parrot](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Parrot) |
-| [Random](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/LabRandom.java) |
-| [Variable](https://github.com/jeyla380/school_work/blob/main/backend_programming/java/variable.java) |
+| .. |
 
 <br>
 
