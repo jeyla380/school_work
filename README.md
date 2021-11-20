@@ -23,10 +23,48 @@
   
 </details>
 
+<details>
+  <summary><b>Web Programming</b></summary>
+  
+  | Projects |
+  | :--: |
+  | [Hello World](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/Hello_World) |
+  | [Javascript Validation](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/JavascriptValidation) |
+  | [SQL Form](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/MySQLForm) |
+  | [Planet Form](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/Planet_Forms) |
+  | [eCommerce](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/eCommerce) |
+  | [PHP-One](https://github.com/jeyla380/school_work/tree/main/web_programming/web_programming/php_one) |
+  
+</details>
 
 
+<details>
+  <summary><b>Advanced Javascript & JSP</b></summary>
+  
+  | Projects |
+  | :--: |
+  | [Javascript Refresher](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H1) |
+  | [Book Search](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H2) |
+  | [Carousel](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H3) |
+  | [JQuery Intro](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H4) |
+  | [JQuery Website](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H5) |
+  | [Bootstrap Site](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H6) |
+  | [Mobile Site](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H7) |
+  | [Twitter Site](https://github.com/jeyla380/school_work/tree/main/web_programming/advanced_javascript/H8) |
+  
+</details>
 
-
+<details>
+  <summary><b>Web Design</b></summary>
+  
+  | Assignments | Projects |
+  | :--: | :--: |
+  | [Create a Gif](https://github.com/jeyla380/school_work/tree/main/web_programming/web_design/A4) | [Digital Mockup](https://github.com/jeyla380/school_work/tree/main/web_programming/web_design/Digital_Mockup) |
+  | [Creating Tables](https://github.com/jeyla380/school_work/tree/main/web_programming/web_design/A6) | [Website Wireframe](https://github.com/jeyla380/school_work/tree/main/web_programming/web_design/Website_Wireframe) |
+  |  | [Website Completed](https://github.com/jeyla380/school_work/tree/main/web_programming/web_design/Website_Completed) |
+  
+  
+</details>
 
 
 <!--| XHTML & Internet Fundamentals | Web Programming | Advanced Javascript & JSP | Website Design |
