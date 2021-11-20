@@ -8,7 +8,7 @@
 ### Web Programming
 
 <details>
-  <summary><b>XHTML & Internet Fundamentals</b></summary>
+  <summary>XHTML & Internet Fundamentals</summary>
   
   |Assignments | Projects |
   | :--: | :--: |
@@ -24,7 +24,7 @@
 </details>
 
 <details>
-  <summary><b>Web Programming</b></summary>
+  <summary>Web Programming</summary>
   
   | Projects |
   | :--: |
@@ -39,7 +39,7 @@
 
 
 <details>
-  <summary><b>Advanced Javascript & JSP</b></summary>
+  <summary>Advanced Javascript & JSP</summary>
   
   | Projects |
   | :--: |
@@ -55,7 +55,7 @@
 </details>
 
 <details>
-  <summary><b>Web Design</b></summary>
+  <summary>Web Design</summary>
   
   | Assignments | Projects |
   | :--: | :--: |
@@ -82,7 +82,7 @@
 
 ### Back-end Programming
 <details>
-  <summary><b>Fundamentals of Programming (Java)</b></summary>
+  <summary>Fundamentals of Programming (Java)</summary>
   
   | Labs | Assignments | Projects |
   | :--: | :--: | :--: |
@@ -113,7 +113,7 @@
 
 ## 📷 Visual Arts
 <details>
-<summary><b>Photoshop</b></summary>
+<summary>Photoshop</summary>
   
   | Assignments| Projects |
   | :--: | :--:|
@@ -128,7 +128,7 @@
   </details>
 
 <details>
-  <summary><b>InDesign</b></summary>
+  <summary>InDesign</summary>
   
   | Projects |
   | :--: | 
