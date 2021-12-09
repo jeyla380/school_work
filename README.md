@@ -3,6 +3,16 @@
 <br>
 <br>
 
+<div align="center">
+ <table>
+  <tr>
+   <td>:grey_exclamation:</td>
+   <td>Please click on each <code>&#x25B6;</code> to see my work!</td>
+  </tr>
+ </table>
+</div>
+
+
 ## 💻 Computer Science
 
 ### Web Programming
