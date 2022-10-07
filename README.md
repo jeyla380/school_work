@@ -104,6 +104,14 @@
   
 </details>
 
+<details>
+ <summary>Scripting and Programming (C++)</summary>
+ 
+ | Labs | Projects |
+ | :--: | :--: |
+ 
+</details>
+
 
 
 <!--| Fundamentals of Programming (Java) | 
