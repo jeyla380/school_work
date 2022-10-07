@@ -18,7 +18,7 @@
 ### Web Programming
 
 <details>
-  <summary>XHTML & Internet Fundamentals (HTML, CSS, & JavaScript)</summary>
+  <summary>XHTML & Internet Fundamentals (HTML, CSS, JavaScript)</summary>
   
   |Assignments | Projects |
   | :--: | :--: |
