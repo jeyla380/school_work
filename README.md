@@ -18,7 +18,7 @@
 ### Web Programming
 
 <details>
-  <summary>XHTML & Internet Fundamentals</summary>
+  <summary>XHTML & Internet Fundamentals (HTML, CSS, & JavaScript)</summary>
   
   |Assignments | Projects |
   | :--: | :--: |
@@ -34,7 +34,7 @@
 </details>
 
 <details>
-  <summary>Web Programming</summary>
+  <summary>Web Programming (PHP, MySQL)</summary>
   
   | Projects |
   | :--: |
@@ -49,7 +49,7 @@
 
 
 <details>
-  <summary>Advanced Javascript & JSP</summary>
+  <summary>Advanced Javascript & JSP (JavaScript, jQuery, Bootstrap)</summary>
   
   | Projects |
   | :--: |
@@ -65,7 +65,7 @@
 </details>
 
 <details>
-  <summary>Web Design</summary>
+  <summary>Web Design (HTML, CSS)</summary>
   
   | Assignments | Projects |
   | :--: | :--: |
