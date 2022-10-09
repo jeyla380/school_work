@@ -113,6 +113,7 @@
  | [Interstate Highway](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/interstate_highway.cpp) | |
  | [Name Formatting](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/name_format.cpp) | |
  | [Varied Input Data](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/varied_input_data.cpp) | |
+ | [Reverse Numbers](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/reverse_numbers.cpp) | |
  
 </details>
 
