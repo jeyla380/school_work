@@ -117,6 +117,7 @@
  | [Middle Item](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/middle_item.cpp) | |
  | [Normalizing List](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/normalizing_list.cpp) | |
  | [Word Frequencies](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/word_frequencies.cpp) | |
+ | [Sort A Vector](https://github.com/jeyla380/school_work/blob/main/backend_programming/c%2B%2B/labs/sort_vector.cpp) | |
  
 </details>
 
