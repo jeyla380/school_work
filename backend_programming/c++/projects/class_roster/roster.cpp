@@ -13,9 +13,13 @@ Roster::Roster() //constructor
 	lastName = "N/A";
 	emailAddress = "N/A";
 	age = 0;
-	daysInCourse1 = 0;
-	daysInCourse2 = 0;
-	daysInCourse3 = 0;
+	//daysInCourse1 = 0;
+	//daysInCourse2 = 0;
+	//daysInCourse3 = 0;
+	for (int i = 0; i < 3; i++)
+	{
+		daysInCourses[i] = 0;
+	}
 	degreeProgram;
 }
 
@@ -74,16 +78,15 @@ void Roster::ParseData(const string *array)
 
 		y = x + 1;
 		x = arrayPtr[i].find(",", y);
-		int courseDay1 = stoi(arrayPtr[i].substr(y, x - y)); //puts the int into a variable to put into the .SetNumberOfDays later
-		studentObj[i].SetCourseDays1(courseDay1);
+		int courseDay1 = stoi(arrayPtr[i].substr(y, x - y));
 		y = x + 1;
 		x = arrayPtr[i].find(",", y);
-		int courseDay2 = stoi(arrayPtr[i].substr(y, x - y)); //puts the int into a variable to put into the .SetNumberOfDays later
-		studentObj[i].SetCourseDays2(courseDay2);
+		int courseDay2 = stoi(arrayPtr[i].substr(y, x - y));
 		y = x + 1;
 		x = arrayPtr[i].find(",", y);
-		int courseDay3 = stoi(arrayPtr[i].substr(y, x - y)); //puts the int into a variable to put into the .SetNumberOfDays later
-		studentObj[i].SetCourseDays3(courseDay3);
+		int courseDay3 = stoi(arrayPtr[i].substr(y, x - y));
+		int courseDays[3] = {courseDay1, courseDay2, courseDay3};
+		studentObj[i].SetCourseDays(courseDays);
 
 		y = x + 1;
 		x = arrayPtr[i].find(",", y);
@@ -91,6 +94,8 @@ void Roster::ParseData(const string *array)
 		DegreeProgram program = convert(convertStr); //declares the program variable as a converted string to input into .SetDegreeProgram()
 		studentObj[i].SetDegreeProgram(program);
 
+		//this works, prints out all 3 days with no issue
+		//cout << studentObj[i].getCourseDays1() << " " << studentObj[i].getCourseDays2() << " " << studentObj[i].getCourseDays3() << endl;
 
 		add(studentObj[i].getStudentId(), studentObj[i].getFirstName(), studentObj[i].getLastName(), studentObj[i].getEmail(), studentObj[i].getAge(), studentObj[i].getCourseDays1(), studentObj[i].getCourseDays2(), studentObj[i].getCourseDays3(), studentObj[i].getDegreeProgram());
 	}
@@ -100,8 +105,10 @@ void Roster::ParseData(const string *array)
 //this adds the data from ParseData() and puts it into a new Student class each time, which populates classRosterArray
 void Roster::add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram degreeprogram)
 {
+	int courseDays[3] = { daysInCourse1, daysInCourse2, daysInCourse3 };
+
 	//each time the a new Student is added, the classRosterArray goes up one
-	classRosterArray[index++] = new Student(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, degreeprogram);
+	classRosterArray[index++] = new Student(studentID, firstName, lastName, emailAddress, age, courseDays, degreeprogram);
 }
 
 
@@ -163,9 +170,8 @@ void Roster::printAverageDaysInCourse(string studentID)
 	int totalDays = classRosterArray[numIndex]->getCourseDays1() + classRosterArray[numIndex]->getCourseDays2() + classRosterArray[numIndex]->getCourseDays3();
 	int averageDays = totalDays / 3;
 
-	cout << "Average Day In Course: " << endl;
 	cout << "Student ID: " << studentID << ", Average Days in Course: " << averageDays << endl;
-	cout << endl;
+
 }
 
 
