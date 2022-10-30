@@ -33,9 +33,10 @@ private:
 	std::string lastName;
 	std::string emailAddress;
 	int age;
-	int daysInCourse1;
-	int daysInCourse2;
-	int daysInCourse3;
+	//int daysInCourse1;
+	//int daysInCourse2;
+	//int daysInCourse3;
+	int daysInCourses[3];
 	DegreeProgram degreeProgram;
 };
 
