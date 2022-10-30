@@ -22,7 +22,7 @@ int main()
 	"A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
 	"A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
 	"A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
-	"A5,[firstname],[lastname],[email],18,27,54,32,SOFTWARE" };
+	"A5,[firstname],[lastname],[email],20,35,42,23,SOFTWARE" };
 
 	/*
 	//Test for student.h and student.cpp to ensure it works
@@ -33,9 +33,11 @@ int main()
 	student1.SetLastName("Smith");
 	student1.SetEmail("John1989@gm ail.com");
 	student1.SetAge(20);
-	student1.SetNumberOfDays(30, 35, 40);
+	int numOfDays[3] = {30, 35, 40};
+	student1.SetCourseDays(numOfDays);
 	student1.SetDegreeProgram(SECURITY);
-	student1.Print();
+
+	//student1.Print();
 	*/
 
 	/*
@@ -48,7 +50,7 @@ int main()
 	//roster1.printAverageDaysInCourse("A3");
 	//roster1.printInvalidEmails();
 	//roster1.printByDegreeProgram(SOFTWARE);
-	roster1.printAll();
+	//roster1.printAll();
 	*/
 	
 	
@@ -72,7 +74,7 @@ int main()
 	classRoster.remove("A3");
 	classRoster.printAll();
 	classRoster.remove("A3");
-
+	
 
 	return 0;
 }
