@@ -1,21 +1,26 @@
 #include <iostream>
 #include <string>
+#include <tuple>
 using namespace std;
 
 #include "student.h"
 #include "degree.h"
 #include "roster.h"
 
-Student::Student(string sId, string fName, string lName, string emailAdd, int ageNum, int courseDay1, int courseDay2, int courseDay3, DegreeProgram degreeType) //constructor
+Student::Student(string sId, string fName, string lName, string emailAdd, int ageNum, int *courseDays, DegreeProgram degreeType) //constructor
 {
 	studentId = sId;
 	firstName = fName;
 	lastName = lName;
 	email = emailAdd;
 	age = ageNum;
-	day1 = courseDay1;
-	day2 = courseDay2;
-	day3 = courseDay3;
+	//day1 = courseDay1;
+	//day2 = courseDay2;
+	//day3 = courseDay3;
+	for (int i = 0; i < 3; i++)
+	{
+		days[i] = courseDays[i]; //this copies the courseDays[i] data over to the days[i], this will cause issues with element 1 and 2 (not 0) if there is no for loop
+	}
 	degreeProgram = degreeType;
 }
 
@@ -26,9 +31,10 @@ Student::Student() //default constructor
 	lastName = "N/A";
 	email = "N/A";
 	age = 0;
-	day1 = 0;
-	day2 = 0;
-	day3 = 0;
+	for (int i = 0; i < 3; i++) //each day will equal 0
+	{
+		days[i] = 0;
+	}
 	degreeProgram = SECURITY;
 }
 
@@ -78,31 +84,24 @@ int Student::getAge() const
 }
 
 //number of days spent in first course
-void Student::SetCourseDays1(int day1)
+void Student::SetCourseDays(int days[3])
 {
-	this->day1 = day1;
+	for (int i = 0; i < 3; i++)
+	{
+		this->days[i] = days[i];
+	}
 }
 int Student::getCourseDays1() const
 {
-	return day1;
-}
-
-void Student::SetCourseDays2(int day2)
-{
-	this->day2 = day2;
+	return days[0];
 }
 int Student::getCourseDays2() const
 {
-	return day2;
-}
-
-void Student::SetCourseDays3(int day3)
-{
-	this->day3 = day3;
+	return days[1];
 }
 int Student::getCourseDays3() const
 {
-	return day3;
+	return days[2];
 }
 
 //type of CS program
@@ -123,6 +122,7 @@ void Student::Print()
 	cout << "Last Name: " << getLastName() << '\t';
 	cout << "Age: " << getAge() << '\t';
 	cout << "daysInCourse: {" << getCourseDays1() << ", " << getCourseDays2() << ", " << getCourseDays3() << "}";
+
 
 	//this turns the values of the enum and turns them into strings
 	const char* type[] = { "Security", "Network", "Software" };
