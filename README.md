@@ -143,7 +143,7 @@
   
   | Projects |
   | :--: |
-  | Jaunty Coffee Co. | 
+  | [Jaunty Coffee Co.](https://github.com/jeyla380/school_work/tree/main/database_management/mysql) | 
   
 </details>
 
