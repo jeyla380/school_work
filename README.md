@@ -137,7 +137,18 @@
 | [Midterm 2](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Midterm2) |
 | [Final](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Final) |-->
 
+### Database Management
+<details>
+  <summary>MySQL Applications</summary>
+  
+  | Projects |
+  | :--: |
+  | Jaunty Coffee Co. | 
+  
+</details>
+
 <br>
+
 
 ## 📷 Visual Arts
 <details>
