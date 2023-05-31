@@ -122,6 +122,15 @@
  
 </details>
 
+<details>
+ <summary>Data Structures and Algorithms (Python)</summary>
+ 
+ | Labs | Projects |
+ | :--: | :--: |
+ | |
+
+</details>
+
 
 
 <!--| Fundamentals of Programming (Java) | 
