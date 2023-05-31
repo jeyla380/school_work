@@ -1,3 +1,17 @@
+#The main program:  p has been defined and code to read in the x and y coordinates (integers) for point p is also provided.
+
+#Instructions:
+#1) Output p.
+#2) Read in the number of steps the be taken:
+    #forwards along the x-axis
+    #forwards along the y-axis
+    #backwards along both axes every 3rd iteration
+#3) Define a dynamic programming algorithm that advances and retreats the required number of steps along the x and y axes and determines the closest point to p. After each iteration, calculate the distance between point p and the current location using the distance function:
+#d = sqrt((x_p - x_1)^2 + (y_p - y_1)^2)
+#Count the number of iterations.
+#4) Output the final arrival point (the point closest to p), the distance between the arrival point and p, and the number of iterations taken.
+
+
 import math
 
 # Point class
