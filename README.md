@@ -127,7 +127,7 @@
  
  | Labs | Projects |
  | :--: | :--: |
- | [Get Location](https://github.com/jeyla380/school_work/blob/main/backend_programming/python/labs/get_location.py) | |
+ | [Get Location](https://github.com/jeyla380/school_work/blob/main/backend_programming/python/labs/get_location.py) | [WGUPS Routing Program](https://github.com/jeyla380/school_work/tree/main/backend_programming/python/project) |
 
 </details>
 
