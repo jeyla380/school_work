@@ -18,3 +18,9 @@ Keep in mind that the supervisor should be able to see, at assigned points, the 
 - The day ends when all 40 packages have been delivered.
 
 *EOD = End of Day
+
+<br>
+<hr>
+
+### Note:
+If the Jupyter Notebook's version of the WGUPS Routing Program Project does not load properly, I have included a PDF version of the project, and a Python file of the project as well.
