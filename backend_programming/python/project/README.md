@@ -23,4 +23,4 @@ Keep in mind that the supervisor should be able to see, at assigned points, the 
 <hr>
 
 ### Note:
-If the Jupyter Notebook's version of the WGUPS Routing Program Project does not load properly, I have included a PDF version of the project, and a Python file of the project as well.
+If the [Jupyter Notebook's version of the WGUPS Routing Program Project](https://github.com/jeyla380/school_work/blob/main/backend_programming/python/project/WGUPS_Routing_Program.ipynb) does not load properly, I have included a PDF version of the project, and a Python file of the project as well.
