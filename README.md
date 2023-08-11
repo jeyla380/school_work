@@ -127,7 +127,7 @@
  
  | Labs | Projects |
  | :--: | :--: |
- | [Get Location] | |
+ | [Get Location](https://github.com/jeyla380/school_work/blob/main/backend_programming/python/labs/get_location.py) | |
 
 </details>
 
