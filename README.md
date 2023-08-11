@@ -125,9 +125,9 @@
 <details>
  <summary>Data Structures and Algorithms (Python)</summary>
  
- | Projects |
- | :--: |
- | |
+ | Labs | Projects |
+ | :--: | :--: |
+ | [Get Location] | |
 
 </details>
 
