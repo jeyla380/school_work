@@ -98,7 +98,7 @@
   | :--: | :--: | :--: |
   | [LabMid1](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/LabMid1) | [Assignment 01](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/A01) | [Midterm 1](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Midterm1) |
   | [LabMid2](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/LabMid2) | [Assignment 02](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/A02) | [Midterm 2](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Midterm2) |
-  | [WGULabs](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/WGU_Labs) | [Assignment 03](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/A03) | [Final](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Final) |
+  | [WGU Labs](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/WGU_Labs) | [Assignment 03](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/A03) | [Final](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/Final) |
   | | [Assignment 05](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/A05) | |
   | | [Assignment 06](https://github.com/jeyla380/school_work/tree/main/backend_programming/java/A06) | |
   
