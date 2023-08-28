@@ -8,7 +8,6 @@ public class LabProgram {
 
       highwayNumber = scnr.nextInt();
       
-      /* Type your code here. */
       //Notes 0 and 100, 200
       if (highwayNumber == 0 || highwayNumber % 100 == 0)
       {
