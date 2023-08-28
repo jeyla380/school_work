@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class LabProgram {
    public static void main(String[] args) {
-      /* Type your code here. */
       
       Scanner scnr = new Scanner(System.in);
       int change = scnr.nextInt();
