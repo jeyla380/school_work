@@ -4,7 +4,7 @@ public class FoodItem {
    private double carbs;
    private double protein;
    
-   // TODO: Define default constructor
+   //default constructor
    public FoodItem()
    {
       name = "Water";
@@ -12,7 +12,8 @@ public class FoodItem {
       carbs = 0.0;
       protein = 0.0;
    }
-   
+
+   //second constructor
    public FoodItem(String name, double fat, double carbs, double protein)
    {
       this.name = name;
