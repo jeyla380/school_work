@@ -84,6 +84,9 @@ $$;
 
 ```
 
+| Before Function | After Function |
+| --- | --- |
+| ![](https://github.com/jeyla380/school_work/blob/main/database_management/postgresql/images/before_function.png) | ![](https://github.com/jeyla380/school_work/blob/main/database_management/postgresql/images/after_function.png) |
 
 <br>
 
