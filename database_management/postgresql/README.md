@@ -63,3 +63,52 @@ The Popularity field (in the detailed table) is indicating a high and low popula
 
 ### A6.
 The report should be refreshed every quarter as it’ll allow the stakeholders to respond to the changing market effectively and efficiently.
+
+<br>
+
+## B. Popularity Function
+```sql
+CREATE FUNCTION HighLowPopularity(x BOOL)
+	RETURNS VARCHAR(50)
+	LANGUAGE plpgsql
+AS
+$$
+BEGIN
+	IF x THEN
+		RETURN  'High Popularity';
+	ELSE
+		RETURN  'Low Popularity';
+	END IF;
+END
+$$;
+
+```
+
+
+<br>
+
+## C. Detailed Table and Summary Table
+<b>Detailed Table:</b>
+```sql
+CREATE TABLE detailed_table (
+	genre_id INT PRIMARY KEY,
+	genre VARCHAR(50),
+	total_times_rented INT,
+	popularity VARCHAR(50),
+	avg_rental_duration FLOAT
+);
+
+```
+
+<b>Summary Table:</b>
+```sql
+CREATE TABLE summary_table (
+	genre_id INT PRIMARY KEY,
+	genre VARCHAR(50),
+	total_times_rented INT,
+	avg_rental_duration FLOAT
+);
+
+```
+
+
