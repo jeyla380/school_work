@@ -187,7 +187,7 @@ CREATE TRIGGER update_table
 
 <br>
 
-## Procedure
+## F. Procedure
 Refreshes the data in both Detailed Table and Summary Table as the data comes from the DVD Rentals Database.
 ```sql
 CREATE PROCEDURE update_detailed_summary()
