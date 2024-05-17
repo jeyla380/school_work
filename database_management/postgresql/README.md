@@ -111,4 +111,119 @@ CREATE TABLE summary_table (
 
 ```
 
+<br>
 
+## D. Extract Data from Detailed Table
+```sql
+WITH total_rented_genre AS (
+		SELECT category.name AS genre, COUNT(customer.customer_id) AS total_times_rented,
+			HighLowPopularity(
+			CAST(
+				CASE
+					WHEN COUNT(customer.customer_id) >= 1000 THEN 1
+					ELSE 0
+				END
+			AS BOOL))AS popularity
+		FROM category JOIN film_category
+		USING(category_id)
+		JOIN film
+		USING(film_id)
+		JOIN inventory
+		USING(film_id)
+		JOIN rental
+		USING(inventory_id)
+		JOIN customer
+		USING(customer_id)
+		GROUP BY genre
+		ORDER BY total_times_rented DESC),
+	rental_duration_genre AS (
+		SELECT category.name AS genre, AVG(film.rental_duration) AS avg_rental_duration
+		FROM category JOIN film_category
+		USING(category_id)
+		JOIN film
+		USING(film_id)
+		GROUP BY genre
+		ORDER BY avg_rental_duration DESC)
+INSERT INTO detailed_table(genre_id, genre, total_times_rented, popularity, avg_rental_duration)
+SELECT RANK() OVER (ORDER BY total_rented_genre.total_times_rented DESC) AS genre_id, total_rented_genre.genre, total_rented_genre.total_times_rented, total_rented_genre.popularity, rental_duration_genre.avg_rental_duration
+FROM total_rented_genre JOIN rental_duration_genre
+ON total_rented_genre.genre = rental_duration_genre.genre;
+
+```
+
+<br>
+
+## E. Trigger
+The purpose of this trigger is to update the Summary Table every time there is a change from the Detailed Table.
+```sql
+/*Function*/
+CREATE FUNCTION update_to_summary()
+	RETURNS TRIGGER
+	LANGUAGE plpgsql
+AS
+$$
+BEGIN
+	INSERT INTO summary_table(genre_id, genre, total_times_rented, avg_rental_duration)
+	VALUES(NEW.genre_id, NEW.genre, NEW.total_times_rented, NEW.avg_rental_duration);
+	RETURN NEW;
+END;
+$$
+
+/*Trigger*/
+CREATE TRIGGER update_table
+	AFTER INSERT OR UPDATE OR DELETE
+	ON detailed_table
+	FOR EACH ROW
+	EXECUTE PROCEDURE update_to_summary();
+
+```
+
+<br>
+
+## Procedure
+Refreshes the data in both Detailed Table and Summary Table as the data comes from the DVD Rentals Database.
+```sql
+CREATE PROCEDURE update_detailed_summary()
+LANGUAGE plpgsql
+AS
+$$
+BEGIN
+	TRUNCATE TABLE summary_table;
+	TRUNCATE TABLE detailed_table;
+	WITH total_rented_genre AS (
+		SELECT category.name AS genre, COUNT(customer.customer_id) AS total_times_rented,
+			HighLowPopularity(
+			CAST(
+			CASE
+				WHEN COUNT(customer.customer_id) >= 1000 THEN 1
+				ELSE 0
+			END
+			AS BOOL))AS popularity
+		FROM category JOIN film_category
+		USING(category_id)
+		JOIN film
+		USING(film_id)
+		JOIN inventory
+		USING(film_id)
+		JOIN rental
+		USING(inventory_id)
+		JOIN customer
+		USING(customer_id)
+		GROUP BY genre
+		ORDER BY total_times_rented DESC),
+	rental_duration_genre AS (
+		SELECT category.name AS genre, AVG(film.rental_duration) AS avg_rental_duration
+		FROM category JOIN film_category
+		USING(category_id)
+		JOIN film
+		USING(film_id)
+		GROUP BY genre
+		ORDER BY avg_rental_duration DESC)
+	INSERT INTO detailed_table(genre_id, genre, total_times_rented, popularity, avg_rental_duration)
+	SELECT RANK() OVER (ORDER BY total_rented_genre.total_times_rented DESC) AS rank, total_rented_genre.genre, total_rented_genre.total_times_rented, total_rented_genre.popularity, rental_duration_genre.avg_rental_duration
+	FROM total_rented_genre JOIN rental_duration_genre
+	ON total_rented_genre.genre = rental_duration_genre.genre;
+END;
+$$;
+
+```
