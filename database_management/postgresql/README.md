@@ -114,9 +114,13 @@ CREATE TABLE summary_table (
 
 ```
 
+| Detailed Table | Summary Table |
+| --- | --- |
+| ![](https://github.com/jeyla380/school_work/blob/main/database_management/postgresql/images/detailed_table.png) | ![](https://github.com/jeyla380/school_work/blob/main/database_management/postgresql/images/summary_table.png) |
+
 <br>
 
-## D. Extract Data from Detailed Table
+## D. Extract Data to Input Into Detailed Table
 ```sql
 WITH total_rented_genre AS (
 		SELECT category.name AS genre, COUNT(customer.customer_id) AS total_times_rented,
