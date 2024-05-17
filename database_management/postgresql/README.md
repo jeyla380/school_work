@@ -1,4 +1,4 @@
-# Advanced Data Management (Data Analysis)
+# Advanced Data Management
 This assignment is based off the data from the DVD Rental Database on the [PostgreSQL Sample Database](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) webpage.
 
 <br>
@@ -84,7 +84,7 @@ $$;
 
 ```
 
-| Before Function | After Function |
+| Without Function | With Function |
 | --- | --- |
 | ![](https://github.com/jeyla380/school_work/blob/main/database_management/postgresql/images/before_function.png) | ![](https://github.com/jeyla380/school_work/blob/main/database_management/postgresql/images/after_function.png) |
 
