@@ -1,5 +1,11 @@
 # Book Title Translation Project
 
+### Table of Contents:
+- [Project Proposal Plan](#project-proposal-plan)
+- [Post-Implementation Report](#post-implementation-report)
+- [Sources](#sources)
+- [Additional Notes](#additional-notes)
+
 <br>
 
 ## Project Proposal Plan
