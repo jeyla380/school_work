@@ -22,16 +22,16 @@ The Simple Bookstore is looking for a book title translator application that has
 <span style="font-size:10pt">*All the information will be translated into English.</span>
 
 ### 4. Objectives and Hypotheses
-Objectives:
+**Objectives:**
 -	Develop a language translation model that is able to translate book titles between English, French, and Japanese.
 -	Enable users to discover and purchase books in various languages based on title searches.
 
-Hypotheses:
+**Hypotheses:**
 -	The translation model’s accuracy will improve with larger and more diverse datasets.
 -	Longer titles may be more challenging to translate in maintaining fluency and accuracy.
 -	Book titles with cultural references and/or localized context may be difficult to translate accurately.
 
-### 5.	Outline of Project Methodology
+### 5. Outline of Project Methodology
 1. Define the needs and requirements of the stakeholders.
 2. Gather and scrape sentences for English, French, and Japanese.
 3. Develop and train language translation models in order to translate and properly implement them.
@@ -93,5 +93,74 @@ Hypotheses:
          1. If a user is looking for a title in English, the model recommends its Japanese and French translations as well.
          2. Train language models using machine learning libraries like PyTorch.
 
-<span style="font-size:10pt">** ”Users” in the project are not customers, but rather employees that work for Simple Bookstore.</span>
+<span style="font-size:10pt">* ”Users” in the project are not customers, but rather employees that work for Simple Bookstore.</span>
+
+
+### 8. Resources and Costs
+
+The only cost associated with the book title translation models, as of right now, are related to procedures, documentation, and testing. 
+
+**Procedures, Documentation, and Training:**
+- Time and cost need to be considered for creating and training custom language models.
+- Allocate cost and time for testing and debugging, as well as costs for regular maintenance and ongoing updates.
+- Create user guides and training materials for Simple Bookstore’s employees, so costs and time will need to be determined.
+
+However, there are additional factors that needs to be considered as Simple Bookstore continuously expands.
+
+**Infrastructure:**
+- Implement the book title translation model within Simple Bookstore’s website and mobile application to allow customers to search for book titles.
+- Over time, the database that contains all book information will need to be expanded, so a larger database will need to be implemented.
+- Associated costs:
+   - Microsoft Azure – Starts at around $177 per month based on our current needs.
+   - Snowflake – Starts at $23 per TB per month.
+
+**Translation Services:**
+- Book titles that are longer or contain localized context may require translation services if the translation model metrics fail.
+- Translated book titles that don’t have enough language data to train may require translation services.
+- Associated costs: 
+   - DeepL – Free
+   - Amazon Translate – Starts at $15 per million characters.
+   - SunTec AI – Prices vary depending on the amount of data that needs to be evaluated.
+
+### 9. Ethical and Legal Considerations
+- Ensure book title translations are still able to preserve original context and intent.
+- Remain unbiased when translating book titles that contain controversial or politically charged content.
+
+<br>
+
+## Post-Implementation Report
+
+### 1. User Guide
+If you have not installed any of the following applications or libraries, please follow each section. Any applications you have installed you can skip, and any libraries you’ve installed will just be updated if you re-run the code.
+
+**Anaconda:**
+- The download option is meant for Windows only. If you would like, you can download Anaconda on Mac or Linux, however, this program would be better to be run on Windows. 
+
+**PyTorch:**
+- The installation for PyTorch can be found here: https://pytorch.org/get-started/locally/
+   - Make sure Python is updated to 3.8 or later before installing.
+- To verify PyTorch has been installed, select “Environment” within the Anaconda Navigator, then type “pytorch” in the search bar. Look for “pytorch”, if it’s there, it’s been installed. 
+
+**CUDA & cuDNN:**
+- After installing PyTorch, CUDA and cuDNN (a CUDA library) will need to be installed as well. You can install/update both using these commands in Anaconda’s CMD.exe Prompt as well:
+   - `conda install -c anaconda cudatoolkit`
+   - `conda install -c anaconda cudnn`
+- To verify CUDA has been installed, type “cuda-version” in the search bar. If it appears, it means it has been installed. It should be the exact same version as “pytorch-cuda” (you’ll need to type this in the search bar to check). Make sure those match or there may be issues.
+- To verify cuDNN has been installed, do the same thing by typing “cudnn”. If it’s there, it’s been installed correctly.
+- If there are any issues with installing either CUDA and/or cuDNN, follow this installation guide: https://medium.com/@afierror14/how-to-install-cuda-11-8-cudnn-9-1-pytorch-on-windows-anaconda-bf6af1a16aa6. This will go through downloading CUDA and cuDNN through NVIDIA’s website.
+
+**Additional Libraries:**
+If these libraries are not installed already, run the code in Anaconda’s CMD.exe Prompt.
+- `conda install -c anaconda beautifulsoup4`
+- `pip install scikit-learn`
+- `pip install pymysql`
+- `pip install deep-translator`
+- `pip install mecab-python3`
+- `pip install fugashi`
+- `pip install urllib3`
+- `pip install ipywidgets`
+
+Once everything has been completed, run the code by selecting Jupyter Notebook in the Anaconda Navigator.                                                                    
+
+
 
