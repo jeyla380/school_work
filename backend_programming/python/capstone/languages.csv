@@ -1,0 +1,130 @@
+author_id,first_name,last_name,translated_name,nationality,birth,death,num_books_written
+1,Harper,Lee,ハーパー・リー,United States,1926-04-28,2016-02-19,2
+2,J.K.,Rowling,J・K・ローリング,United Kingdom,1965-07-31,,18
+3,F. Scott,Fitzgerald,F・スコット・フィッツジェラルド,United States,1896-09-24,1940-12-21,4
+4,George,Orwell,ジョージ・オーウェル,United Kingdom,1903-06-25,1950-01-21,13
+5,J.R.R.,Tolkien,J・R・R・トールキン,United Kingdom,1892-01-03,1973-09-02,17
+6,Antoine,de Saint-Exupéry,アントワーヌ・ド・サン＝テグジュペリ,France,1900-06-29,1944-07-31,17
+7,Ray,Bradbury,レイ・ブラッドベリ,United States,1920-08-22,2012-06-05,30
+8,J.D.,Salinger,J・D・サリンジャー,United States,1919-01-01,2010-01-27,6
+9,C.S.,Lewis,C・S・ルイス,United Kingdom,1898-11-29,1963-11-22,40
+10,John,Steinbeck,ジョン・スタインベック,United States,1902-02-27,1968-12-20,33
+11,Gabriel García,Márquez,ガブリエル・ガルシア＝マルケス,Columbia,1927-03-06,2014-04-17,27
+12,Aldous,Huxley,オルダス・ハクスリー,United Kingdom,1894-07-26,1963-11-22,50
+13,Margaret,Mitchell,マーガレット・ミッチェル,United States,1900-11-08,1949-08-16,1
+14,Lois,Lowry,ロイス・ローリー,United States,1937-03-20,,50
+15,William,Golding,ウィリアム・ゴールディング,United Kingdom,1911-09-19,1993-06-19,12
+16,Kurt,Vonnegut,カート・ヴォネガット,United States,1922-11-11,2007-04-11,9
+17,Vladimir,Nabokov,ウラジーミル・ナボコフ,"Russia, United States",1899-04-22,1977-07-02,10
+18,Margaret,Atwood,マーガレット・アトウッド,Canada,1939-11-18,,18
+19,Ken,Kesey,ケン・キージー,United States,1935-09-17,2001-11-10,10
+20,Albert,Camus,アルベール・カミュ,France,1913-11-07,1960-01-04,8
+21,Arthur,Golden,アーサー・ゴールデン,United States,1956-12-06,,1
+22,Douglas,Adams,ダグラス・アダムズ,United Kingdom,1952-03-11,2001-05-11,7
+23,E.B.,White,E・B・ホワイト,United States,1899-07-11,1985-10-01,17
+24,Madeleine,L'Engle,マデレイン・レングル,United States,1918-11-29,2007-09-06,60
+25,Ernest,Hemingway,アーネスト・ヘミングウェイ,United States,1899-07-21,1961-07-02,7
+26,Orson Scott,Card,オースン・スコット・カード,United States,1951-08-24,,50
+27,Shel,Silverstein,シェル・シルヴァスタイン,United States,1930-09-25,1999-05-10,7
+28,Elie,Wiesel,エリ・ヴィーゼル,"Romania, United States",1928-09-30,2016-07-02,57
+29,Sylvia,Plath,シルヴィア・プラス,United States,1932-10-27,1963-02-11,5
+30,Betty,Smith,ベティ・スミス,United States,1896-12-15,1972-01-17,5
+31,Richard,Adams,リチャード・アダムス,United Kingdom,1920-05-09,2016-12-24,19
+32,Paulo,Coelho,パウロ・コエーリョ,Brazil,1947-08-24,,17
+33,L.M.,Montgomery,L・M・モンゴメリ,Canada,1874-11-30,1942-04-24,20
+34,Truman,Capote,トルーマン・カポーティ,United States,1924-09-30,1984-08-25,5
+35,Dr.,Seuss,ドクター・スース,United States,1904-03-02,1991-09-24,60
+36,Alice,Walker,アリス・ウォーカー,United States,1944-02-09,,17
+37,Ayn,Rand,アイン・ランド,"Russia, United States",1905-02-02,1982-03-06,5
+38,Franz,Kafka,フランツ・カフカ,Czech Republic,1883-07-03,1924-06-03,13
+39,Barbara,Kingsolver,バーバラ・キングソルヴァー,United States,1955-04-08,,8
+40,Frances,Hodgson Burnett,フランシス・ホジソン・バーネット,"United Kingdom, United States",1849-11-24,1924-10-29,3
+41,Arthur Conan,Doyle,アーサー・コナン・ドイル,United Kingdom,1859-05-22,1930-07-07,300
+42,Max,Horkheimer,マックス・ホルクハイマー,Germany,1895-02-14,1973-07-07,9
+43,Alain,Fournier,アラン＝フルニエ,France,1886-10-03,1914-09-22,1
+44,Robert,Antelme,ロベール・アンテルム,France,1917-01-05,1990-10-26,1
+45,Guillaume,Apollinaire,ギヨーム・アポリネール,France,1880-08-26,1918-11-09,23
+46,Louis,Aragon,ルイ・アラゴン,France,1897-10-03,1982-12-24,100
+47,Hannah,Arendt,ハンナ・アーレント,"Germany, United States",1906-10-14,1975-12-04,30
+48,Philippe,Ariès,フィリップ・アリエス,France,1914-07-21,1984-02-08,15
+49,Antonin,Artaud,アントナン・アルトー,France,1896-09-04,1948-03-04,14
+50,Isaac,Asimov,アイザック・アシモフ,United States,1920-01-02,1992-04-06,500
+51,Amadou Hampâté,Bâ,アマドゥ・ハンパテ・バ,Mali,1901-01-01,1991-05-13,48
+52,Roland,Barthes,ロラン・バルト,France,1951-11-12,1980-03-26,22
+53,Georges,Bataille,ジョルジュ・バタイユ,France,1897-09-10,1962-07-09,46
+54,Simone,de Beauvoir,シモーヌ・ド・ボーヴォワール,France,1908-01-09,1986-04-14,5
+55,Samuel,Beckett,サミュエル・ベケット,Ireland,1906-04-13,1989-12-22,3
+56,Émile,Benveniste,エミール・バンヴェニスト,France,1902-05-27,1976-10-03,3
+57,Georges,Bernanos,ジョルジュ・ベルナノス,France,1888-02-20,1948-07-05,13
+58,Thomas,Bernhard,トーマス・ベルンハルト,Austria,1931-02-09,1989-02-12,60
+59,Enki,Bilal,エンキ・ビラル,France,1951-10-07,,14
+60,Maurice,Blanchot,モーリス・ブランショ,France,1907-09-22,2003-02-20,11
+61,Heinrich,Böll,ハインリヒ・ベル,Germany,1917-12-21,1985-07-16,70
+62,Jorge Luis,Borges,ホルヘ・ルイス・ボルヘス,Argentina,1899-08-24,1986-06-14,12
+63,Mikhail,Bulgakov,ミハイル・ブルガーコフ,Russia,1891-05-15,1940-03-10,5
+64,Pierre,Bourdieu,ピエール・ブルデュー,France,1930-08-01,2002-01-23,36
+65,Bertolt,Brecht,ベルトルト・ブレヒト,Germany,1898-02-10,1956-08-14,83
+66,André,Breton,アンドレ・ブルトン,France,1896-02-01,1966-09-28,20
+67,Hermann,Broch,ヘルマン・ブロッホ,Austria,1886-11-01,1951-05-30,6
+68,William S.,Burroughs,ウィリアム・S・バロウズ,United States,1914-02-05,1997-08-02,18
+69,Michel,Butor,ミシェル・ビュトール,France,1926-09-14,2016-08-24,4
+70,Dino,Buzzati,ディーノ・ブッツァーティ,Italy,1906-10-16,1972-01-28,5
+71,Italo,Calvino,イタロ・カルヴィーノ,Italy,1923-10-15,1985-09-19,10
+72,Edmond-François,Calvo,エドモン・フランソワ・カルボ,France,1892-08-26,1957-10-11,18
+73,Georges,Canguilhem,ジョルジュ・カンギレム,France,1904-06-04,1995-09-11,8
+74,Alejo,Carpentier,アレホ・カルペンティエル,Cuba,1904-12-26,1980-04-24,12
+75,Ernst,Cassirer,エルンスト・カッシーラー,Germany,1874-07-28,1945-04-13,4
+76,Louis-Ferdinand,Céline,ルイ＝フェルディナン・セリーヌ,France,1894-05-27,1961-07-01,13
+77,Blaise,Cendrars,ブレーズ・サンドラール,Switzerland,1887-09-01,1961-01-21,49
+78,Aimé,Césaire,エメ・セゼール,Martinique,1913-06-26,2008-04-17,9
+79,Raymond,Chandler,レイモンド・チャンドラー,"United States, United Kingdom",1888-07-23,1959-03-26,7
+80,René,Char,ルネ・シャール,France,1907-06-14,1988-02-19,23
+81,James Hadley,Chase,ジェイムズ・ハドリー・チェイス,United Kingdom,1906-12-24,1985-02-06,90
+82,Agatha,Christie,アガサ・クリスティ,United Kingdom,1890-09-15,1976-01-12,75
+83,Paul,Claudel,ポール・クローデル,France,1868-08-06,1955-02-23,5
+84,Albert,Cohen,アルベール・コーエン,Switzerland,1895-08-16,1981-10-17,4
+85,Sidonie-Gabrielle,Colette,シドニー＝ガブリエル・コレット,France,1873-01-28,1954-08-03,40
+86,Joseph,Conrad,ジョゼフ・コンラッド,"Poland, United Kingdom",1857-12-03,1924-08-03,5
+87,Julio,Cortázar,フリオ・コルタサル,"Argentina, France",1914-08-26,1984-02-12,10
+88,Guy,Debord,ギー・ドゥボール,France,1931-12-28,1994-11-30,10
+89,Gilles,Deleuze,ジル・ドゥルーズ,France,1925-01-18,1995-11-04,12
+90,芳樹,田中,Yoshiki Tanaka,Japan,1952-10-22,,589
+91,遼太郎,司馬,Ryōtarō Shiba,Japan,1923-08-07,1996-02-12,1146
+92,浩,有川,Hiro Arikawa,Japan,1972-06-09,,55
+93,正太郎,池波,Shōtarō Ikenami,Japan,1923-01-25,1990-05-03,532
+94,潤,池井戸,Jun Ikeido,Japan,1963-06-16,,83
+95,菜穂子,上橋,Nahoko Uehashi,Japan,1962-07-15,,120
+96,豊子,山崎,Toyoko Yamasaki,Japan,1924-11-03,2013-09-29,125
+97,正史,横溝,Seishi Yokomizo,Japan,1902-05-24,1981-12-28,243
+98,よる,住野,Yoru Sumino,Japan,,,8
+99,美夜,香月,Miya Kazuki,Japan,,,46
+100,誠,新海,Makoto Shinkai,Japan,1973-02-09,,29
+101,しをん,三浦 ,Shion Miura,Japan,1976-09-23,,72
+102,秀夫,横山,Hideo Yokoyama,Japan,1957-01-17,,4
+103,祐介,貴志,Yusuke Kishi,Japan,1959-01-03,,53
+104,竜,和田,Ryo Wada,Japan,1969-01-01,,5
+105,七生 ,塩野,Nanami Shiono,Japan,1937-07-07,,15
+106,カルロ,ゼン,Carlo Zen,Japan,,,37
+107,翁,馬場,Okina Baba,Japan,,,81
+108,衣良,石田,Ira Ishida,Japan,1960-03-28,,72
+109,穂信,米澤,Honobu Yonezawa,Japan,1978-01-01,,79
+110,篤哉, 東川,Tokuya Higashikawa,Japan,1968-01-01,,3
+111,陸,恩田,Riku Onda,Japan,1964-10-25,,3
+112,圭祐,松岡,Keisuke Matsuoka,Japan,1968-12-03,,156
+113,丁,冲方,Tow Ubukata,Japan,1977-02-14,,65
+114,元気,川村,Genki Kawamura,Japan,1979-03-12,,3
+115,学,神永,Manabu Kaminaga,Japan,1974-08-03,,137
+116,荘八,山岡,Sōhachi Yamaoka,Japan,1907-01-11,1978-09-30,73
+117,カズオ,イシグロ,Kazuo Ishiguro,"Japan, United Kingdom",1954-11-08,,10
+118,なつ,浅葉,Natsu Asaba,Japan,,,24
+119,ひろ,愛七,Hiro Ainana,Japan,,,60
+120,敏,今野,Bin Konno,Japan,1955-09-27,,276
+121,規子,荻原,Noriko Ogiwara,Japan,1959-04-22,,8
+122,延,三上,En Mikami,Japan,1971-01-01,,39
+123,Darren,O'Shaughnessy,ダレン シャン,Ireland,1972-01-01,,12
+124,くるみ,乾,Kurumi Inui,Japan,1963-10-30,,7
+125,滝美,秋川,Takimi Akigawa,Japan,,,42
+126,沙耶香,村田,Sayaka Murata,Japan,1979-08-14,,13
+127,瞬一,堂場,Shunichi Dōba,Japan,1963-01-01,,13
+128,秀行,菊地,Hideyuki Kikuchi,Japan,1949-09-25,,237
+129,日輪,香月,Hinowa Kōzuki,Japan,1963-01-01,2014-12-19,11

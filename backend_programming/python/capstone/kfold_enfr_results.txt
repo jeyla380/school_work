@@ -1,0 +1,134 @@
+Fold 1/5
+Epoch: 01 | Time: 10m 47s
+	Train Loss: 5.833 | Train Perplexity: 341.314
+	Valid Loss: 5.668 | Valid Perplexity: 289.448
+Epoch: 02 | Time: 10m 48s
+	Train Loss: 5.657 | Train Perplexity: 286.336
+	Valid Loss: 5.643 | Valid Perplexity: 282.329
+Epoch: 03 | Time: 10m 48s
+	Train Loss: 5.626 | Train Perplexity: 277.578
+	Valid Loss: 5.633 | Valid Perplexity: 279.494
+Epoch: 04 | Time: 10m 48s
+	Train Loss: 5.604 | Train Perplexity: 271.465
+	Valid Loss: 5.618 | Valid Perplexity: 275.287
+Epoch: 05 | Time: 10m 48s
+	Train Loss: 5.581 | Train Perplexity: 265.215
+	Valid Loss: 5.600 | Valid Perplexity: 270.529
+Epoch: 06 | Time: 11m 2s
+	Train Loss: 5.558 | Train Perplexity: 259.303
+	Valid Loss: 5.581 | Valid Perplexity: 265.338
+Epoch: 07 | Time: 11m 10s
+	Train Loss: 5.519 | Train Perplexity: 249.336
+	Valid Loss: 5.516 | Valid Perplexity: 248.710
+Epoch: 08 | Time: 10m 50s
+	Train Loss: 5.432 | Train Perplexity: 228.536
+	Valid Loss: 5.442 | Valid Perplexity: 230.894
+Epoch: 09 | Time: 10m 50s
+	Train Loss: 5.181 | Train Perplexity: 177.881
+	Valid Loss: 5.002 | Valid Perplexity: 148.772
+Epoch: 10 | Time: 10m 50s
+	Train Loss: 4.918 | Train Perplexity: 136.696
+	Valid Loss: 4.917 | Valid Perplexity: 136.617
+------------------------------------------------------------
+Test Loss: 4.928 | Test Perplexity: 138.044 | Total Time: 650.7534267902374
+Fold 2/5
+Epoch: 01 | Time: 11m 25s
+	Train Loss: 4.792 | Train Perplexity: 120.572
+	Valid Loss: 4.762 | Valid Perplexity: 116.968
+Epoch: 02 | Time: 11m 38s
+	Train Loss: 4.662 | Train Perplexity: 105.804
+	Valid Loss: 4.673 | Valid Perplexity: 106.989
+Epoch: 03 | Time: 11m 38s
+	Train Loss: 4.557 | Train Perplexity:  95.311
+	Valid Loss: 4.655 | Valid Perplexity: 105.137
+Epoch: 04 | Time: 11m 37s
+	Train Loss: 4.474 | Train Perplexity:  87.672
+	Valid Loss: 4.640 | Valid Perplexity: 103.554
+Epoch: 05 | Time: 11m 39s
+	Train Loss: 4.446 | Train Perplexity:  85.245
+	Valid Loss: 4.682 | Valid Perplexity: 107.996
+Epoch: 06 | Time: 11m 39s
+	Train Loss: 4.351 | Train Perplexity:  77.527
+	Valid Loss: 4.645 | Valid Perplexity: 104.093
+Epoch: 07 | Time: 11m 40s
+	Train Loss: 4.338 | Train Perplexity:  76.523
+	Valid Loss: 4.667 | Valid Perplexity: 106.392
+Epoch: 08 | Time: 11m 40s
+	Train Loss: 4.309 | Train Perplexity:  74.361
+	Valid Loss: 4.640 | Valid Perplexity: 103.515
+Epoch: 09 | Time: 11m 40s
+	Train Loss: 4.015 | Train Perplexity:  55.414
+	Valid Loss: 4.582 | Valid Perplexity:  97.719
+Epoch: 10 | Time: 11m 39s
+	Train Loss: 3.948 | Train Perplexity:  51.822
+	Valid Loss: 4.571 | Valid Perplexity:  96.614
+------------------------------------------------------------
+Test Loss: 4.619 | Test Perplexity: 101.351 | Total Time: 699.8802399635315
+Fold 3/5
+Epoch: 01 | Time: 11m 46s
+	Train Loss: 4.089 | Train Perplexity:  59.689
+	Valid Loss: 3.782 | Valid Perplexity:  43.913
+Epoch: 02 | Time: 10m 52s
+	Train Loss: 4.048 | Train Perplexity:  57.298
+	Valid Loss: 3.816 | Valid Perplexity:  45.425
+Epoch: 03 | Time: 10m 47s
+	Train Loss: 4.025 | Train Perplexity:  55.960
+	Valid Loss: 3.860 | Valid Perplexity:  47.462
+Epoch: 04 | Time: 10m 47s
+	Train Loss: 4.003 | Train Perplexity:  54.741
+	Valid Loss: 3.890 | Valid Perplexity:  48.927
+Epoch: 05 | Time: 10m 46s
+	Train Loss: 3.964 | Train Perplexity:  52.653
+	Valid Loss: 3.925 | Valid Perplexity:  50.636
+Epoch: 06 | Time: 10m 48s
+	Train Loss: 3.919 | Train Perplexity:  50.334
+	Valid Loss: 3.917 | Valid Perplexity:  50.270
+Early stopping triggered
+------------------------------------------------------------
+Test Loss: 4.583 | Test Perplexity:  97.813 | Total Time: 648.0776934623718
+Fold 4/5
+Epoch: 01 | Time: 10m 48s
+	Train Loss: 3.972 | Train Perplexity:  53.101
+	Valid Loss: 3.654 | Valid Perplexity:  38.627
+Epoch: 02 | Time: 10m 47s
+	Train Loss: 3.963 | Train Perplexity:  52.628
+	Valid Loss: 3.657 | Valid Perplexity:  38.726
+Epoch: 03 | Time: 10m 47s
+	Train Loss: 3.961 | Train Perplexity:  52.529
+	Valid Loss: 3.659 | Valid Perplexity:  38.814
+Epoch: 04 | Time: 10m 48s
+	Train Loss: 3.962 | Train Perplexity:  52.557
+	Valid Loss: 3.665 | Valid Perplexity:  39.073
+Epoch: 05 | Time: 10m 47s
+	Train Loss: 3.949 | Train Perplexity:  51.862
+	Valid Loss: 3.676 | Valid Perplexity:  39.491
+Epoch: 06 | Time: 10m 48s
+	Train Loss: 3.944 | Train Perplexity:  51.604
+	Valid Loss: 3.677 | Valid Perplexity:  39.535
+Early stopping triggered
+------------------------------------------------------------
+Test Loss: 4.576 | Test Perplexity:  97.108 | Total Time: 648.1729347705841
+Fold 5/5
+Epoch: 01 | Time: 10m 46s
+	Train Loss: 3.962 | Train Perplexity:  52.563
+	Valid Loss: 3.626 | Valid Perplexity:  37.561
+Epoch: 02 | Time: 10m 47s
+	Train Loss: 3.957 | Train Perplexity:  52.318
+	Valid Loss: 3.627 | Valid Perplexity:  37.609
+Epoch: 03 | Time: 10m 48s
+	Train Loss: 3.953 | Train Perplexity:  52.104
+	Valid Loss: 3.628 | Valid Perplexity:  37.635
+Epoch: 04 | Time: 11m 2s
+	Train Loss: 3.956 | Train Perplexity:  52.240
+	Valid Loss: 3.628 | Valid Perplexity:  37.652
+Epoch: 05 | Time: 11m 18s
+	Train Loss: 3.960 | Train Perplexity:  52.437
+	Valid Loss: 3.630 | Valid Perplexity:  37.695
+Epoch: 06 | Time: 11m 14s
+	Train Loss: 3.956 | Train Perplexity:  52.253
+	Valid Loss: 3.630 | Valid Perplexity:  37.700
+Early stopping triggered
+------------------------------------------------------------
+Test Loss: 4.575 | Test Perplexity:  97.035 | Total Time: 674.9141492843628
+K-Fold Cross Validation Results: [4.917182493209839, 4.570728684425354, 3.9174175205230712, 3.6771839389801024, 3.629665448188782]
+Average Validation Loss: 4.142
