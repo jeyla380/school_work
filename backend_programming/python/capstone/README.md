@@ -172,5 +172,5 @@ The models are trained using a large dataset of identical sentences in English, 
 •	`deep_translator` – Library used to translate the English sentences to French using `GoogleTranslator`.
 •	`NLTK` – Natural language processing library used mainly used for tokenization in this project.
 •	`scikit-learn` – Machine learning library used for data preprocessing and evaluation.
-•	`pytorch` – Deep learning framework used for building and training models through seq2seq.
+•	`torch` (PyTorch) – Deep learning framework used for building and training models through seq2seq.
 
