@@ -169,8 +169,106 @@ The application that was created is a Book Title Translation tool that uses a ma
 The models are trained using a large dataset of identical sentences in English, French, and Japanese. Additional algorithms and libraries that were used to create the models include:
 
 - `BeautifulSoup` – Web scraping library used to scrape the data needed to train the model.
-•	`deep_translator` – Library used to translate the English sentences to French using `GoogleTranslator`.
-•	`NLTK` – Natural language processing library used mainly used for tokenization in this project.
-•	`scikit-learn` – Machine learning library used for data preprocessing and evaluation.
-•	`torch` (PyTorch) – Deep learning framework used for building and training models through seq2seq.
+- `deep_translator` – Library used to translate the English sentences to French using `GoogleTranslator`.
+- `NLTK` – Natural language processing library used mainly used for tokenization in this project.
+- `scikit-learn` – Machine learning library used for data preprocessing and evaluation.
+- `torch` (PyTorch) – Deep learning framework used for building and training models through seq2seq.
+
+The implementation plan for the application involved several steps:
+- Scrape data from Tangorin (Section E) to collect a large dataset of identical sentences in English, French, and Japanese amounting to 150,000 sentences total (50,000 sentences in each language).
+- Translate the data using GoogleTranslator for French sentences (using English sentences), and create dataframes for each language.
+- Save each dataframe as a .csv file that will be used to avoid re-running the scraping and translation code; turn .csv files into a dataframe to make it easier to read.
+- Merge the dataframes into a single dataframe so each row of sentences are identical in each language.
+- Clean the data of the merged dataframe to remove non-alphabetical characters (except very limited punctuation like apostrophes and hyphens) in English and French, and non-Latin characters in Japanese.
+- Split the data into training, valid, and testing sets to make it more suitable for seq2seq.
+- Create the encoder, attention layer, and decoder that will be used to create models through the seq2seq neural network.
+- Train the models by creating training and evaluation loops (through epochs) through each fold to avoid overfitting and/or underfitting.
+- Evaluate the models using the BLEU score metric and the confusion matrix to assess their performance on how well they translated.
+- The models can be further improved by gathering more data and having more processing power, as well as possibly fine-tuning the hyperparameters.
+
+Using PyTorch as the deep learning framework provided a wide range of functionality and usability for building and training neural networks, it made it a simple choice to use. 
+
+Overall, the decisions made in this Book Title Translation application were driven by the need of using a large and diverse dataset and the choice of using a suitable deep learning framework that could handle gathering and trying my own data.
+
+### 3. Validation
+In order to assess the model’s accuracy, `NLTK`’s BLEU was used to compare translations. BLEU is specifically used for machine-translated text, which is why this is used to evaluate the model rather than F-1 Score, Accuracy, etc.
+
+The result of a BLEU score is between 0 and 1, where 0 is low quality translation, and 1 means extremely high-quality translation. However, it needs to be noted that human translators don’t achieve a perfect score of 1.
+
+|BLEU Score | Interpretation* |
+| :--: | :--: |
+| 0 - 0.09| Essentially useless |
+| 0.1 - 0.19| Hard to understand |
+| 0.2 - 0.29 | The idea is there, but has significant grammatical errors |
+| 0.3 - 0.39 | Understandable, good translations |
+| 0.4 - 0.49| High quality translations |
+|0.5 - 0.59 | Very high-quality translations, adequate, fluent |
+|> 0.6 | Quality better than human |
+
+<span style="font-size:10pt">*From Evaluating Models (Sources)</span>
+
+### 4. Solution Summary 
+
+**Problem:**
+- The Simple Bookstore is expanding globally with new locations in Paris, France and Tokyo, Japan along with new locations in the United States. They are looking to update their list of popular books with translated versions for all their stores.
+
+**Results:**
+- The results of the models are not as expected. There may be couple reasonings for this: 
+   - The dataset may not be large or diverse enough to train the model.
+      - English and French are both Latin-based languages, so they may not need large datasets for their models to translate efficiently.
+   - The vocabulary may be too diverse where it may be difficult for the model to translate effectively.
+   - The computer’s processing power isn’t enough to handle batch sizes greater than 32. Therefore, if the batch size was larger, it may have been able to reduce the overfitting and/or underfitting of the models.
+
+**Solution:**
+- These different set of solutions are all based on hypotheses that may help reduce overfitting and/or underfitting for models, which in turn will allow for more accurate translations.
+   - Web scrape at least 150,000 sentences or more for each language or find a dataset that already contains 150,000 or more sentences.
+      - Especially since Japanese uses three different alphabets, for a more efficient translation, a large database of sentences should be used.
+   - Ensure that the sentences are not too overly diverse if the dataset is smaller, keep the sentences simple. The larger the dataset, the more diverse the sentences can be.
+   - Increase the batch size to at least 128 or more. More time and processing power will be required, so a computer with faster processing speed is highly recommended so the computer doesn’t need to run over the course of days or weeks.
+
+### 5. Data Summary
+- The data was provided by Tangorin (found in Sources) by web scraping the sentences in Japanese and their English translations.
+- The French sentences were translated using the deep_translator’s GoogleTranslator API by translating the sentences from English to French as Tangorin didn’t have any French translations.
+- The sentences in each language were turned into dataframes for each language, which was in turn merged into an entire language dataframe that contained the translated sentences next to each other.
+- Each of the dataframes were saved as a .csv file in order to prevent running the code again as it took hours and days to create the dataframes for each language.
+- The rest of the project used the .csv files that were created to prevent any issues or errors when running the entire project.
+
+
+### 6. Visualizations
+
+*Note: The visualizations can be viewed in the `Book Title Translation.ipynb` file.*
+
+**Train Loss and Validation Loss:**
+- Based on the results of the graphs, English to French, and French to English seems to have good results for the first fold, but folds afterwards tend to become either overfitted and/or underfitted.
+- Any translation that involves Japanese does not do well at all. This could be due to a variety of reasons, but the best guess is most likely due to not having enough data to train the model properly as Japanese is not a Latin-based language like English and French.
+
+<span style="font-size:10pt">*To view examples on what an overfitting, underfitting, and good fit graphs look like when training models: https://www.baeldung.com/cs/training-validation-loss-deep-learning </span>
+
+**Machine Translation vs. Native Translation for Basic Sentences:**
+- A good translation model will usually have most 1s concentrated diagonally. The French to English model is a good example of how the heatmap should look when compared to the rest of the models.
+- If a model has a 1 that is not diagonal, this means there was an error in translation. The French to Japanese model is an example of this as there were no 1s concentrated along the diagonal.
+
+**BLEU Scores:**
+- As seen in the graph, the English and French translations seemed to do well when translating basic sentences and complex sentences. 
+   - However, when looking at the English to French translation, it did worse than the French to English translation. This could mean that a variety of French sentences can mean the same thing in English, but it doesn’t work from English to French.
+- Any model that included Japanese did not do well with their BLEU score, and all models had a score of 0. Examples of what the sentences look like can be seen in the previous visualization of the heatmap.
+
+<br>
+
+## Sources
+- Example sentences - Japanese Dictionary Tangorin. (n.d.). Tangorin. https://tangorin.com/sentences
+- Best Books of the 20th Century (7827 books). (n.d.). https://www.goodreads.com/list/show/6.Best_Books_of_the_20th_Century
+- Les 200 meilleurs livres du XXe siècle - Liste de 200 livres - Babelio. (n.d.). Babelio. https://www.babelio.com/liste/3044/Les-200-meilleurs-livres-du-XXe-siecle
+- 【2021年に読みたい!】読者が選ぶ、おすすめ名作小説ベスト100ランキング! - キャンペーン・特集 - 漫画・ラノベ(小説)・無料試し読みなら、電子書籍・コミックストア ブックライブ. (n.d.). 株式会社BookLive. https://booklive.jp/feature/index/id/novel100#
+- 人気書店が選ぶいま読んでおきたい100冊– LITERATURE – | Discover Japan | ディスカバー・ジャパン. (2017, April 14). Discover Japan | 日本の魅力、再発見 ディスカバー・ジャパン. https://discoverjapan-web.com/article/23141
+- Language Translation with TorchText — PyTorch Tutorials 1.7.1 documentation. (n.d.). https://pytorch.org/tutorials/beginner/torchtext_translation_tutorial.html
+- Tatoeba: Collection of sentences and translations. (n.d.). https://tatoeba.org/en
+- Evaluating models. (n.d.). Google Cloud. https://cloud.google.com/translate/automl/docs/evaluate
+
+<br>
+<hr>
+
+### Additional Notes
+- The actual models of each language pair is not located in the files as the file size is too large.
+- The password for the SQL database was partially removed.
 
