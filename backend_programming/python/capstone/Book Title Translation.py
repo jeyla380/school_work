@@ -414,7 +414,7 @@ new_language_data_df.tail()
 db_name = "book_titles"
 db_host = "localhost"
 db_username = "root"
-db_password = "fMCX7dJHn@fDQ.M"
+db_password = "fMC..."
 
 try:
     connection = pymysql.connect(host = db_host,
