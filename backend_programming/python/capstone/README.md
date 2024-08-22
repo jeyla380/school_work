@@ -1,10 +1,8 @@
 # Book Title Translation Project
 
 ### Table of Contents:
-- [Project Proposal Plan](#project-proposal-plan)
-- [Post-Implementation Report](#post-implementation-report)
-- [Sources](#sources)
-- [Additional Notes](#additional-notes)
+| [Project Proposal Plan](#project-proposal-plan) | [Post-Implementation Report](#post-implementation-report) | [Sources](#sources) | [Additional Notes](#additional-notes) |
+| :--: | :--: | :--: | :--: |
 
 <br>
 
@@ -44,7 +42,7 @@ The Simple Bookstore is looking for a book title translator application that has
 4. Integrate the language translation model into a simple graphical user interface (GUI) for users to use.
 5. Gather feedback from users to determine whether necessary changes are needed for the models.
 
-### 6.	Projected Timeline of Project*
+### 6. Projected Timeline of Project*
 | Deliverable | Duration | Project Start Date | Anticipated End Date |
 | :--: | :--: | :--: | :--: |
 | Data Collection | 6 Days | July 1, 2024 | July 8, 2024 |
@@ -59,7 +57,7 @@ The Simple Bookstore is looking for a book title translator application that has
 <span style="font-size:10pt">*This projected timeline is based on typical business days which exclude Saturdays and Sundays</span>
 
 
-### 7.	Outline of Project
+### 7. Outline of Project
 1. Data Collection
    1. Web scrape data for English, French, and Japanese.
 2. Data Cleaning
@@ -131,6 +129,8 @@ However, there are additional factors that needs to be considered as Simple Book
 ### 9. Ethical and Legal Considerations
 - Ensure book title translations are still able to preserve original context and intent.
 - Remain unbiased when translating book titles that contain controversial or politically charged content.
+
+[Return to the Top](#book-title-translation-project)
 
 <br>
 
@@ -259,6 +259,9 @@ The result of a BLEU score is between 0 and 1, where 0 is low quality translatio
    - However, when looking at the English to French translation, it did worse than the French to English translation. This could mean that a variety of French sentences can mean the same thing in English, but it doesn’t work from English to French.
 - Any model that included Japanese did not do well with their BLEU score, and all models had a score of 0. Examples of what the sentences look like can be seen in the previous visualization of the heatmap.
 
+
+[Return to the Top](#book-title-translation-project)
+
 <br>
 
 ## Sources
@@ -271,6 +274,9 @@ The result of a BLEU score is between 0 and 1, where 0 is low quality translatio
 - Tatoeba: Collection of sentences and translations. (n.d.). https://tatoeba.org/en
 - Evaluating models. (n.d.). Google Cloud. https://cloud.google.com/translate/automl/docs/evaluate
 
+[Return to the Top](#book-title-translation-project)
+
+
 <br>
 <hr>
 
@@ -278,3 +284,4 @@ The result of a BLEU score is between 0 and 1, where 0 is low quality translatio
 - The actual models of each language pair is not located in the files as the file size is too large.
 - The password for the SQL database was partially removed.
 
+[Return to the Top](#book-title-translation-project)
