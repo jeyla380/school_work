@@ -281,7 +281,7 @@ The result of a BLEU score is between 0 and 1, where 0 is low quality translatio
 <hr>
 
 ### Additional Notes
-- The actual models of each language pair is not located in the files as the file size is too large.
-- The password for the SQL database was partially removed.
+- The actual models of each language pair is not located in the files as the file size for each one is too large.
+- The password for the SQL database is partially removed.
 
 [Return to the Top](#book-title-translation-project)
