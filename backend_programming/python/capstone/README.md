@@ -162,5 +162,15 @@ If these libraries are not installed already, run the code in Anaconda’s CMD.e
 
 Once everything has been completed, run the code by selecting Jupyter Notebook in the Anaconda Navigator.                                                                    
 
+### 2. Machine Learning
 
+The application that was created is a Book Title Translation tool that uses a machine learning model to translate book titles between English, French, and Japanese. It takes a book title in one language as input and generates the translated book title in the two other languages as output.
+
+The models are trained using a large dataset of identical sentences in English, French, and Japanese. Additional algorithms and libraries that were used to create the models include:
+
+- `BeautifulSoup` – Web scraping library used to scrape the data needed to train the model.
+•	`deep_translator` – Library used to translate the English sentences to French using `GoogleTranslator`.
+•	`NLTK` – Natural language processing library used mainly used for tokenization in this project.
+•	`scikit-learn` – Machine learning library used for data preprocessing and evaluation.
+•	`pytorch` – Deep learning framework used for building and training models through seq2seq.
 
